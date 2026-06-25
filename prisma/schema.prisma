@@ -11,12 +11,13 @@ datasource db {
 // ─── Hierarquia de conteúdo ───────────────────────────────────────────────────
 
 model Level {
-  id        Int      @id @default(autoincrement())
-  codigo    String   @unique
+  id        Int        @id @default(autoincrement())
+  codigo    String     @unique
   nome      String
   descricao String
   ordem     Int
   modules   Module[]
+  userState UserState? @relation("UserCurrentLevel")
 }
 
 model Module {
@@ -31,6 +32,7 @@ model Module {
   grammarModules GrammarModule[]
   externalExs    ExternalExercise[]
   progress       Progress?
+  userState      UserState?         @relation("UserCurrentModule")
 }
 
 model Progress {
@@ -64,12 +66,13 @@ model ExternalExercise {
 model Word {
   id         Int     @id @default(autoincrement())
   alemao     String
-  artigo     String  @default("")
-  genero     String  @default("—")
+  artigo     String?
+  genero     String?
   raiz       String  @default("")
   traducaoPt String
-  plural     String  @default("")
+  plural     String?
   exemplo    String  @default("")
+  exemploPt  String?
   tema       String  @default("")
   tipo       String  @default("palavra")
   moduleId   Int?
@@ -86,6 +89,8 @@ model Verb {
   separavel   Boolean @default(false)
   irregular   Boolean @default(false)
   conjugacoes String  @default("{}")
+  exemplo     String  @default("")
+  exemploPt   String?
   moduleId    Int?
   module      Module? @relation(fields: [moduleId], references: [id])
 }
@@ -93,12 +98,23 @@ model Verb {
 // ─── Gramática ────────────────────────────────────────────────────────────────
 
 model GrammarModule {
-  id         Int     @id @default(autoincrement())
-  titulo     String
-  conteudo   String
-  exercicios String  @default("[]")
-  moduleId   Int?
-  module     Module? @relation(fields: [moduleId], references: [id])
+  id            Int     @id @default(autoincrement())
+  titulo        String
+  conteudo      String
+  exercicios    String  @default("[]")
+  moduleId      Int?
+  module        Module? @relation(fields: [moduleId], references: [id])
+  ordemNoModulo Int     @default(0)
+}
+
+// ─── Estado do utilizador ────────────────────────────────────────────────────
+
+model UserState {
+  id              Int    @id @default(1)
+  currentLevelId  Int    @unique
+  currentModuleId Int    @unique
+  currentLevel    Level  @relation("UserCurrentLevel",  fields: [currentLevelId],  references: [id])
+  currentModule   Module @relation("UserCurrentModule", fields: [currentModuleId], references: [id])
 }
 
 // ─── Cenários de conversa ─────────────────────────────────────────────────────

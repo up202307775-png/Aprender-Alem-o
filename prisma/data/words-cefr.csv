@@ -1,0 +1,368 @@
+level,lemma,pos,article,plural,gender,translation_pt,example_de,example_pt,topic,difficulty_note
+A1,Haus,noun,das,Häuser,neutro,casa/lar,"Das Haus ist groß und hell.","A casa é grande e luminosa.",Wohnen,Plural com Umlaut: Haus→Häuser
+A1,Wohnung,noun,die,Wohnungen,fem,apartamento,"Meine Wohnung hat drei Zimmer.","O meu apartamento tem três quartos.",Wohnen,Sufixo -ung sempre feminino
+A1,Zimmer,noun,das,Zimmer,neutro,quarto/divisão,"Das Zimmer ist sehr klein.","O quarto é muito pequeno.",Wohnen,Plural igual ao singular
+A1,Küche,noun,die,Küchen,fem,cozinha,"Die Küche ist modern und groß.","A cozinha é moderna e grande.",Wohnen,Do latim coquina
+A1,Badezimmer,noun,das,Badezimmer,neutro,casa de banho,"Das Badezimmer ist rechts.","A casa de banho fica à direita.",Wohnen,Composto: Bad + Zimmer
+A1,Tisch,noun,der,Tische,masc,mesa,"Der Tisch steht im Esszimmer.","A mesa fica na sala de jantar.",Wohnen,Plural com -e
+A1,Stuhl,noun,der,Stühle,masc,cadeira,"Der Stuhl ist aus Holz.","A cadeira é de madeira.",Wohnen,Plural com Umlaut + -e
+A1,Bett,noun,das,Betten,neutro,cama,"Das Bett ist sehr bequem.","A cama é muito confortável.",Wohnen,Plural com -en
+A1,Fenster,noun,das,Fenster,neutro,janela,"Das Fenster ist offen.","A janela está aberta.",Wohnen,Do latim fenestra; plural igual
+A1,Tür,noun,die,Türen,fem,porta,"Die Tür ist zu.","A porta está fechada.",Wohnen,Não confundir com Tor (portão)
+A1,Mutter,noun,die,Mütter,fem,mãe,"Meine Mutter kocht sehr gut.","A minha mãe cozinha muito bem.",Familie,Plural com Umlaut
+A1,Vater,noun,der,Väter,masc,pai,"Mein Vater arbeitet in der Stadt.","O meu pai trabalha na cidade.",Familie,Plural com Umlaut
+A1,Bruder,noun,der,Brüder,masc,irmão,"Mein Bruder ist älter als ich.","O meu irmão é mais velho do que eu.",Familie,Plural com Umlaut
+A1,Schwester,noun,die,Schwestern,fem,irmã,"Meine Schwester studiert Medizin.","A minha irmã estuda Medicina.",Familie,Plural com -n
+A1,Kind,noun,das,Kinder,neutro,criança,"Das Kind spielt im Garten.","A criança brinca no jardim.",Familie,Plural com -er
+A1,Familie,noun,die,Familien,fem,família,"Meine Familie ist sehr groß.","A minha família é muito grande.",Familie,Do latim familia
+A1,Freund,noun,der,Freunde,masc,amigo/namorado,"Mein Freund wohnt in Berlin.","O meu amigo mora em Berlim.",Familie,Feminino: Freundin
+A1,Freundin,noun,die,Freundinnen,fem,amiga/namorada,"Meine Freundin kommt heute.","A minha amiga vem hoje.",Familie,Sufixo -in para feminino
+A1,Mann,noun,der,Männer,masc,homem/marido,"Der Mann liest ein Buch.","O homem lê um livro.",Familie,Plural com Umlaut + -er
+A1,Frau,noun,die,Frauen,fem,mulher/esposa,"Die Frau arbeitet im Büro.","A mulher trabalha no escritório.",Familie,Plural com -en
+A1,Großmutter,noun,die,Großmütter,fem,avó,"Meine Großmutter backt Kuchen.","A minha avó faz bolo.",Familie,Composto: groß + Mutter
+A1,Großvater,noun,der,Großväter,masc,avô,"Mein Großvater ist 80 Jahre alt.","O meu avô tem 80 anos.",Familie,Composto: groß + Vater
+A1,Name,noun,der,Namen,masc,nome,"Wie ist Ihr Name?","Qual é o seu nome?",Alltag,Plural com -n
+A1,Adresse,noun,die,Adressen,fem,morada/endereço,"Wie ist Ihre Adresse?","Qual é a sua morada?",Alltag,Do francês adresse
+A1,Telefonnummer,noun,die,Telefonnummern,fem,número de telefone,"Wie ist deine Telefonnummer?","Qual é o teu número de telefone?",Alltag,Composto longo mas essencial no A1
+A1,Land,noun,das,Länder,neutro,país/terra,"Aus welchem Land kommen Sie?","De que país é?",Alltag,Plural com Umlaut + -er
+A1,Sprache,noun,die,Sprachen,fem,língua/idioma,"Ich lerne die deutsche Sprache.","Aprendo a língua alemã.",Alltag,De sprechen
+A1,Wort,noun,das,Wörter,neutro,palavra,"Ich verstehe dieses Wort nicht.","Não percebo esta palavra.",Alltag,Plural com Umlaut + -er (≠ Worte = palavras em contexto)
+A1,Buch,noun,das,Bücher,neutro,livro,"Das Buch ist sehr interessant.","O livro é muito interessante.",Alltag,Plural com Umlaut + -er
+A1,Schule,noun,die,Schulen,fem,escola,"Die Kinder gehen in die Schule.","As crianças vão para a escola.",Alltag,Do latim schola
+A1,Lehrer,noun,der,Lehrer,masc,professor,"Der Lehrer erklärt die Grammatik.","O professor explica a gramática.",Alltag,Plural igual; feminino: Lehrerin
+A1,Stift,noun,der,Stifte,masc,caneta/lápis,"Hast du einen Stift für mich?","Tens uma caneta para mim?",Alltag,Usado para caneta e lápis
+A1,Heft,noun,das,Hefte,neutro,caderno,"Ich schreibe ins Heft.","Escrevo no caderno.",Alltag,Plural com -e
+A1,Tag,noun,der,Tage,masc,dia,"Heute ist ein schöner Tag.","Hoje é um dia bonito.",Zeit,Plural com -e
+A1,Woche,noun,die,Wochen,fem,semana,"Diese Woche lerne ich viel.","Esta semana estudo muito.",Zeit,Plural com -n
+A1,Monat,noun,der,Monate,masc,mês,"Der Monat Januar ist kalt.","O mês de janeiro é frio.",Zeit,Plural com -e
+A1,Jahr,noun,das,Jahre,neutro,ano,"Das Jahr hat zwölf Monate.","O ano tem doze meses.",Zeit,Plural com -e
+A1,Uhr,noun,die,Uhren,fem,relógio/hora,"Die Uhr an der Wand ist kaputt.","O relógio na parede está avariado.",Zeit,Também usado para horas: um 8 Uhr
+A1,Morgen,noun,der,Morgen,masc,manhã,"Am Morgen trinke ich Kaffee.","De manhã bebo café.",Zeit,Plural igual; também = amanhã (advérbio)
+A1,Abend,noun,der,Abende,masc,tarde/noite,"Am Abend lese ich ein Buch.","À noite leio um livro.",Zeit,Plural com -e
+A1,Nacht,noun,die,Nächte,fem,noite,"Die Nacht ist sehr ruhig.","A noite é muito calma.",Zeit,Plural com Umlaut + -e; mais tarde que Abend
+A1,Brot,noun,das,Brote,neutro,pão,"Ich esse morgens Brot.","De manhã como pão.",Essen,Plural com -e
+A1,Wasser,noun,das,Wässer,neutro,água,"Ich trinke viel Wasser.","Bebo muita água.",Essen,Plural raro no singular coletivo
+A1,Milch,noun,die,,fem,leite (sem plural usual),"Kinder trinken gern Milch.","As crianças gostam de beber leite.",Essen,Sem plural habitual
+A1,Kaffee,noun,der,Kaffees,masc,café,"Ich möchte einen Kaffee.","Queria um café.",Essen,Do árabe qahwa
+A1,Tee,noun,der,Tees,masc,chá,"Ich trinke lieber Tee als Kaffee.","Prefiro chá a café.",Essen,Do chinês via holandês
+A1,Apfel,noun,der,Äpfel,masc,maçã,"Der Apfel ist frisch und süß.","A maçã é fresca e doce.",Essen,Plural com Umlaut + -el→Äpfel
+A1,Ei,noun,das,Eier,neutro,ovo,"Ich esse zum Frühstück zwei Eier.","Ao pequeno-almoço como dois ovos.",Essen,Plural com -er
+A1,Fleisch,noun,das,,neutro,carne (sem plural usual),"Das Fleisch ist zu salzig.","A carne está demasiado salgada.",Essen,Sem plural habitual
+A1,Gemüse,noun,das,,neutro,legumes (sem plural usual),"Gemüse ist gesund.","Os legumes são saudáveis.",Essen,Palavra coletiva; sem plural habitual
+A1,Suppe,noun,die,Suppen,fem,sopa,"Die Suppe ist sehr heiß.","A sopa está muito quente.",Essen,Plural com -n
+A1,Kuchen,noun,der,Kuchen,masc,bolo,"Meine Oma backt guten Kuchen.","A minha avó faz um bolo delicioso.",Essen,Plural igual ao singular
+A1,Geld,noun,das,Gelder,neutro,dinheiro,"Ich habe kein Geld dabei.","Não tenho dinheiro comigo.",Alltag,Plural raro (usado para fundos)
+A1,Straße,noun,die,Straßen,fem,rua,"Die Straße ist sehr laut.","A rua é muito barulhenta.",Stadt,Do latim strata
+A1,Bahnhof,noun,der,Bahnhöfe,masc,estação de comboios,"Der Bahnhof ist in der Mitte.","A estação fica no centro.",Stadt,Composto: Bahn + Hof
+A1,Bus,noun,der,Busse,masc,autocarro,"Ich fahre mit dem Bus.","Ando de autocarro.",Verkehr,De Omnibus
+A1,Auto,noun,das,Autos,neutro,carro/automóvel,"Das Auto ist rot.","O carro é vermelho.",Verkehr,De Automobil
+A1,Fahrrad,noun,das,Fahrräder,neutro,bicicleta,"Ich fahre gern Fahrrad.","Gosto de andar de bicicleta.",Verkehr,Composto: Fahr + Rad
+A1,Kopf,noun,der,Köpfe,masc,cabeça,"Mein Kopf tut weh.","A minha cabeça dói.",Körper,Plural com Umlaut + -e
+A1,Hand,noun,die,Hände,fem,mão,"Wasch deine Hände!","Lava as mãos!",Körper,Plural com Umlaut + -e
+A1,Auge,noun,das,Augen,neutro,olho,"Sie hat blaue Augen.","Ela tem olhos azuis.",Körper,Plural com -n
+A1,Ohr,noun,das,Ohren,neutro,orelha/ouvido,"Die Ohren sind kalt.","As orelhas estão frias.",Körper,Plural com -en
+A1,Nase,noun,die,Nasen,fem,nariz,"Meine Nase ist rot.","O meu nariz está vermelho.",Körper,Plural com -n
+A1,Mund,noun,der,Münder,masc,boca,"Öffne bitte den Mund!","Abre a boca, por favor!",Körper,Plural com Umlaut + -er
+A1,Arm,noun,der,Arme,masc,braço,"Er hat einen langen Arm.","Ele tem um braço comprido.",Körper,Plural com -e
+A1,Bein,noun,das,Beine,neutro,perna,"Mein Bein tut weh.","A minha perna dói.",Körper,Plural com -e; também = osso em compostos
+A1,Rücken,noun,der,Rücken,masc,costas,"Mein Rücken schmerzt.","As minhas costas doem.",Körper,Plural igual; dores nas costas = Rückenschmerzen
+A1,Farbe,noun,die,Farben,fem,cor,"Welche Farbe magst du?","De que cor gostas?",Farben,Plural com -n
+A1,Arbeit,noun,die,Arbeiten,fem,trabalho,"Die Arbeit beginnt um 9 Uhr.","O trabalho começa às 9 horas.",Alltag,De arbeiten
+A1,Büro,noun,das,Büros,neutro,escritório,"Ich arbeite im Büro.","Trabalho no escritório.",Alltag,Do francês bureau
+A1,Arzt,noun,der,Ärzte,masc,médico,"Der Arzt kommt gleich.","O médico já vem.",Gesundheit,Plural com Umlaut + -e; feminino: Ärztin
+A1,Krankenhaus,noun,das,Krankenhäuser,neutro,hospital,"Er ist im Krankenhaus.","Ele está no hospital.",Gesundheit,Composto: krank + Haus
+A1,Handy,noun,das,Handys,neutro,telemóvel,"Mein Handy ist neu.","O meu telemóvel é novo.",Alltag,Anglicismo; plural com -s
+A1,Foto,noun,das,Fotos,neutro,fotografia,"Das Foto ist sehr schön.","A fotografia é muito bonita.",Alltag,Plural com -s
+A1,groß,adj,,,,"grande/alto","Das Haus ist sehr groß.","A casa é muito grande.",Adj-Basis,Comparativo: größer; superlativo: am größten
+A1,klein,adj,,,,"pequeno/baixo","Das Kind ist noch klein.","A criança ainda é pequena.",Adj-Basis,Comparativo: kleiner
+A1,gut,adj,,,,bom,"Das Essen ist sehr gut.","A comida está muito boa.",Adj-Basis,Irregular: besser / am besten
+A1,schlecht,adj,,,,mau/mau,"Das Wetter ist schlecht.","O tempo está mau.",Adj-Basis,Comparativo: schlechter
+A1,neu,adj,,,,novo,"Das Auto ist neu.","O carro é novo.",Adj-Basis,Comparativo: neuer
+A1,alt,adj,,,,velho/antigo,"Das Haus ist sehr alt.","A casa é muito antiga.",Adj-Basis,Comparativo irregular: älter
+A1,schön,adj,,,,bonito/belo,"Das ist eine schöne Stadt.","É uma cidade bonita.",Adj-Basis,Comparativo: schöner
+A1,kalt,adj,,,,frio,"Das Wasser ist kalt.","A água está fria.",Adj-Basis,Comparativo: kälter (com Umlaut)
+A1,warm,adj,,,,quente/morno,"Die Suppe ist warm.","A sopa está quente.",Adj-Basis,Comparativo: wärmer
+A1,billig,adj,,,,barato,"Das ist sehr billig.","Isso é muito barato.",Adj-Basis,Comparativo: billiger
+A1,teuer,adj,,,,caro,"Das Hotel ist sehr teuer.","O hotel é muito caro.",Adj-Basis,Comparativo: teurer
+A1,jung,adj,,,,jovem,"Er ist noch sehr jung.","Ele é ainda muito jovem.",Adj-Basis,Comparativo: jünger
+A1,lang,adj,,,,comprido/longo,"Der Weg ist sehr lang.","O caminho é muito longo.",Adj-Basis,Comparativo: länger
+A1,kurz,adj,,,,curto,"Das ist eine kurze Antwort.","Esta é uma resposta curta.",Adj-Basis,Comparativo: kürzer
+A1,richtig,adj,,,,correto/certo,"Das ist richtig!","Isso está correto!",Adj-Basis,Usado também como advérbio
+A1,falsch,adj,,,,errado/falso,"Das ist falsch.","Isso está errado.",Adj-Basis,Oposto de richtig
+A1,viel,adj,,,,muito (quantidade),"Ich habe viel Arbeit.","Tenho muito trabalho.",Adj-Basis,Irregular: mehr / am meisten
+A1,wenig,adj,,,,pouco,"Ich habe wenig Zeit.","Tenho pouco tempo.",Adj-Basis,Comparativo: weniger
+A1,schnell,adj,,,,rápido,"Das Auto fährt sehr schnell.","O carro anda muito rápido.",Adj-Basis,Comparativo: schneller
+A1,langsam,adj,,,,lento/devagar,"Bitte sprechen Sie langsam.","Por favor fale devagar.",Adj-Basis,Comparativo: langsamer
+A1,müde,adj,,,,cansado,"Ich bin sehr müde.","Estou muito cansado.",Adj-Basis,Sem plural
+A1,hungrig,adj,,,,com fome,"Ich bin hungrig.","Estou com fome.",Adj-Basis,Sem plural
+A1,glücklich,adj,,,,feliz/contente,"Sie ist sehr glücklich.","Ela está muito feliz.",Adj-Basis,Comparativo: glücklicher
+A1,Guten Morgen,phrase,,,,"Bom dia (de manhã)","Guten Morgen! Wie geht es Ihnen?","Bom dia! Como está?",Begrüßung,Saudação da manhã (até ~11h)
+A1,Guten Tag,phrase,,,,"Bom dia / Boa tarde","Guten Tag! Was darf es sein?","Bom dia! O que deseja?",Begrüßung,Saudação neutra durante o dia
+A1,Guten Abend,phrase,,,,Boa noite (saudação),"Guten Abend! Nehmen Sie Platz.","Boa noite! Sente-se.",Begrüßung,Saudação ao fim do dia
+A1,Auf Wiedersehen,phrase,,,,Adeus (formal),"Auf Wiedersehen und gute Reise!","Adeus e boa viagem!",Begrüßung,Formal; informal: Tschüss
+A1,Bitte,phrase,,,,Por favor / De nada,"Einen Kaffee, bitte!","Um café, por favor!",Begrüßung,Duplo significado: pedido + resposta a obrigado
+A1,Danke,phrase,,,,Obrigado,"Danke für Ihre Hilfe.","Obrigado pela sua ajuda.",Begrüßung,Reforço: Danke schön / Vielen Dank
+A1,Entschuldigung,phrase,,,,Desculpe/Com licença,"Entschuldigung, wo ist der Bahnhof?","Com licença, onde fica a estação?",Begrüßung,Também Entschuldigen Sie
+A1,Es tut mir leid,phrase,,,,Lamento/Desculpe,"Es tut mir leid, ich kann nicht kommen.","Lamento, não posso vir.",Begrüßung,Mais intenso que Entschuldigung
+A2,Supermarkt,noun,der,Supermärkte,masc,supermercado,"Ich gehe in den Supermarkt.","Vou ao supermercado.",Einkaufen,Plural com Umlaut + -e
+A2,Geschäft,noun,das,Geschäfte,neutro,loja/negócio,"Das Geschäft öffnet um 9 Uhr.","A loja abre às 9 horas.",Einkaufen,Plural com -e
+A2,Kasse,noun,die,Kassen,fem,caixa (registadora),"Bezahlen Sie bitte an der Kasse.","Pague na caixa, por favor.",Einkaufen,Plural com -n
+A2,Preis,noun,der,Preise,masc,preço,"Wie viel kostet das? Was ist der Preis?","Quanto custa? Qual é o preço?",Einkaufen,Plural com -e
+A2,Quittung,noun,die,Quittungen,fem,recibo,"Kann ich eine Quittung haben?","Posso ter um recibo?",Einkaufen,Sufixo -ung sempre feminino
+A2,Größe,noun,die,Größen,fem,tamanho/número (roupa),"Welche Größe haben Sie?","Qual é o seu tamanho?",Einkaufen,De groß + -e
+A2,Kleidung,noun,die,,fem,roupa (coletivo),"Die Kleidung ist sehr modern.","A roupa é muito moderna.",Einkaufen,Sem plural habitual; -ung sempre feminino
+A2,Hemd,noun,das,Hemden,neutro,camisa (homem),"Das Hemd ist weiß.","A camisa é branca.",Einkaufen,Plural com -en; não confundir com Bluse (blusa)
+A2,Hose,noun,die,Hosen,fem,calças,"Die Hose ist zu eng.","As calças estão demasiado apertadas.",Einkaufen,Singular em alemão; plural em português
+A2,Schuh,noun,der,Schuhe,masc,sapato,"Die Schuhe sind bequem.","Os sapatos são confortáveis.",Einkaufen,Plural com -e; usado quase sempre no plural
+A2,Jacke,noun,die,Jacken,fem,casaco/jaqueta,"Die Jacke ist warm.","O casaco é quente.",Einkaufen,Plural com -n
+A2,Apotheke,noun,die,Apotheken,fem,farmácia,"Die Apotheke ist geöffnet.","A farmácia está aberta.",Gesundheit,Plural com -n; não confundir com Drogerie
+A2,Medikament,noun,das,Medikamente,neutro,medicamento,"Nehmen Sie dieses Medikament.","Tome este medicamento.",Gesundheit,Plural com -e
+A2,Erkältung,noun,die,Erkältungen,fem,constipação,"Ich habe eine Erkältung.","Estou constipado/a.",Gesundheit,Sufixo -ung; de erkälten
+A2,Fieber,noun,das,,neutro,febre,"Ich habe 38 Grad Fieber.","Tenho 38 graus de febre.",Gesundheit,Geralmente sem plural
+A2,Schmerz,noun,der,Schmerzen,masc,dor,"Ich habe Schmerzen im Rücken.","Tenho dores nas costas.",Gesundheit,Plural com -en; quase sempre no plural
+A2,Tablette,noun,die,Tabletten,fem,comprimido,"Nehmen Sie drei Tabletten pro Tag.","Tome três comprimidos por dia.",Gesundheit,Plural com -n
+A2,Rezept,noun,das,Rezepte,neutro,receita médica/culinária,"Ich brauche ein Rezept.","Preciso de uma receita.",Gesundheit,Plural com -e; duplo significado
+A2,Urlaub,noun,der,Urlaube,masc,férias,"Wir fahren nächste Woche in Urlaub.","Na semana que vem vamos de férias.",Freizeit,Plural raro; quase sempre singular
+A2,Reise,noun,die,Reisen,fem,viagem,"Die Reise war wunderbar.","A viagem foi maravilhosa.",Freizeit,Plural com -n
+A2,Strand,noun,der,Strände,masc,praia,"Am Strand ist es schön warm.","Na praia está muito agradável.",Freizeit,Plural com Umlaut + -e
+A2,Sport,noun,der,,masc,desporto (coletivo),"Ich treibe dreimal pro Woche Sport.","Faço desporto três vezes por semana.",Freizeit,Quase sem plural; Sport treiben = fazer desporto
+A2,Musik,noun,die,,fem,música,"Ich höre gern Musik.","Gosto de ouvir música.",Freizeit,Sem plural habitual
+A2,Kino,noun,das,Kinos,neutro,cinema,"Wollen wir heute ins Kino gehen?","Vamos ao cinema hoje?",Freizeit,Plural com -s
+A2,Theater,noun,das,Theater,neutro,teatro,"Wir gehen ins Theater.","Vamos ao teatro.",Freizeit,Plural igual ao singular
+A2,Konzert,noun,das,Konzerte,neutro,concerto,"Das Konzert beginnt um 20 Uhr.","O concerto começa às 20 horas.",Freizeit,Plural com -e
+A2,Hobby,noun,das,Hobbys,neutro,passatempo/hobby,"Was ist dein Hobby?","Qual é o teu passatempo?",Freizeit,Plural com -s; anglicismo
+A2,Wetter,noun,das,,neutro,tempo (meteorológico),"Das Wetter ist heute schlecht.","O tempo hoje está mau.",Wetter,Sem plural habitual
+A2,Sonne,noun,die,,fem,sol,"Die Sonne scheint.","O sol brilha.",Wetter,Geralmente sem plural
+A2,Regen,noun,der,,masc,chuva,"Der Regen hört nicht auf.","A chuva não para.",Wetter,Geralmente sem plural
+A2,Schnee,noun,der,,masc,neve,"Der Schnee ist weiß und kalt.","A neve é branca e fria.",Wetter,Geralmente sem plural
+A2,Wind,noun,der,Winde,masc,vento,"Der Wind ist heute sehr stark.","O vento está muito forte hoje.",Wetter,Plural com -e
+A2,Wolke,noun,die,Wolken,fem,nuvem,"Die Wolken sind dunkel.","As nuvens estão escuras.",Wetter,Plural com -n
+A2,Temperatur,noun,die,Temperaturen,fem,temperatura,"Die Temperatur liegt bei 20 Grad.","A temperatura é de 20 graus.",Wetter,Plural com -en
+A2,Flughafen,noun,der,Flughäfen,masc,aeroporto,"Der Flughafen ist weit von der Stadt.","O aeroporto fica longe da cidade.",Reisen,Composto: Flug + Hafen
+A2,Zug,noun,der,Züge,masc,comboio,"Der Zug fährt pünktlich ab.","O comboio parte a horas.",Reisen,Plural com Umlaut + -e
+A2,Ticket,noun,das,Tickets,neutro,bilhete,"Ich kaufe ein Ticket online.","Compro o bilhete online.",Reisen,Plural com -s; anglicismo
+A2,Pass,noun,der,Pässe,masc,passaporte,"Zeigen Sie bitte Ihren Pass.","Mostre o seu passaporte, por favor.",Reisen,Plural com Umlaut + -e
+A2,Hotel,noun,das,Hotels,neutro,hotel,"Das Hotel ist sehr komfortabel.","O hotel é muito confortável.",Reisen,Plural com -s
+A2,Koffer,noun,der,Koffer,masc,mala de viagem,"Mein Koffer ist zu schwer.","A minha mala está demasiado pesada.",Reisen,Plural igual; de Koffer (cofre)
+A2,Zimmer (Hotel),noun,das,Zimmer,neutro,quarto de hotel,"Das Zimmer hat Meerblick.","O quarto tem vista para o mar.",Reisen,Plural igual; contexto distingue de Zimmer (divisão)
+A2,Rezeption,noun,die,Rezeptionen,fem,receção (hotel),"Bitte melden Sie sich an der Rezeption.","Por favor dirija-se à receção.",Reisen,Plural com -en
+A2,Büro,noun,das,Büros,neutro,escritório,"Das Büro öffnet um 8 Uhr.","O escritório abre às 8 horas.",Arbeit,Do francês bureau
+A2,Chef,noun,der,Chefs,masc,chefe/patrão,"Mein Chef ist sehr streng.","O meu chefe é muito exigente.",Arbeit,Plural com -s; feminino: Chefin
+A2,Kollege,noun,der,Kollegen,masc,colega (masc.),"Mein Kollege hilft mir.","O meu colega ajuda-me.",Arbeit,Feminino: Kollegin; plural com -n
+A2,Besprechung,noun,die,Besprechungen,fem,reunião,"Die Besprechung dauert zwei Stunden.","A reunião dura duas horas.",Arbeit,Sufixo -ung; de besprechen
+A2,Termin,noun,der,Termine,masc,compromisso/marcação,"Ich habe einen Termin beim Arzt.","Tenho uma consulta no médico.",Arbeit,Plural com -e; do latim terminus
+A2,Baum,noun,der,Bäume,masc,árvore,"Der Baum ist sehr alt.","A árvore é muito antiga.",Natur,Plural com Umlaut + -e
+A2,Blume,noun,die,Blumen,fem,flor,"Die Blumen sind schön.","As flores são bonitas.",Natur,Plural com -n
+A2,Tier,noun,das,Tiere,neutro,animal,"Das Tier lebt im Wald.","O animal vive na floresta.",Natur,Plural com -e
+A2,Hund,noun,der,Hunde,masc,cão,"Der Hund ist treu und freundlich.","O cão é fiel e amigo.",Natur,Plural com -e
+A2,Katze,noun,die,Katzen,fem,gato,"Die Katze schläft viel.","O gato dorme muito.",Natur,Plural com -n; masculino: Kater
+A2,Vogel,noun,der,Vögel,masc,pássaro,"Der Vogel singt im Garten.","O pássaro canta no jardim.",Natur,Plural com Umlaut
+A2,Berg,noun,der,Berge,masc,montanha,"Der Berg ist sehr hoch.","A montanha é muito alta.",Natur,Plural com -e
+A2,Fluss,noun,der,Flüsse,masc,rio,"Der Fluss ist tief und breit.","O rio é fundo e largo.",Natur,Plural com Umlaut + -e
+A2,See,noun,der,Seen,masc,lago,"Der See ist sehr klar.","O lago é muito limpo.",Natur,Atenção: die See = o mar
+A2,Wald,noun,der,Wälder,masc,floresta,"Im Wald ist es ruhig.","Na floresta é calmo.",Natur,Plural com Umlaut + -er
+A2,Garten,noun,der,Gärten,masc,jardim,"Der Garten ist sehr groß.","O jardim é muito grande.",Natur,Plural com Umlaut + -en
+A2,Rathaus,noun,das,Rathäuser,neutro,câmara municipal,"Das Rathaus ist im Zentrum.","A câmara municipal fica no centro.",Stadt,Composto: Rat + Haus
+A2,Post,noun,die,,fem,correios,"Ich muss zur Post gehen.","Tenho de ir aos correios.",Stadt,Geralmente sem plural neste sentido
+A2,Bank,noun,die,Banken,fem,banco (financeiro),"Die Bank ist montags geschlossen.","O banco está fechado às segundas.",Stadt,Plural com -en; ≠ Bank (banco para sentar) = Bänke
+A2,Polizei,noun,die,,fem,polícia,"Rufen Sie die Polizei!","Chame a polícia!",Stadt,Sem plural; palavra coletiva
+A2,Ampel,noun,die,Ampeln,fem,semáforo,"Die Ampel ist rot.","O semáforo está vermelho.",Stadt,Plural com -n
+A2,Parkplatz,noun,der,Parkplätze,masc,lugar de estacionamento,"Gibt es hier einen Parkplatz?","Há aqui estacionamento?",Stadt,Composto: Park + Platz
+A2,Kühlschrank,noun,der,Kühlschränke,masc,frigorífico,"Der Kühlschrank ist leer.","O frigorífico está vazio.",Wohnen,Composto: kühl + Schrank
+A2,Herd,noun,der,Herde,masc,fogão,"Der Herd ist neu.","O fogão é novo.",Wohnen,Plural com -e; não confundir com Herde (rebanho)
+A2,Waschmaschine,noun,die,Waschmaschinen,fem,máquina de lavar roupa,"Die Waschmaschine ist kaputt.","A máquina de lavar está avariada.",Wohnen,Composto: waschen + Maschine
+A2,Sofa,noun,das,Sofas,neutro,sofá,"Das Sofa ist sehr bequem.","O sofá é muito confortável.",Wohnen,Plural com -s
+A2,Regal,noun,das,Regale,neutro,estante/prateleira,"Das Regal ist voll mit Büchern.","A estante está cheia de livros.",Wohnen,Plural com -e
+A2,Vorhang,noun,der,Vorhänge,masc,cortina,"Die Vorhänge sind blau.","As cortinas são azuis.",Wohnen,Plural com Umlaut + -e
+A2,traurig,adj,,,,triste,"Sie ist heute sehr traurig.","Ela está muito triste hoje.",Adj-Emotion,Comparativo: trauriger
+A2,froh,adj,,,,contente/alegre,"Ich bin sehr froh, dich zu sehen.","Estou muito contente de te ver.",Adj-Emotion,Comparativo: froher; sinónimo: fröhlich
+A2,aufgeregt,adj,,,,agitado/emocionado,"Das Kind ist sehr aufgeregt.","A criança está muito agitada.",Adj-Emotion,Particípio de aufregen usado como adjetivo
+A2,nervös,adj,,,,nervoso,"Ich bin vor dem Examen nervös.","Estou nervoso antes do exame.",Adj-Emotion,Comparativo: nervöser
+A2,krank,adj,,,,doente,"Er ist krank und bleibt zu Hause.","Ele está doente e fica em casa.",Gesundheit,Comparativo: kränker
+A2,gesund,adj,,,,saudável,"Sie lebt sehr gesund.","Ela vive de forma muito saudável.",Gesundheit,Comparativo: gesünder
+A2,schwierig,adj,,,,difícil,"Das ist eine schwierige Aufgabe.","Esta é uma tarefa difícil.",Adj-Basis,Comparativo: schwieriger; ≠ schwer (peso/difícil)
+A2,einfach,adj,,,,fácil/simples,"Das ist einfach zu verstehen.","Isso é fácil de perceber.",Adj-Basis,Também = simplesmente (advérbio)
+A2,wichtig,adj,,,,importante,"Das ist sehr wichtig.","Isso é muito importante.",Adj-Basis,Comparativo: wichtiger
+A2,interessant,adj,,,,interessante,"Das Buch ist sehr interessant.","O livro é muito interessante.",Adj-Basis,Comparativo: interessanter
+A2,laut,adj,,,,barulhento/alto,"Die Musik ist zu laut.","A música está demasiado alta.",Adj-Basis,Comparativo: lauter
+A2,leise,adj,,,,silencioso/baixinho,"Bitte sei leise!","Faz favor de ser silencioso!",Adj-Basis,Comparativo: leiser
+A2,sauber,adj,,,,limpo,"Das Zimmer ist sauber.","O quarto está limpo.",Adj-Basis,Comparativo: sauberer
+A2,schmutzig,adj,,,,sujo,"Die Hände sind schmutzig.","As mãos estão sujas.",Adj-Basis,Comparativo: schmutziger
+A2,pünktlich,adj,,,,pontual,"Der Zug ist pünktlich.","O comboio está pontual.",Adj-Basis,Comparativo: pünktlicher
+A2,kostenlos,adj,,,,gratuito/grátis,"Der Eintritt ist kostenlos.","A entrada é gratuita.",Adj-Basis,Sinónimo: umsonst / gratis
+A2,Herzlichen Glückwunsch,phrase,,,,"Parabéns / Felicitações","Herzlichen Glückwunsch zum Geburtstag!","Parabéns pelo aniversário!",Alltag,Expressão fixa de felicitação
+A2,Gute Besserung,phrase,,,,Melhoras,"Gute Besserung! Erhol dich gut.","Melhoras! Descansa bem.",Alltag,Diz-se a alguém que está doente
+A2,Viel Erfolg,phrase,,,,Boa sorte / Muito sucesso,"Viel Erfolg bei deinem Examen!","Boa sorte no teu exame!",Alltag,Mais literal que Glück; indica esforço+resultado
+B1,Erfahrung,noun,die,Erfahrungen,fem,experiência,"Sie hat viele Erfahrungen im Ausland.","Ela tem muita experiência no estrangeiro.",Arbeit,Abstrato frequente em CV; de erfahren
+B1,Ausbildung,noun,die,Ausbildungen,fem,formação profissional,"Er macht eine Ausbildung als Koch.","Ele está a fazer formação como cozinheiro.",Bildung,≠ Studium (universitário); crucial para DACH
+B1,Bewerbung,noun,die,Bewerbungen,fem,candidatura (emprego),"Ich habe eine Bewerbung geschrieben.","Escrevi uma candidatura.",Arbeit,Sufixo -ung; de bewerben (candidatar-se)
+B1,Zeugnis,noun,das,Zeugnisse,neutro,certificado/atestado,"Ich brauche ein Zeugnis vom Arzt.","Preciso de um atestado médico.",Arbeit,Plural com -e; contexto define se escolar ou médico
+B1,Gehalt,noun,das,Gehälter,neutro,salário (mensal),"Das Gehalt ist nicht hoch genug.","O salário não é suficientemente alto.",Arbeit,Plural com Umlaut + -er; ≠ Lohn (salário por hora)
+B1,Kündigung,noun,die,Kündigungen,fem,despedimento/rescisão,"Er hat eine Kündigung bekommen.","Ele recebeu uma carta de despedimento.",Arbeit,Sufixo -ung; de kündigen (despedir/cancelar)
+B1,Beitrag,noun,der,Beiträge,masc,contribuição/artigo,"Sie hat einen wichtigen Beitrag geleistet.","Ela deu uma contribuição importante.",Gesellschaft,Plural com Umlaut + -e; múltiplos contextos
+B1,Verantwortung,noun,die,Verantwortungen,fem,responsabilidade,"Er trägt viel Verantwortung.","Ele tem muita responsabilidade.",Gesellschaft,Sufixo -ung; de verantworten
+B1,Möglichkeit,noun,die,Möglichkeiten,fem,possibilidade,"Es gibt viele Möglichkeiten.","Há muitas possibilidades.",Alltag,Sufixo -keit sempre feminino; de möglich
+B1,Entscheidung,noun,die,Entscheidungen,fem,decisão,"Das ist eine schwierige Entscheidung.","Esta é uma decisão difícil.",Alltag,Sufixo -ung; de entscheiden
+B1,Lösung,noun,die,Lösungen,fem,solução,"Wir suchen eine Lösung.","Estamos à procura de uma solução.",Alltag,Sufixo -ung; de lösen
+B1,Vorteil,noun,der,Vorteile,masc,vantagem,"Das ist ein großer Vorteil.","Isso é uma grande vantagem.",Alltag,Composto: vor + Teil; ≠ Nachteil (desvantagem)
+B1,Nachteil,noun,der,Nachteile,masc,desvantagem,"Das hat einen Nachteil.","Isso tem uma desvantagem.",Alltag,Composto: nach + Teil; ≠ Vorteil
+B1,Unterschied,noun,der,Unterschiede,masc,diferença,"Was ist der Unterschied?","Qual é a diferença?",Alltag,Plural com -e; de unterscheiden
+B1,Zusammenhang,noun,der,Zusammenhänge,masc,contexto/ligação,"Ich verstehe den Zusammenhang nicht.","Não percebo a ligação.",Alltag,Composto: zusammen + hängen
+B1,Einfluss,noun,der,Einflüsse,masc,influência,"Das hat großen Einfluss auf mein Leben.","Isso tem grande influência na minha vida.",Gesellschaft,Plural com Umlaut + -e
+B1,Gesellschaft,noun,die,Gesellschaften,fem,sociedade/companhia,"Die Gesellschaft verändert sich.","A sociedade está a mudar.",Gesellschaft,Plural com -en; múltiplos significados
+B1,Umwelt,noun,die,,fem,meio ambiente,"Wir müssen die Umwelt schützen.","Temos de proteger o meio ambiente.",Umwelt,Sem plural; composto: um + Welt
+B1,Energie,noun,die,Energien,fem,energia,"Wir brauchen erneuerbare Energie.","Precisamos de energia renovável.",Umwelt,Plural com -n; do grego energeia
+B1,Klimawandel,noun,der,,masc,alterações climáticas,"Der Klimawandel ist ein globales Problem.","As alterações climáticas são um problema global.",Umwelt,Composto: Klima + Wandel; sem plural
+B1,Nachhaltigkeit,noun,die,,fem,sustentabilidade,"Nachhaltigkeit ist sehr wichtig.","A sustentabilidade é muito importante.",Umwelt,Sem plural; sufixo -keit feminino
+B1,Abfall,noun,der,Abfälle,masc,lixo/resíduo,"Bitte Abfall trennen!","Por favor separe o lixo!",Umwelt,Plural com Umlaut + -e
+B1,Medien,noun,die,,pl,media/meios de comunicação,"Die Medien berichten über den Unfall.","Os media noticiam o acidente.",Medien,Geralmente só plural; singular: Medium
+B1,Nachricht,noun,die,Nachrichten,fem,notícia/mensagem,"Haben Sie die Nachrichten gehört?","Ouviu as notícias?",Medien,Plural com -en; duplo significado
+B1,Zeitung,noun,die,Zeitungen,fem,jornal,"Ich lese jeden Morgen die Zeitung.","Leio o jornal todas as manhãs.",Medien,Plural com -en; sufixo -ung feminino
+B1,Sendung,noun,die,Sendungen,fem,programa (TV/rádio),"Die Sendung beginnt um 20 Uhr.","O programa começa às 20 horas.",Medien,Sufixo -ung; de senden
+B1,Bericht,noun,der,Berichte,masc,relatório/reportagem,"Der Bericht ist sehr detailliert.","O relatório é muito detalhado.",Medien,Plural com -e; de berichten
+B1,Bildung,noun,die,,fem,educação/formação,"Bildung ist sehr wichtig.","A educação é muito importante.",Bildung,Sem plural; sufixo -ung feminino
+B1,Schüler,noun,der,Schüler,masc,aluno (escola),"Die Schüler lernen fleißig.","Os alunos estudam com afinco.",Bildung,Plural igual; feminino: Schülerin
+B1,Student,noun,der,Studenten,masc,estudante (universidade),"Der Student schreibt eine Arbeit.","O estudante escreve um trabalho.",Bildung,Plural com -en; feminino: Studentin
+B1,Prüfung,noun,die,Prüfungen,fem,exame/teste,"Ich habe morgen eine Prüfung.","Tenho um exame amanhã.",Bildung,Sufixo -ung; de prüfen
+B1,Kenntnisse,noun,die,,pl,conhecimentos/competências,"Ich habe gute Kenntnisse in Deutsch.","Tenho bons conhecimentos de alemão.",Bildung,Quase sempre plural; singular Kenntnis pouco usado
+B1,Bürger,noun,der,Bürger,masc,cidadão,"Jeder Bürger hat Rechte und Pflichten.","Todo o cidadão tem direitos e deveres.",Gesellschaft,Plural igual; feminino: Bürgerin
+B1,Recht,noun,das,Rechte,neutro,direito (jurídico),"Das ist mein Recht.","Esse é o meu direito.",Gesellschaft,Plural com -e; ≠ recht (correto, adj)
+B1,Pflicht,noun,die,Pflichten,fem,dever/obrigação,"Das ist eine wichtige Pflicht.","Este é um dever importante.",Gesellschaft,Plural com -en
+B1,Freiheit,noun,die,Freiheiten,fem,liberdade,"Freiheit ist ein Grundrecht.","A liberdade é um direito fundamental.",Gesellschaft,Sufixo -heit sempre feminino
+B1,Gleichheit,noun,die,,fem,igualdade,"Gleichheit vor dem Gesetz ist wichtig.","A igualdade perante a lei é importante.",Gesellschaft,Sufixo -heit; sem plural habitual
+B1,Kultur,noun,die,Kulturen,fem,cultura,"Die deutsche Kultur ist sehr reich.","A cultura alemã é muito rica.",Kultur,Plural com -en; do latim cultura
+B1,Tradition,noun,die,Traditionen,fem,tradição,"Diese Tradition gibt es seit 200 Jahren.","Esta tradição existe há 200 anos.",Kultur,Plural com -en; do latim traditio
+B1,Veranstaltung,noun,die,Veranstaltungen,fem,evento/manifestação,"Die Veranstaltung findet draußen statt.","O evento realiza-se ao ar livre.",Kultur,Sufixo -ung; de veranstalten
+B1,Ausstellung,noun,die,Ausstellungen,fem,exposição,"Die Ausstellung ist bis Mai geöffnet.","A exposição está aberta até maio.",Kultur,Sufixo -ung; de ausstellen
+B1,Ernährung,noun,die,Ernährungen,fem,alimentação,"Eine gesunde Ernährung ist wichtig.","Uma alimentação saudável é importante.",Gesundheit,Sufixo -ung; de ernähren
+B1,Bewegung,noun,die,Bewegungen,fem,movimento/exercício,"Sport und Bewegung halten fit.","O desporto e o exercício mantêm a forma.",Gesundheit,Sufixo -ung; de bewegen
+B1,Stress,noun,der,,masc,stress,"Zu viel Stress ist ungesund.","Demasiado stress é prejudicial.",Gesundheit,Sem plural habitual; anglicismo
+B1,Lebensqualität,noun,die,,fem,qualidade de vida,"Die Lebensqualität in dieser Stadt ist hoch.","A qualidade de vida nesta cidade é alta.",Gesundheit,Composto: Leben + Qualität; sem plural
+B1,Versicherung,noun,die,Versicherungen,fem,seguro (financeiro),"Ich habe eine Krankenversicherung.","Tenho um seguro de saúde.",Alltag,Sufixo -ung; de versichern
+B1,Wohnsitz,noun,der,Wohnsitze,masc,domicílio/residência,"Mein Wohnsitz ist in München.","O meu domicílio é em Munique.",Alltag,Composto: wohnen + Sitz; formal
+B1,Miete,noun,die,Mieten,fem,renda (casa),"Die Miete ist zu hoch.","A renda está demasiado alta.",Alltag,Plural com -n; de mieten
+B1,Vertrag,noun,der,Verträge,masc,contrato,"Ich habe den Vertrag unterschrieben.","Assinei o contrato.",Alltag,Plural com Umlaut + -e
+B1,Rechnung,noun,die,Rechnungen,fem,conta/fatura,"Die Rechnung ist sehr hoch.","A conta é muito alta.",Alltag,Sufixo -ung; de rechnen
+B1,Antrag,noun,der,Anträge,masc,requerimento/candidatura,"Ich stelle einen Antrag.","Apresento um requerimento.",Verwaltung,Plural com Umlaut + -e; fundamental para burocracia alemã
+B1,Formular,noun,das,Formulare,neutro,formulário,"Füllen Sie das Formular aus.","Preencha o formulário.",Verwaltung,Plural com -e; essencial para vida quotidiana
+B1,Behörde,noun,die,Behörden,fem,repartição pública/autoridade,"Ich muss zur Behörde gehen.","Tenho de ir à repartição.",Verwaltung,Plural com -n
+B1,Ausweis,noun,der,Ausweise,masc,documento de identidade,"Zeigen Sie bitte Ihren Ausweis.","Mostre o seu documento, por favor.",Verwaltung,Plural com -e; composto: aus + weisen
+B1,Anmeldung,noun,die,Anmeldungen,fem,registo/inscrição,"Die Anmeldung ist pflicht.","O registo é obrigatório.",Verwaltung,Sufixo -ung; crucial em contexto alemão (Einwohnermeldeamt)
+B1,überraschend,adj,,,,surpreendente,"Das Ergebnis ist überraschend.","O resultado é surpreendente.",Adj-B1,Particípio presente como adjetivo
+B1,bedeutend,adj,,,,significativo/importante,"Das ist ein bedeutendes Ereignis.","É um acontecimento significativo.",Adj-B1,Particípio presente de bedeuten
+B1,typisch,adj,,,,típico,"Das ist typisch deutsch.","Isso é tipicamente alemão.",Adj-B1,Comparativo: typischer
+B1,öffentlich,adj,,,,público,"Das ist ein öffentliches Gebäude.","É um edifício público.",Adj-B1,Oposto: privat
+B1,beruflich,adj,,,,profissional,"Ich reise beruflich.","Viajo a trabalho.",Adj-B1,De Beruf; usado também como advérbio
+B1,persönlich,adj,,,,pessoal,"Das ist eine persönliche Angelegenheit.","Isso é um assunto pessoal.",Adj-B1,Comparativo: persönlicher
+B1,zuverlässig,adj,,,,fiável/de confiança,"Er ist sehr zuverlässig.","Ele é muito de confiança.",Adj-B1,De verlassen; comparativo: zuverlässiger
+B1,neugierig,adj,,,,curioso,"Das Kind ist sehr neugierig.","A criança é muito curiosa.",Adj-B1,Comparativo: neugieriger
+B1,selbstständig,adj,,,,independente/autónomo,"Sie arbeitet selbstständig.","Ela trabalha de forma independente.",Adj-B1,Variante: selbständig
+B1,kostenlos,adj,,,,gratuito (contexto formal),"Der Service ist kostenlos.","O serviço é gratuito.",Adj-B1,Já em A2 mas comum em B1 em contextos formais
+B1,Übrigens,adv,,,,"aliás / a propósito","Übrigens, hast du das gehört?","A propósito, ouviste isso?",Alltag,Marcador de discurso frequente
+B1,obwohl,conj,,,,embora/apesar de,"Ich gehe spazieren, obwohl es regnet.","Vou passear, embora chova.",Grammatik,Conjunção subordinativa → verbo no fim
+B1,deshalb,adv,,,,"por isso / portanto","Ich bin müde, deshalb schlafe ich früh.","Estou cansado, por isso vou dormir cedo.",Grammatik,Advérbio causal; posição 1 → inversão
+B1,trotzdem,adv,,,,"mesmo assim / apesar disso","Es regnet, trotzdem gehe ich raus.","Chove, mesmo assim saio.",Grammatik,Advérbio concessivo
+B1,außerdem,adv,,,,"além disso / também","Ich bin müde und außerdem krank.","Estou cansado e além disso doente.",Grammatik,Conector aditivo frequente em B1
+B2,Bevölkerung,noun,die,Bevölkerungen,fem,população,"Die Bevölkerung des Landes wächst langsam.","A população do país cresce lentamente.",Gesellschaft,Formal; alternativa: Einwohner (coloquial)
+B2,Wirtschaft,noun,die,Wirtschaften,fem,economia/negócio,"Die Wirtschaft wächst langsam.","A economia cresce lentamente.",Wirtschaft,Sufixo -schaft feminino; múltiplos sentidos
+B2,Entwicklung,noun,die,Entwicklungen,fem,desenvolvimento,"Die wirtschaftliche Entwicklung ist positiv.","O desenvolvimento económico é positivo.",Wirtschaft,Sufixo -ung; de entwickeln
+B2,Wachstum,noun,das,,neutro,crescimento,"Das Wachstum der Wirtschaft verlangsamt sich.","O crescimento da economia está a abrandar.",Wirtschaft,Sem plural; de wachsen
+B2,Krise,noun,die,Krisen,fem,crise,"Die Finanzkrise hatte globale Auswirkungen.","A crise financeira teve efeitos globais.",Wirtschaft,Plural com -n; do grego krisis
+B2,Haushalt,noun,der,Haushalte,masc,orçamento/economia doméstica,"Der Staatshaushalt ist ausgeglichen.","O orçamento do Estado está equilibrado.",Wirtschaft,Composto: Haus + halten; plural com -e
+B2,Investition,noun,die,Investitionen,fem,investimento,"Die Investition in Bildung ist wichtig.","O investimento na educação é importante.",Wirtschaft,Plural com -en; do latim
+B2,Globalisierung,noun,die,,fem,globalização,"Die Globalisierung hat Vor- und Nachteile.","A globalização tem vantagens e desvantagens.",Wirtschaft,Sem plural; sufixo -ung
+B2,Fortschritt,noun,der,Fortschritte,masc,progresso,"Der wissenschaftliche Fortschritt ist beeindruckend.","O progresso científico é impressionante.",Wissenschaft,Plural com -e; composto: fort + schreiten
+B2,Forschung,noun,die,Forschungen,fem,investigação/pesquisa,"Die Forschung braucht mehr Förderung.","A investigação precisa de mais financiamento.",Wissenschaft,Sufixo -ung; de forschen
+B2,Technologie,noun,die,Technologien,fem,tecnologia,"Neue Technologien verändern die Welt.","As novas tecnologias mudam o mundo.",Technologie,Plural com -n; do grego
+B2,Digitalisierung,noun,die,,fem,digitalização,"Die Digitalisierung verändert den Arbeitsmarkt.","A digitalização está a mudar o mercado de trabalho.",Technologie,Sem plural; palavra-chave contemporânea
+B2,Künstliche Intelligenz,noun,die,,fem,inteligência artificial,"Künstliche Intelligenz ist ein wichtiges Thema.","A inteligência artificial é um tema importante.",Technologie,Abreviatura: KI; sem plural
+B2,Datenschutz,noun,der,,masc,proteção de dados,"Datenschutz ist in Deutschland sehr wichtig.","A proteção de dados é muito importante na Alemanha.",Technologie,Sem plural; composto: Daten + Schutz
+B2,Infrastruktur,noun,die,Infrastrukturen,fem,infraestrutura,"Die Infrastruktur muss modernisiert werden.","A infraestrutura precisa de ser modernizada.",Wirtschaft,Plural com -en; do latim
+B2,Demokratie,noun,die,Demokratien,fem,democracia,"Die Demokratie muss geschützt werden.","A democracia tem de ser protegida.",Politik,Plural com -n; do grego
+B2,Regierung,noun,die,Regierungen,fem,governo,"Die Regierung hat neue Maßnahmen angekündigt.","O governo anunciou novas medidas.",Politik,Sufixo -ung; de regieren
+B2,Opposition,noun,die,Oppositionen,fem,oposição,"Die Opposition kritisiert die Regierung.","A oposição critica o governo.",Politik,Plural com -en; do latim
+B2,Gesetz,noun,das,Gesetze,neutro,lei,"Das Gesetz tritt nächsten Monat in Kraft.","A lei entra em vigor no mês que vem.",Politik,Plural com -e
+B2,Reform,noun,die,Reformen,fem,reforma (política/social),"Die Rentenreform ist umstritten.","A reforma das pensões é controversa.",Politik,Plural com -en; do latim
+B2,Maßnahme,noun,die,Maßnahmen,fem,medida,"Welche Maßnahmen sind geplant?","Que medidas estão planeadas?",Politik,Plural com -n; composto: Maß + nehmen
+B2,Auswirkung,noun,die,Auswirkungen,fem,consequência/impacto,"Die Auswirkungen sind noch nicht bekannt.","As consequências ainda não são conhecidas.",Alltag,Sufixo -ung; plural quase sempre usado
+B2,Voraussetzung,noun,die,Voraussetzungen,fem,requisito/pressuposto,"Das ist eine wichtige Voraussetzung.","Este é um requisito importante.",Alltag,Sufixo -ung; composto: voraus + setzen
+B2,Ausnahme,noun,die,Ausnahmen,fem,exceção,"Das ist eine Ausnahme.","Esta é uma exceção.",Alltag,Plural com -n; composto: aus + nehmen
+B2,Beziehung,noun,die,Beziehungen,fem,relação/relacionamento,"Die Beziehung zwischen den Ländern ist gut.","A relação entre os países é boa.",Gesellschaft,Sufixo -ung; de beziehen
+B2,Konflikt,noun,der,Konflikte,masc,conflito,"Der Konflikt zwischen beiden Seiten wächst.","O conflito entre as duas partes cresce.",Gesellschaft,Plural com -e; do latim
+B2,Integration,noun,die,Integrationen,fem,integração,"Die Integration von Migranten ist eine Herausforderung.","A integração de migrantes é um desafio.",Gesellschaft,Plural com -en
+B2,Herausforderung,noun,die,Herausforderungen,fem,desafio,"Das ist eine große Herausforderung.","Este é um grande desafio.",Gesellschaft,Sufixo -ung; muito frequente em B2
+B2,Stellungnahme,noun,die,Stellungnahmen,fem,declaração/posição,"Die Regierung hat eine Stellungnahme abgegeben.","O governo emitiu uma declaração.",Kommunikation,Composto longo; formal
+B2,Argumentation,noun,die,Argumentationen,fem,argumentação,"Die Argumentation ist nicht überzeugend.","A argumentação não é convincente.",Kommunikation,Plural com -en; académico
+B2,These,noun,die,Thesen,fem,tese/afirmação,"Die These ist gut begründet.","A tese está bem fundamentada.",Kommunikation,Plural com -n; do grego
+B2,Schlussfolgerung,noun,die,Schlussfolgerungen,fem,conclusão,"Die Schlussfolgerung ist logisch.","A conclusão é lógica.",Kommunikation,Composto: Schluss + Folge + -ung
+B2,Konsequenz,noun,die,Konsequenzen,fem,consequência,"Das hat ernste Konsequenzen.","Isso tem consequências graves.",Kommunikation,Plural com -en; do latim
+B2,nachhaltig,adj,,,,sustentável/duradouro,"Wir brauchen eine nachhaltige Lösung.","Precisamos de uma solução sustentável.",Adj-B2,Comparativo: nachhaltiger; palavra-chave ambiental e política
+B2,umstritten,adj,,,,controverso/disputado,"Das Thema ist sehr umstritten.","O tema é muito controverso.",Adj-B2,Não tem grau comparativo habitual
+B2,wettbewerbsfähig,adj,,,,competitivo,"Das Unternehmen muss wettbewerbsfähig bleiben.","A empresa tem de manter-se competitiva.",Adj-B2,Composto complexo; frequente em contextos económicos
+B2,ausgeprägt,adj,,,,acentuado/marcado,"Er hat einen ausgeprägten Sinn für Humor.","Ele tem um sentido de humor muito marcado.",Adj-B2,Particípio de ausprägen; formal
+B2,erheblich,adj,,,,considerável/substancial,"Das ist ein erheblicher Unterschied.","Esta é uma diferença considerável.",Adj-B2,Comparativo: erheblicher; formal
+B2,grundlegend,adj,,,,fundamental/essencial,"Das ist eine grundlegende Änderung.","Esta é uma mudança fundamental.",Adj-B2,Composto: Grund + legend
+B2,dennoch,adv,,,,"contudo / todavia","Es ist teuer, dennoch kaufe ich es.","É caro; contudo compro-o.",Grammatik,Conector adversativo; posição 1 → inversão
+B2,infolgedessen,adv,,,,"consequentemente / por isso","Die Preise steigen, infolgedessen sparen wir mehr.","Os preços sobem; consequentemente poupamos mais.",Grammatik,Formal; sinónimo: daher / deswegen
+B2,hingegen,adv,,,,"pelo contrário / por outro lado","Er ist optimistisch, sie hingegen ist pessimistisch.","Ele é otimista; ela, pelo contrário, é pessimista.",Grammatik,Conector de contraste formal
+B2,sowohl...als auch,conj,,,,"tanto...como","Sowohl Erfahrung als auch Bildung sind wichtig.","Tanto a experiência como a formação são importantes.",Grammatik,Correlativa de adição; formal
+C1,Auseinandersetzung,noun,die,Auseinandersetzungen,fem,"confronto / debate / conflito","Die politische Auseinandersetzung dauerte Stunden.","O debate político durou horas.",Gesellschaft/Politik,Composto longo; jornalístico e académico
+C1,Kompromiss,noun,der,Kompromisse,masc,compromisso (acordo),"Wir müssen einen Kompromiss finden.","Temos de encontrar um compromisso.",Politik,Plural com -e; do latim compromissum
+C1,Legitimität,noun,die,,fem,legitimidade,"Die Legitimität der Regierung wird angezweifelt.","A legitimidade do governo é questionada.",Politik,Sem plural; sufixo -ität feminino; do latim
+C1,Transparenz,noun,die,,fem,transparência,"Transparenz ist für die Demokratie unerlässlich.","A transparência é indispensável para a democracia.",Politik,Sem plural; sufixo -enz feminino
+C1,Rechenschaft,noun,die,,fem,responsabilização/prestação de contas,"Politiker müssen Rechenschaft ablegen.","Os políticos têm de prestar contas.",Politik,Sem plural; composto: rechnen + Schaft
+C1,Subsidiarität,noun,die,,fem,subsidiariedade,"Das Prinzip der Subsidiarität gilt in der EU.","O princípio da subsidiariedade aplica-se na UE.",Politik,Sem plural; termo técnico europeu
+C1,Paradigma,noun,das,Paradigmen,neutro,paradigma,"Ein neues Paradigma setzt sich durch.","Um novo paradigma impõe-se.",Wissenschaft,Plural com -en; do grego; registo académico
+C1,Hypothese,noun,die,Hypothesen,fem,hipótese,"Diese Hypothese muss überprüft werden.","Esta hipótese tem de ser verificada.",Wissenschaft,Plural com -n; do grego
+C1,Methodik,noun,die,,fem,metodologia,"Die Methodik der Studie ist fragwürdig.","A metodologia do estudo é questionável.",Wissenschaft,Sem plural; de Methode + -ik
+C1,Erkenntnis,noun,die,Erkenntnisse,fem,conhecimento/descoberta,"Diese Erkenntnis ist bahnbrechend.","Esta descoberta é revolucionária.",Wissenschaft,Plural com -se; de erkennen
+C1,Diskurs,noun,der,Diskurse,masc,discurso (académico),"Der öffentliche Diskurs ist wichtig.","O discurso público é importante.",Kommunikation,Plural com -e; do latim
+C1,Rhetorik,noun,die,,fem,retórica,"Seine Rhetorik ist sehr überzeugend.","A sua retórica é muito convincente.",Kommunikation,Sem plural; do grego rhetorike
+C1,Konnotation,noun,die,Konnotationen,fem,conotação,"Das Wort hat eine negative Konnotation.","A palavra tem uma conotação negativa.",Sprache,Plural com -en; linguística
+C1,Ambivalenz,noun,die,Ambivalenzen,fem,ambivalência,"Seine Ambivalenz gegenüber dem Thema ist bekannt.","A sua ambivalência em relação ao tema é conhecida.",Psychologie,Plural com -en; do latim
+C1,Ideologie,noun,die,Ideologien,fem,ideologia,"Diese Ideologie hat Millionen beeinflusst.","Esta ideologia influenciou milhões.",Politik,Plural com -n; do grego
+C1,Konsens,noun,der,Konsensse,masc,consenso,"Wir müssen einen Konsens erzielen.","Temos de alcançar um consenso.",Gesellschaft,Plural com -e; do latim
+C1,Kontroverse,noun,die,Kontroversen,fem,controvérsia,"Die Kontroverse um das Gesetz dauert an.","A controvérsia em torno da lei continua.",Kommunikation,Plural com -n; do latim
+C1,Prämisse,noun,die,Prämissen,fem,premissa,"Die Prämisse des Arguments ist falsch.","A premissa do argumento está errada.",Wissenschaft,Plural com -n; do latim; lógica/filosofia
+C1,Evidenz,noun,die,Evidenzen,fem,evidência/prova,"Die wissenschaftliche Evidenz ist eindeutig.","A evidência científica é inequívoca.",Wissenschaft,Plural com -en; ≠ PT evidente (=óbvio em pt)
+C1,Abstrakta,noun,die,,pl,substantivos abstratos,"Abstrakta sind oft schwer zu übersetzen.","Os substantivos abstratos são muitas vezes difíceis de traduzir.",Sprache,Termo linguístico; plural
+C1,Nuance,noun,die,Nuancen,fem,nuance/matiz,"Diese Nuance ist wichtig für das Verständnis.","Esta nuance é importante para a compreensão.",Sprache,Plural com -n; do francês
+C1,Syntax,noun,die,,fem,sintaxe,"Die Syntax dieser Sprache ist komplex.","A sintaxe desta língua é complexa.",Sprache,Sem plural; do grego
+C1,Semantik,noun,die,,fem,semântica,"Die Semantik untersucht die Bedeutung.","A semântica estuda o significado.",Sprache,Sem plural; do grego
+C1,Kohärenz,noun,die,,fem,coerência,"Die Kohärenz des Textes ist mangelhaft.","A coerência do texto é deficiente.",Sprache,Sem plural; sufixo -enz
+C1,Implikation,noun,die,Implikationen,fem,implicação,"Was sind die Implikationen dieser Entscheidung?","Quais são as implicações desta decisão?",Wissenschaft,Plural com -en; do latim
+C1,Verfassung,noun,die,Verfassungen,fem,constituição,"Die Verfassung schützt die Grundrechte.","A constituição protege os direitos fundamentais.",Politik,Plural com -en; de verfassen
+C1,Souveränität,noun,die,,fem,soberania,"Die Souveränität des Staates ist unantastbar.","A soberania do Estado é inviolável.",Politik,Sem plural; sufixo -ität
+C1,Verhältnismäßigkeit,noun,die,,fem,proporcionalidade,"Das Prinzip der Verhältnismäßigkeit ist zentral.","O princípio da proporcionalidade é central.",Rechtswesen,Sem plural; composto longo; jurídico
+C1,Widerspruch,noun,der,Widersprüche,masc,contradição/objeção,"Das ist ein offensichtlicher Widerspruch.","Esta é uma contradição óbvia.",Kommunikation,Plural com Umlaut + -e
+C1,unerlässlich,adj,,,,indispensável/imprescindível,"Das ist eine unerlässliche Bedingung.","Esta é uma condição indispensável.",Adj-C1,Comparativo incomum; formal
+C1,schlüssig,adj,,,,coerente/conclusivo,"Das Argument ist nicht schlüssig.","O argumento não é coerente.",Adj-C1,De Schluss; comparativo: schlüssiger
+C1,widersprüchlich,adj,,,,contraditório,"Die Aussagen sind widersprüchlich.","As declarações são contraditórias.",Adj-C1,De Widerspruch; comparativo: widersprüchlicher
+C1,maßgeblich,adj,,,,determinante/relevante,"Dieser Faktor ist maßgeblich.","Este fator é determinante.",Adj-C1,Formal; de Maßgabe
+C1,weitreichend,adj,,,,de longo alcance/de grande impacto,"Das hat weitreichende Folgen.","Isso tem consequências de grande alcance.",Adj-C1,Composto: weit + reichen
+C1,tiefgreifend,adj,,,,profundo/radical (mudança),"Das ist eine tiefgreifende Veränderung.","Esta é uma mudança profunda.",Adj-C1,Composto: tief + greifen; para transformações estruturais
+C2,Ambiguität,noun,die,Ambiguitäten,fem,ambiguidade,"Die Ambiguität des Textes ist beabsichtigt.","A ambiguidade do texto é intencional.",Sprache/Literatur,Do latim ambiguitas; raro em língua oral
+C2,Epistemologie,noun,die,,fem,epistemologia,"Die Epistemologie untersucht die Grenzen des Wissens.","A epistemologia estuda os limites do conhecimento.",Philosophie,Sem plural; do grego; académico
+C2,Ontologie,noun,die,,fem,ontologia,"Die Ontologie fragt nach dem Wesen des Seins.","A ontologia questiona a natureza do ser.",Philosophie,Sem plural; do grego
+C2,Hermeneutik,noun,die,,fem,hermenêutica,"Die Hermeneutik ist die Kunst der Textauslegung.","A hermenêutica é a arte da interpretação de textos.",Wissenschaft,Sem plural; do grego; filologia e filosofia
+C2,Dialektik,noun,die,,fem,dialética,"Die Dialektik von These und Antithese.","A dialética de tese e antítese.",Philosophie,Sem plural; do grego; Hegel
+C2,Konstitution,noun,die,Konstitutionen,fem,constituição (filosófica)/estrutura,"Die Konstitution des Subjekts ist komplex.","A constituição do sujeito é complexa.",Philosophie,Plural com -en; filosófico ≠ Verfassung (jurídico)
+C2,Aporetik,noun,die,,fem,aporética,"Die Aporetik des Problems ist offensichtlich.","A aporética do problema é evidente.",Philosophie,Sem plural; muito especializado
+C2,Deduktion,noun,die,Deduktionen,fem,dedução,"Durch Deduktion gelangt man zur Schlussfolgerung.","Através da dedução chega-se à conclusão.",Wissenschaft,Plural com -en; lógica formal
+C2,Induktion,noun,die,Induktionen,fem,indução,"Die Induktion schließt vom Besonderen auf das Allgemeine.","A indução vai do particular para o geral.",Wissenschaft,Plural com -en; lógica formal
+C2,Axiom,noun,das,Axiome,neutro,axioma,"Dieses Axiom ist nicht beweisbar.","Este axioma não é demonstrável.",Wissenschaft,Plural com -e; do grego; matemática e filosofia
+C2,Phänomenologie,noun,die,,fem,fenomenologia,"Die Phänomenologie untersucht das Erleben.","A fenomenologia estuda a experiência vivida.",Philosophie,Sem plural; Husserl; muito especializado
+C2,Determinismus,noun,der,,masc,determinismo,"Der Determinismus leugnet den freien Willen.","O determinismo nega o livre arbítrio.",Philosophie,Sem plural; sufixo -ismus masculino
+C2,Kontingenz,noun,die,,fem,contingência,"Kontingenz bedeutet: es hätte auch anders sein können.","Contingência significa que poderia ter sido de outra forma.",Philosophie,Sem plural; do latim contingentia
+C2,Transzendenz,noun,die,,fem,transcendência,"Transzendenz bezieht sich auf das Übernatürliche.","A transcendência refere-se ao sobrenatural.",Philosophie,Sem plural; sufixo -enz feminino
+C2,Intersubjektivität,noun,die,,fem,intersubjetividade,"Intersubjektivität ist Grundlage sozialer Erkenntnis.","A intersubjetividade é base do conhecimento social.",Philosophie,Sem plural; composto técnico
+C2,nuanciert,adj,,,,nuançado/matizado,"Seine Analyse ist sehr nuanciert.","A sua análise é muito nuançada.",Adj-C2,Particípio de nuancieren; C2 pela precisão conceptual
+C2,vielschichtig,adj,,,,multifacetado/complexo,"Das Problem ist vielschichtig.","O problema é multifacetado.",Adj-C2,Composto: viel + Schicht + -ig
+C2,stringent,adj,,,,rigoroso/estrito (argumento),"Die Argumentation muss stringent sein.","A argumentação tem de ser rigorosa.",Adj-C2,Do latim stringens; académico
+C2,prägnant,adj,,,,preciso/conciso/marcante,"Formulieren Sie es prägnant!","Formule-o de forma precisa!",Adj-C2,Do latim praegnans; estilo académico e literário
+C2,paradigmatisch,adj,,,,paradigmático,"Das ist ein paradigmatisches Beispiel.","Este é um exemplo paradigmático.",Adj-C2,De Paradigma; académico
+C2,konstitutiv,adj,,,,constitutivo/fundamental,"Sprache ist konstitutiv für Denken.","A linguagem é constitutiva do pensamento.",Adj-C2,Do latim; filosofia da linguagem
+C2,apodiktisch,adj,,,,apodítico/indubitável,"Eine apodiktische Aussage lässt keinen Zweifel.","Uma afirmação apodítica não admite dúvida.",Adj-C2,Grego apodeiktikos; lógica formal; muito especializado
+C2,rekursiv,adj,,,,recursivo,"Das ist eine rekursive Struktur.","Esta é uma estrutura recursiva.",Adj-C2,Do latim; matemática e linguística
+C2,elliptisch,adj,,,,elíptico,"Der Satz ist elliptisch.","A frase é elíptica.",Adj-C2,Do grego ellipsis; linguística e retórica
+C2,idiomatisch,adj,,,,idiomático,"Diese Wendung ist idiomatisch.","Esta expressão é idiomática.",Adj-C2,De Idiom; fundamental para domínio C2

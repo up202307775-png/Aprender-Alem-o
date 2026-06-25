@@ -1,0 +1,211 @@
+level,lemma,pos,translation_pt,example_de,example_pt,topic,difficulty_note,separavel,irregular
+A1,sein,verb,ser/estar,"Ich bin Student. Er ist müde.","Sou estudante. Ele está cansado.",Grundverben,Totalmente irregular: bin/bist/ist/sind/seid/sind; Präteritum: war; Partizip: gewesen,false,true
+A1,haben,verb,ter,"Ich habe einen Bruder. Sie hat Zeit.","Tenho um irmão. Ela tem tempo.",Grundverben,Irregular: habe/hast/hat/haben/habt/haben; Partizip: gehabt,false,true
+A1,werden,verb,tornar-se/ficar (futuro),"Er wird Arzt. Es wird kalt.","Ele vai ser médico. Está a ficar frio.",Grundverben,Irregular: werde/wirst/wird; auxiliar de futuro e passiva,false,true
+A1,machen,verb,fazer/fazer (geral),"Was machst du? Ich mache Hausaufgaben.","O que estás a fazer? Estou a fazer os trabalhos de casa.",Alltag,Regular; muito versátil: machen + substantivo para muitas ações,false,false
+A1,gehen,verb,ir (a pé),"Ich gehe in die Schule. Wir gehen einkaufen.","Vou para a escola. Vamos às compras.",Bewegung,Irregular: ging/gegangen; só para movimento a pé,false,true
+A1,kommen,verb,vir/chegar,"Woher kommst du? Er kommt um 8 Uhr.","De onde és? Ele chega às 8 horas.",Bewegung,Irregular: kam/gekommen; usado para origem (aus + Dativ),false,true
+A1,fahren,verb,andar (veículo)/conduzir,"Ich fahre mit dem Bus. Sie fährt Auto.","Ando de autocarro. Ela conduz.",Verkehr,Irregular: fährt (Vokalwechsel a→ä); fuhr/gefahren,false,true
+A1,wohnen,verb,morar/viver,"Wo wohnst du? Ich wohne in Berlin.","Onde moras? Moro em Berlim.",Wohnen,Regular; a pergunta mais comum sobre alguém,false,false
+A1,heißen,verb,chamar-se,"Ich heiße Thomas. Wie heißt du?","Chamo-me Thomas. Como te chamas?",Vorstellung,Irregular: heißt (não tem Umlaut); heißen/hieß/geheißen,false,true
+A1,arbeiten,verb,trabalhar,"Meine Mutter arbeitet im Büro.","A minha mãe trabalha no escritório.",Arbeit,Regular; atenção: -et (não -t) em du/er por eufonia,false,false
+A1,lernen,verb,aprender/estudar,"Ich lerne Deutsch. Sie lernt schnell.","Estudo alemão. Ela aprende depressa.",Bildung,Regular; ≠ studieren (nível universitário),false,false
+A1,sprechen,verb,falar,"Sprechen Sie Deutsch? Er spricht Englisch.","Fala alemão? Ele fala inglês.",Sprache,Irregular: spricht (e→i); sprach/gesprochen,false,true
+A1,verstehen,verb,perceber/compreender,"Ich verstehe das nicht. Verstehst du mich?","Não percebo isso. Percebes-me?",Sprache,Irregular: verstand/verstanden; verbo separável não separado (ver-),false,false
+A1,lesen,verb,ler,"Ich lese ein Buch. Sie liest jeden Tag.","Leio um livro. Ela lê todos os dias.",Alltag,Irregular: liest (e→ie); las/gelesen,false,true
+A1,schreiben,verb,escrever,"Ich schreibe eine E-Mail.","Escrevo um email.",Alltag,Irregular: schrieb/geschrieben; ie-Verb,false,true
+A1,essen,verb,comer,"Was isst du? Ich esse Brot.","O que comes? Como pão.",Essen,Irregular: isst (e→i); aß/gegessen,false,true
+A1,trinken,verb,beber,"Ich trinke Kaffee. Was trinkst du?","Bebo café. O que bebes?",Essen,Irregular: trank/getrunken,false,true
+A1,schlafen,verb,dormir,"Das Kind schläft. Wie lange schläfst du?","A criança dorme. Quanto tempo dormes?",Alltag,Irregular: schläft (a→ä); schlief/geschlafen,false,true
+A1,kaufen,verb,comprar,"Ich kaufe Brot im Supermarkt.","Compro pão no supermercado.",Einkaufen,Regular; fácil e frequente,false,false
+A1,brauchen,verb,precisar de,"Ich brauche Hilfe. Was brauchst du?","Preciso de ajuda. O que precisas?",Alltag,Regular; construção: brauchen + Akkusativ,false,false
+A1,suchen,verb,procurar,"Ich suche den Bahnhof.","Procuro a estação de comboios.",Alltag,Regular; frequente em contextos de orientação,false,false
+A1,fragen,verb,perguntar,"Darf ich fragen? Er fragt den Lehrer.","Posso perguntar? Ele pergunta ao professor.",Sprache,Regular,false,false
+A1,antworten,verb,responder,"Bitte antworten Sie auf meine Frage.","Por favor responda à minha pergunta.",Sprache,Regular; atenção: antworten + Dativ (antworten auf + Akk.),false,false
+A1,hören,verb,ouvir/escutar,"Ich höre Musik. Hörst du mich?","Ouço música. Ouves-me?",Alltag,Regular; ≠ zuhören (prestar atenção),false,false
+A1,sehen,verb,ver,"Ich sehe das Haus. Siehst du es?","Vejo a casa. Vês-la?",Alltag,Irregular: sieht (e→ie); sah/gesehen,false,true
+A1,öffnen,verb,abrir,"Bitte öffnen Sie das Fenster.","Por favor abra a janela.",Alltag,Regular; atenção: öffnest (eufonia),false,false
+A1,schließen,verb,fechar,"Schließ bitte die Tür!","Fecha a porta, por favor!",Alltag,Irregular: schloss/geschlossen; ss/ß alternância,false,true
+A1,mögen,verb,gostar de,"Ich mag Kaffee. Magst du Sport?","Gosto de café. Gostas de desporto?",Vorlieben,Modal irregular: mag/magst/mag; mochte/gemocht,false,true
+A1,wollen,verb,querer (intenção),"Ich will Deutsch lernen.","Quero aprender alemão.",Modalverben,Modal irregular: will/willst/will; wollte/gewollt,false,true
+A1,können,verb,poder/saber (capacidade),"Ich kann schwimmen. Können Sie helfen?","Sei nadar. Pode ajudar?",Modalverben,Modal irregular: kann/kannst/kann; konnte/gekonnt,false,true
+A1,müssen,verb,ter de (obrigação),"Ich muss jetzt gehen.","Tenho de ir agora.",Modalverben,Modal irregular: muss/musst/muss; musste/gemusst,false,true
+A1,dürfen,verb,ter permissão para,"Darf ich fragen? Hier darf man nicht rauchen.","Posso perguntar? Aqui não se pode fumar.",Modalverben,Modal irregular: darf/darfst/darf; durfte/gedurft,false,true
+A1,sollen,verb,dever (por obrigação externa),"Du sollst nicht lügen.","Não deves mentir.",Modalverben,Modal irregular: soll/sollst/soll; sollte/gesollt,false,true
+A1,spielen,verb,jogar/tocar (instrumento),"Die Kinder spielen im Garten.","As crianças brincam no jardim.",Freizeit,Regular; jogar e tocar instrumento,false,false
+A1,warten,verb,esperar,"Ich warte auf den Bus.","Espero pelo autocarro.",Alltag,Regular; warten auf + Akkusativ,false,false
+A1,leben,verb,viver (existir),"Ich lebe in Portugal. Wie lange lebst du hier?","Vivo em Portugal. Há quanto tempo vives aqui?",Alltag,Regular; ≠ wohnen (residir num local específico),false,false
+A1,kochen,verb,cozinhar,"Meine Mutter kocht jeden Tag.","A minha mãe cozinha todos os dias.",Essen,Regular,false,false
+A1,helfen,verb,ajudar,"Kannst du mir helfen? Er hilft ihr.","Podes ajudar-me? Ele ajuda-a.",Alltag,Irregular: hilft (e→i); half/geholfen; + Dativ,false,true
+A1,danken,verb,agradecer,"Ich danke Ihnen für Ihre Hilfe.","Agradeço-lhe pela sua ajuda.",Alltag,Regular; danken + Dativ,false,false
+A1,bezahlen,verb,pagar,"Kann ich hier mit Karte bezahlen?","Posso pagar aqui com cartão?",Einkaufen,Regular,false,false
+A2,aufstehen,verb,levantar-se,"Ich stehe jeden Morgen um 7 Uhr auf.","Levanto-me às 7 horas todas as manhãs.",Alltag,Separável: auf + stehen; stand auf/aufgestanden,true,true
+A2,einschlafen,verb,adormecer,"Das Kind schläft um 9 Uhr ein.","A criança adormece às 9 horas.",Alltag,Separável: ein + schlafen; irregular,true,true
+A2,anfangen,verb,começar,"Die Schule fängt um 8 Uhr an.","A escola começa às 8 horas.",Alltag,Separável: an + fangen; fängt an / fing an / angefangen,true,true
+A2,aufhören,verb,parar/acabar,"Hör bitte auf! Es hört auf zu regnen.","Para, por favor! Para de chover.",Alltag,Separável: auf + hören; regular,true,false
+A2,anrufen,verb,telefonar,"Ich rufe dich morgen an.","Telefono-te amanhã.",Kommunikation,Separável: an + rufen; rief an / angerufen,true,true
+A2,mitnehmen,verb,levar consigo,"Kannst du mich mitnehmen?","Podes levar-me?",Alltag,Separável: mit + nehmen; irregular (nehmen),true,true
+A2,ausgehen,verb,sair (lazer),"Wir gehen heute Abend aus.","Saímos esta noite.",Freizeit,Separável: aus + gehen; irregular,true,true
+A2,einkaufen,verb,fazer compras,"Ich gehe samstags einkaufen.","Vou às compras ao sábado.",Einkaufen,Separável: ein + kaufen; regular,true,false
+A2,fernsehen,verb,ver televisão,"Ich sehe abends fern.","Vejo televisão à noite.",Freizeit,Separável: fern + sehen; sieht fern/sah fern/ferngesehen,true,true
+A2,zurückkommen,verb,regressar/voltar,"Wann kommst du zurück?","Quando voltas?",Bewegung,Separável: zurück + kommen; irregular,true,true
+A2,vorstellen,verb,apresentar(-se),"Darf ich mich vorstellen? Ich stelle Ihnen meine Kollegin vor.","Posso apresentar-me? Apresento-lhe a minha colega.",Kommunikation,Separável: vor + stellen; regular; reflexivo: sich vorstellen,true,false
+A2,kennenlernen,verb,conhecer (alguém pela primeira vez),"Ich habe meinen Mann auf einer Party kennengelernt.","Conheci o meu marido numa festa.",Gesellschaft,Separável: kennen + lernen; regular; importante A2,true,false
+A2,bestellen,verb,encomendar/pedir (restaurante),"Ich möchte einen Kaffee bestellen.","Gostaria de pedir um café.",Essen/Einkaufen,Inseparável: be-; regular,false,false
+A2,besuchen,verb,visitar,"Wir besuchen unsere Großeltern.","Visitamos os nossos avós.",Freizeit,Inseparável: be-; regular,false,false
+A2,gefallen,verb,agradar/gostar de (+ Dativ),"Das Buch gefällt mir sehr.","O livro agrada-me muito.",Vorlieben,Irregular: gefällt; gefiel/gefallen; + Dativ (não + Akkusativ!),false,true
+A2,interessieren,verb,interessar(-se),"Ich interessiere mich für Musik.","Interesso-me por música.",Vorlieben,Regular; reflexivo: sich interessieren für + Akkusativ,false,false
+A2,treffen,verb,encontrar(-se)/reunir-se,"Ich treffe mich morgen mit Anna.","Encontro-me amanhã com a Anna.",Freizeit,Irregular: trifft (e→i); traf/getroffen,false,true
+A2,reisen,verb,viajar,"Ich reise gern ins Ausland.","Gosto de viajar para o estrangeiro.",Reisen,Regular,false,false
+A2,buchen,verb,reservar,"Ich möchte ein Zimmer buchen.","Gostaria de reservar um quarto.",Reisen,Regular,false,false
+A2,packen,verb,fazer a mala/empacotar,"Ich muss noch meinen Koffer packen.","Ainda tenho de fazer a mala.",Reisen,Regular,false,false
+A2,vergessen,verb,esquecer,"Ich habe meinen Pass vergessen.","Esqueci-me do meu passaporte.",Alltag,Irregular: vergisst (e→i); vergaß/vergessen; inseparável,false,true
+A2,verlieren,verb,perder,"Ich habe mein Handy verloren.","Perdi o meu telemóvel.",Alltag,Irregular: verlor/verloren; inseparável,false,true
+A2,finden,verb,encontrar/achar,"Ich finde das sehr interessant.","Acho isso muito interessante.",Alltag,Irregular: fand/gefunden,false,true
+A2,brauchen (negação),verb,não precisar de (+ Infinitiv ohne zu),"Das brauche ich nicht zu machen.","Não preciso de fazer isso.",Modalverben,Negação modal: nicht brauchen + zu + Infinitiv = nicht müssen,false,false
+A2,duschen,verb,tomar duche,"Ich dusche jeden Morgen.","Tomo duche todas as manhãs.",Alltag,Regular; reflexivo: sich duschen,false,false
+A2,waschen,verb,lavar,"Ich wasche mir die Hände.","Lavo as mãos.",Alltag,Irregular: wäscht (a→ä); wusch/gewaschen; reflexivo: sich waschen,false,true
+A2,anziehen,verb,vestir,"Zieh dich schnell an!","Veste-te depressa!",Alltag,Separável: an + ziehen; zog an/angezogen; reflexivo: sich anziehen,true,true
+A2,ausziehen,verb,despir,"Zieh deine Jacke aus.","Tira o casaco.",Alltag,Separável: aus + ziehen; zog aus/ausgezogen,true,true
+A2,aufräumen,verb,arrumar,"Räum bitte dein Zimmer auf.","Arruma o teu quarto, por favor.",Wohnen,Separável: auf + räumen; regular,true,false
+A2,putzen,verb,limpar/escovar,"Ich putze zweimal am Tag die Zähne.","Escovo os dentes duas vezes por dia.",Alltag,Regular; Zähne putzen = escovar os dentes,false,false
+A2,einladen,verb,convidar,"Ich lade dich zu meiner Party ein.","Convido-te para a minha festa.",Gesellschaft,Separável: ein + laden; lädt ein / lud ein / eingeladen,true,true
+A2,gratulieren,verb,felicitar/dar parabéns,"Herzlichen Glückwunsch! Ich gratuliere dir.","Parabéns! Felicito-te.",Gesellschaft,Regular; gratulieren + Dativ,false,false
+A2,empfehlen,verb,recomendar,"Können Sie mir ein Restaurant empfehlen?","Pode recomendar-me um restaurante?",Alltag,Irregular: empfiehlt (e→ie); empfahl/empfohlen; inseparável,false,true
+A2,erklären,verb,explicar,"Der Lehrer erklärt die Grammatik.","O professor explica a gramática.",Sprache,Inseparável: er-; regular,false,false
+A2,wiederholen,verb,repetir,"Können Sie das bitte wiederholen?","Pode repetir, por favor?",Sprache,Inseparável: wieder-; regular (atenção ao acento),false,false
+A2,übersetzen,verb,traduzir,"Können Sie das ins Portugiesische übersetzen?","Pode traduzir para português?",Sprache,Separável (acento): über + setzen; regular; inseparável num sentido diferente,true,false
+A2,arbeiten an,verb,trabalhar em,"Wir arbeiten an einem neuen Projekt.","Estamos a trabalhar num novo projeto.",Arbeit,Regular + an + Dativ; preposição fixa,false,false
+A2,aufpassen,verb,tomar atenção/vigiar,"Pass auf! Ich passe auf das Kind auf.","Cuidado! Cuido da criança.",Alltag,Separável: auf + passen; regular,true,false
+A2,probieren,verb,provar/experimentar,"Möchten Sie das probieren?","Gostaria de experimentar isso?",Essen,Regular; ≈ versuchen (tentar),false,false
+A2,möchten,verb,gostaria de (forma polida),"Ich möchte einen Kaffee.","Gostaria de um café.",Modalverben,Forma de cortesia de mögen; Konjunktiv II de mögen; muito frequente,false,true
+A2,leihen,verb,emprestar/pedir emprestado,"Kannst du mir dein Fahrrad leihen?","Podes emprestar-me a tua bicicleta?",Alltag,Irregular: lieh/geliehen; atenção à direção do empréstimo,false,true
+A2,gewinnen,verb,ganhar (competição),"Wer hat gewonnen? Wir haben gewonnen!","Quem ganhou? Nós ganhámos!",Freizeit,Irregular: gewann/gewonnen,false,true
+A2,verlieren,verb,perder (competição),"Leider haben wir verloren.","Infelizmente perdemos.",Freizeit,Irregular: verlor/verloren,false,true
+A2,aufmachen,verb,abrir (separável informal),"Mach bitte die Tür auf!","Abre a porta, por favor!",Alltag,Separável: auf + machen; regular; mais informal que öffnen,true,false
+B1,sich bewerben,verb,candidatar-se a,"Ich bewerbe mich um diese Stelle.","Candidato-me a este posto.",Arbeit,Irregular: bewirbt (e→i); bewarb/beworben; reflexivo obrigatório + um + Akk,false,true
+B1,kündigen,verb,despedir/rescindir,"Er hat seine Stelle gekündigt.","Ele rescindiu o seu contrato.",Arbeit,Regular; intrans. = demitir-se; trans. = despedir,false,false
+B1,einstellen,verb,contratar,"Das Unternehmen stellt neue Mitarbeiter ein.","A empresa está a contratar novos funcionários.",Arbeit,Separável: ein + stellen; regular; também = ajustar,true,false
+B1,übernehmen,verb,assumir/encarregar-se,"Ich übernehme diese Aufgabe.","Fico encarregue desta tarefa.",Arbeit,Inseparável: über-; irregular (nehmen),false,true
+B1,leiten,verb,dirigir/liderar,"Sie leitet die Abteilung seit fünf Jahren.","Ela dirige o departamento há cinco anos.",Arbeit,Regular; Leiter = líder/diretor,false,false
+B1,teilnehmen,verb,participar em,"Ich nehme an dem Kurs teil.","Participo no curso.",Alltag,Separável: teil + nehmen; irregular + an + Dativ,true,true
+B1,sich kümmern,verb,tratar de/ocupar-se de,"Wer kümmert sich um die Kinder?","Quem trata das crianças?",Alltag,Regular; reflexivo obrigatório + um + Akkusativ,false,false
+B1,verbringen,verb,passar (tempo),"Ich verbringe meinen Urlaub in Italien.","Passo as minhas férias em Itália.",Freizeit,Inseparável: ver-; irregular: verbrachte/verbracht,false,true
+B1,beschreiben,verb,descrever,"Können Sie das Problem beschreiben?","Pode descrever o problema?",Kommunikation,Inseparável: be-; irregular: beschrieb/beschrieben,false,true
+B1,erkennen,verb,reconhecer/identificar,"Ich habe ihn sofort erkannt.","Reconheci-o imediatamente.",Kommunikation,Inseparável: er-; irregular: erkannte/erkannt,false,true
+B1,unterscheiden,verb,distinguir/diferenciar,"Kannst du die zwei Varianten unterscheiden?","Consegues distinguir as duas variantes?",Kommunikation,Inseparável: unter-; irregular: unterschied/unterschieden,false,true
+B1,vergleichen,verb,comparar,"Vergleich die beiden Möglichkeiten!","Compara as duas possibilidades!",Kommunikation,Inseparável: ver-; irregular: verglich/verglichen,false,true
+B1,erfahren,verb,descobrir/saber (notícia),"Ich habe es erst heute erfahren.","Só soube hoje.",Alltag,Inseparável: er-; irregular: erfuhr/erfahren,false,true
+B1,sich gewöhnen,verb,habituar-se a,"Ich gewöhne mich langsam an das Klima.","Estou a habituar-me devagar ao clima.",Alltag,Regular; reflexivo + an + Akkusativ,false,false
+B1,abhängen,verb,depender de,"Das hängt von dir ab.","Isso depende de ti.",Alltag,Separável: ab + hängen; regular; + von + Dativ,true,false
+B1,vorschlagen,verb,propor/sugerir,"Ich schlage vor, dass wir zusammen essen.","Proponho que comamos juntos.",Kommunikation,Separável: vor + schlagen; irregular: schlägt vor/schlug vor/vorgeschlagen,true,true
+B1,auffordern,verb,pedir/instar,"Er forderte mich auf, Platz zu nehmen.","Ele pediu-me que me sentasse.",Kommunikation,Separável: auf + fordern; regular,true,false
+B1,zustimmen,verb,concordar,"Ich stimme Ihrer Meinung zu.","Concordo com a sua opinião.",Kommunikation,Separável: zu + stimmen; regular + Dativ,true,false
+B1,ablehnen,verb,rejeitar/recusar,"Er hat das Angebot abgelehnt.","Ele recusou a oferta.",Kommunikation,Separável: ab + lehnen; regular,true,false
+B1,vorhaben,verb,tencionar/planear fazer,"Was hast du am Wochenende vor?","O que tencionas fazer ao fim de semana?",Alltag,Separável: vor + haben; irregular (haben); sehr frequente,true,true
+B1,aufnehmen,verb,gravar/admitir/receber,"Die Universität nimmt 500 Studenten auf.","A universidade admite 500 estudantes.",Alltag,Separável: auf + nehmen; irregular (nehmen); múltiplos sentidos,true,true
+B1,nachdenken,verb,pensar/refletir,"Ich muss darüber nachdenken.","Tenho de pensar nisso.",Denken,Separável: nach + denken; irregular: dachte nach/nachgedacht,true,true
+B1,überlegen,verb,considerar/ponderar,"Ich überlege mir, ob ich das mache.","Estou a ponderar se faço isso.",Denken,Regular; reflexivo: sich überlegen; + ob/dass,false,false
+B1,bemerken,verb,notar/aperceber-se de,"Ich habe bemerkt, dass etwas fehlt.","Apercebi-me de que faltava algo.",Denken,Inseparável: be-; regular; ≈ wahrnehmen,false,false
+B1,beachten,verb,ter em conta/prestar atenção,"Bitte beachten Sie die Vorschriften.","Por favor tenha em conta as regras.",Alltag,Inseparável: be-; regular; formal,false,false
+B1,erreichen,verb,alcançar/atingir,"Ich habe mein Ziel erreicht.","Alcancei o meu objetivo.",Alltag,Inseparável: er-; regular,false,false
+B1,lösen,verb,resolver/solucionar,"Wir müssen das Problem lösen.","Temos de resolver o problema.",Alltag,Regular; also: ablösen (substituir), auflösen (dissolver),false,false
+B1,gründen,verb,fundar/criar,"Er hat eine Firma gegründet.","Ele fundou uma empresa.",Wirtschaft,Regular; von Grund = fundamento,false,false
+B1,entwickeln,verb,desenvolver,"Das Unternehmen entwickelt neue Produkte.","A empresa desenvolve novos produtos.",Wirtschaft,Regular; sich entwickeln = desenvolver-se,false,false
+B1,wachsen,verb,crescer,"Die Wirtschaft wächst langsam.","A economia cresce lentamente.",Natur/Wirtschaft,Irregular: wächst (a→ä); wuchs/gewachsen,false,true
+B1,schützen,verb,proteger,"Wir müssen die Umwelt schützen.","Temos de proteger o meio ambiente.",Umwelt,Regular; vor + Dativ = proteger de,false,false
+B1,vermeiden,verb,evitar,"Vermeide zu viel Stress!","Evita demasiado stress!",Gesundheit,Inseparável: ver-; irregular: vermied/vermieden,false,true
+B1,sich ernähren,verb,alimentar-se,"Er ernährt sich gesund.","Ele alimenta-se de forma saudável.",Gesundheit,Regular; reflexivo + von + Dativ,false,false
+B1,bewegen,verb,mover(-se),"Beweg dich mehr! Er bewegt sich wenig.","Move-te mais! Ele move-se pouco.",Gesundheit,Regular; reflexivo: sich bewegen,false,false
+B1,heilen,verb,curar,"Die Wunde heilt langsam.","A ferida cura lentamente.",Gesundheit,Regular; transitivo: curar alguém; intransitivo: sarar,false,false
+B1,berichten,verb,relatar/informar,"Die Zeitung berichtet über den Unfall.","O jornal relata o acidente.",Medien,Inseparável: be-; regular; + über + Akkusativ,false,false
+B1,kritisieren,verb,criticar,"Er kritisierte die Regierung.","Ele criticou o governo.",Gesellschaft,Regular; de griechisch kritikós,false,false
+B1,diskutieren,verb,discutir/debater,"Wir diskutieren über Politik.","Debatemos política.",Gesellschaft,Regular; + über + Akkusativ,false,false
+B1,unterstützen,verb,apoiar/subsidiar,"Die Regierung unterstützt kleine Unternehmen.","O governo apoia as pequenas empresas.",Gesellschaft,Inseparável: unter-; regular,false,false
+B1,sich vorstellen,verb,imaginar/representar-se,"Ich kann mir das nicht vorstellen.","Não consigo imaginar isso.",Denken,Separável: vor + stellen + reflexivo; = fantasiar (vs. sich vorstellen = apresentar-se),true,false
+B1,planen,verb,planear,"Wir planen einen Urlaub in Deutschland.","Planeamos umas férias na Alemanha.",Alltag,Regular; Planer = planeador; Plan = plano,false,false
+B1,erinnernen,verb,lembrar(-se),"Ich erinnere mich noch gut daran.","Ainda me lembro bem disso.",Alltag,Inseparável: er-; regular; sich erinnern an + Akkusativ,false,false
+B1,anmelden,verb,inscrever(-se)/registar,"Ich melde mich zum Kurs an.","Inscrevo-me no curso.",Verwaltung,Separável: an + melden; regular; reflexivo: sich anmelden,true,false
+B1,ausfüllen,verb,preencher (formulário),"Bitte füllen Sie das Formular aus.","Por favor preencha o formulário.",Verwaltung,Separável: aus + füllen; regular,true,false
+B1,beantragen,verb,requerer/pedir (oficial),"Ich beantrage ein Visum.","Requeiro um visto.",Verwaltung,Inseparável: be-; regular,false,false
+B1,überweisen,verb,transferir (dinheiro),"Ich überweise das Geld morgen.","Transfiro o dinheiro amanhã.",Verwaltung,Inseparável: über-; irregular: überwies/überwiesen,false,true
+B1,klagen,verb,queixar-se/processar,"Er klagt über Rückenschmerzen.","Ele queixa-se de dores nas costas.",Gesellschaft,Regular; klagen über + Akkusativ; Klage = queixa,false,false
+B2,analysieren,verb,analisar,"Wir analysieren die Daten genau.","Analisamos os dados com precisão.",Wissenschaft,Regular; de grego analyein,false,false
+B2,interpretieren,verb,interpretar,"Wie interpretieren Sie diese Ergebnisse?","Como interpreta estes resultados?",Wissenschaft,Regular; de latim interpretari,false,false
+B2,evaluieren,verb,avaliar (sistematicamente),"Das Programm wird jährlich evaluiert.","O programa é avaliado anualmente.",Wissenschaft,Regular; mais formal que bewerten,false,false
+B2,begründen,verb,fundamentar/justificar,"Bitte begründen Sie Ihre Entscheidung.","Por favor justifique a sua decisão.",Wissenschaft,Inseparável: be-; regular; Begründung = fundamentação,false,false
+B2,nachweisen,verb,comprovar/demonstrar,"Er konnte seine Unschuld nachweisen.","Ele conseguiu comprovar a sua inocência.",Wissenschaft,Separável: nach + weisen; irregular: wies nach/nachgewiesen,true,true
+B2,ausdrücken,verb,expressar/exprimir,"Wie kann ich das ausdrücken?","Como posso expressar isso?",Kommunikation,Separável: aus + drücken; regular; sich ausdrücken = exprimir-se,true,false
+B2,formulieren,verb,formular/redigir,"Formulieren Sie Ihre Antwort klar.","Formule a sua resposta com clareza.",Kommunikation,Regular; Formulierung = formulação,false,false
+B2,argumentieren,verb,argumentar,"Er argumentiert überzeugend.","Ele argumenta de forma convincente.",Kommunikation,Regular; Argumentation = argumentação,false,false
+B2,widersprechen,verb,contradizer/opor-se,"Ich muss dir widersprechen.","Tenho de te contradizer.",Kommunikation,Inseparável: wider-; irregular: widersprach/widersprochen + Dativ,false,true
+B2,behaupten,verb,afirmar/alegar,"Er behauptet, dass er Recht hat.","Ele afirma que tem razão.",Kommunikation,Inseparável: be-; regular; Behauptung = afirmação,false,false
+B2,bezweifeln,verb,duvidar de,"Ich bezweifle, dass das stimmt.","Duvido que isso seja verdade.",Kommunikation,Inseparável: be-; regular; Zweifel = dúvida,false,false
+B2,zugeben,verb,admitir/confessar,"Er gibt zu, dass er einen Fehler gemacht hat.","Ele admite ter cometido um erro.",Kommunikation,Separável: zu + geben; irregular (geben); + dass,true,true
+B2,berücksichtigen,verb,ter em conta/considerar,"Wir müssen alle Faktoren berücksichtigen.","Temos de ter em conta todos os fatores.",Alltag,Inseparável: be-; regular; formal e frequente,false,false
+B2,ermöglichen,verb,possibilitar/permitir,"Das Internet ermöglicht weltweite Kommunikation.","A internet possibilita a comunicação global.",Alltag,Inseparável: er-; regular,false,false
+B2,verhindern,verb,impedir/prevenir,"Wir müssen diesen Fehler verhindern.","Temos de impedir este erro.",Alltag,Inseparável: ver-; regular,false,false
+B2,einschränken,verb,restringir/limitar,"Die Regierung schränkt die Reisefreiheit ein.","O governo restringe a liberdade de viajar.",Politik,Separável: ein + schränken; regular,true,false
+B2,aufheben,verb,abolir/anular/guardar,"Das Gesetz wurde aufgehoben.","A lei foi abolida.",Politik/Recht,Separável: auf + heben; irregular: hob auf/aufgehoben; múltiplos sentidos,true,true
+B2,durchsetzen,verb,impor/fazer valer,"Er setzt immer seinen Willen durch.","Ele impõe sempre a sua vontade.",Gesellschaft,Separável: durch + setzen; regular,true,false
+B2,abschaffen,verb,abolir/eliminar,"Diese Regel sollte abgeschafft werden.","Esta regra deveria ser abolida.",Politik,Separável: ab + schaffen; regular,true,false
+B2,umsetzen,verb,implementar/concretizar,"Der Plan wird jetzt umgesetzt.","O plano está agora a ser implementado.",Wirtschaft,Separável: um + setzen; regular,true,false
+B2,finanzieren,verb,financiar,"Das Projekt wird öffentlich finanziert.","O projeto é financiado com dinheiro público.",Wirtschaft,Regular; Finanzierung = financiamento,false,false
+B2,investieren,verb,investir,"Das Unternehmen investiert in neue Technologien.","A empresa investe em novas tecnologias.",Wirtschaft,Regular; + in + Akkusativ,false,false
+B2,steigern,verb,aumentar/elevar,"Wir müssen die Produktivität steigern.","Temos de elevar a produtividade.",Wirtschaft,Regular; auch: sich steigern (aumentar intransitivo),false,false
+B2,sinken,verb,baixar/descer (preços),"Die Preise sinken langsam.","Os preços estão a baixar lentamente.",Wirtschaft,Irregular: sank/gesunken; ≠ senken (baixar transitivo),false,true
+B2,fördern,verb,promover/apoiar/financiar,"Der Staat fördert erneuerbare Energien.","O Estado promove as energias renováveis.",Politik/Wirtschaft,Regular; Förderung = promoção/apoio,false,false
+B2,gefährden,verb,pôr em risco/ameaçar,"Der Klimawandel gefährdet die Artenvielfalt.","As alterações climáticas ameaçam a biodiversidade.",Umwelt,Inseparável: ge-; regular,false,false
+B2,verursachen,verb,causar/provocar,"Der Unfall wurde durch Nebel verursacht.","O acidente foi causado pelo nevoeiro.",Alltag,Inseparável: ver-; regular; Ursache = causa,false,false
+B2,auswirken,verb,ter impacto/repercutir-se,"Die Krise wirkt sich auf alle aus.","A crise tem impacto em todos.",Alltag,Separável: aus + wirken; regular; reflexivo: sich auswirken auf + Akk,true,false
+B2,bewirken,verb,causar/provocar (resultado),"Die Reform hat positive Veränderungen bewirkt.","A reforma provocou mudanças positivas.",Alltag,Inseparável: be-; regular; ≈ verursachen mas com resultado positivo possível,false,false
+B2,sich durchsetzen,verb,impor-se/ser aprovado,"Die neue Technologie setzt sich durch.","A nova tecnologia está a impor-se.",Gesellschaft,Separável: durch + setzen + reflexivo,true,false
+B2,beitragen,verb,contribuir para,"Jeder kann zum Umweltschutz beitragen.","Cada um pode contribuir para a proteção ambiental.",Gesellschaft,Separável: bei + tragen; irregular (tragen): trug bei/beigetragen + zu + Dativ,true,true
+B2,hervorbringen,verb,produzir/gerar (resultado),"Diese Forschung bringt wichtige Ergebnisse hervor.","Esta investigação produz resultados importantes.",Wissenschaft,Separável: hervor + bringen; irregular (bringen),true,true
+B2,unterschätzen,verb,subestimar,"Man sollte dieses Problem nicht unterschätzen.","Não se deve subestimar este problema.",Alltag,Inseparável: unter-; regular; ≠ überschätzen (sobrestimar),false,false
+B2,überwinden,verb,superar/vencer (obstáculo),"Er hat seine Angst überwunden.","Ele superou o seu medo.",Alltag,Inseparável: über-; irregular: überwand/überwunden,false,true
+C1,konkretisieren,verb,concretizar/tornar concreto,"Können Sie Ihre Idee konkretisieren?","Pode concretizar a sua ideia?",Wissenschaft,Regular; de konkret + -isieren,false,false
+C1,präzisieren,verb,precisar/especificar,"Lassen Sie mich das präzisieren.","Deixe-me especificar isso.",Wissenschaft,Regular; de präzis + -ieren,false,false
+C1,differenzieren,verb,diferenciar/matizar,"Man muss hier stärker differenzieren.","Temos de diferenciar mais aqui.",Wissenschaft,Regular; sich differenzieren = diferenciar-se,false,false
+C1,elaborieren,verb,elaborar/desenvolver (argumento),"Können Sie das weiter elaborieren?","Pode desenvolver mais isso?",Wissenschaft,Regular; menos frequente que ausführen,false,false
+C1,zuschreiben,verb,atribuir/imputar,"Man schreibt ihm großen Einfluss zu.","Atribui-se-lhe grande influência.",Wissenschaft,Separável: zu + schreiben; irregular (schreiben); + Dativ + Akkusativ,true,true
+C1,widerlegen,verb,refutar,"Diese Studie widerlegt die These.","Este estudo refuta a tese.",Wissenschaft,Inseparável: wider-; regular; Widerlegung = refutação,false,false
+C1,voraussetzen,verb,pressupor/requerer,"Das setzt gute Deutschkenntnisse voraus.","Isso pressupõe bons conhecimentos de alemão.",Wissenschaft,Separável: voraus + setzen; regular; Voraussetzung = pressuposto,true,false
+C1,nachvollziehen,verb,compreender (raciocínio)/seguir,"Ich kann Ihre Argumentation nachvollziehen.","Consigo seguir a sua argumentação.",Kommunikation,Separável: nach + vollziehen; irregular: zog nach/nachvollzogen,true,true
+C1,veranschaulichen,verb,ilustrar/exemplificar,"Das veranschaulicht das Problem gut.","Isto ilustra bem o problema.",Kommunikation,Inseparável: ver-; regular; Anschauung = intuição,false,false
+C1,verdeutlichen,verb,clarificar/esclarecer,"Lassen Sie mich das verdeutlichen.","Deixe-me clarificar isso.",Kommunikation,Inseparável: ver-; regular,false,false
+C1,implizieren,verb,implicar/pressupor,"Diese Aussage impliziert einen Widerspruch.","Esta afirmação implica uma contradição.",Kommunikation,Regular; de latim implicare,false,false
+C1,rechtfertigen,verb,justificar,"Das rechtfertigt keine Ausnahme.","Isso não justifica qualquer exceção.",Kommunikation,Inseparável: recht-; regular; Rechtfertigung = justificação,false,false
+C1,infragestellen,verb,questionar/pôr em causa,"Diese Ergebnisse stellen die Theorie infrage.","Estes resultados questionam a teoria.",Wissenschaft,Separável: in + Frage + stellen; geralmente grafado junto: infrage stellen,true,false
+C1,aufwerfen,verb,levantar (questão),"Der Autor wirft interessante Fragen auf.","O autor levanta questões interessantes.",Kommunikation,Separável: auf + werfen; irregular (werfen): warf auf/aufgeworfen,true,true
+C1,zurückgreifen,verb,recorrer a/basear-se em,"Wir greifen auf bewährte Methoden zurück.","Recorremos a métodos comprovados.",Wissenschaft,Separável: zurück + greifen; irregular: griff zurück/zurückgegriffen + auf + Akk,true,true
+C1,heranziehen,verb,citar/recorrer a (referência),"Diese Daten wurden als Belege herangezogen.","Estes dados foram utilizados como provas.",Wissenschaft,Separável: heran + ziehen; irregular (ziehen),true,true
+C1,abwägen,verb,ponderar/sopesar,"Man muss Vor- und Nachteile abwägen.","Há que ponderar as vantagens e desvantagens.",Denken,Separável: ab + wägen; regular; Abwägung = ponderação,true,false
+C1,berücksichtigen,verb,ter em conta (formal C1),"Alle Faktoren wurden berücksichtigt.","Todos os fatores foram tidos em conta.",Alltag,Inseparável: be-; regular; nível B2-C1 de formalidade,false,false
+C1,manifestieren,verb,manifestar(-se),"Die Krise manifestiert sich in steigenden Preisen.","A crise manifesta-se em preços crescentes.",Gesellschaft,Regular; reflexivo: sich manifestieren in + Dativ,false,false
+C1,determinieren,verb,determinar/condicionar,"Soziale Faktoren determinieren oft den Erfolg.","Fatores sociais determinam frequentemente o sucesso.",Wissenschaft,Regular; mais formal que bestimmen,false,false
+C1,konstituieren,verb,constituir/formar,"Sprache konstituiert soziale Wirklichkeit.","A linguagem constitui a realidade social.",Philosophie,Regular; de latim constituere; akademisch,false,false
+C1,transzendieren,verb,transcender/ir além de,"Das transzendiert meine Kompetenz.","Isso transcende a minha competência.",Philosophie,Regular; de latim transcendere; raro,false,false
+C1,kontextualisieren,verb,contextualizar,"Man muss diese Aussage kontextualisieren.","Há que contextualizar esta afirmação.",Wissenschaft,Regular; frequente em análise de texto C1/C2,false,false
+C1,systematisieren,verb,sistematizar,"Wir müssen die Ergebnisse systematisieren.","Temos de sistematizar os resultados.",Wissenschaft,Regular,false,false
+C2,dekonstruieren,verb,desconstruir,"Derrida dekonstruiert westliche Metaphysik.","Derrida desconstói a metafísica ocidental.",Philosophie,Regular; de Derrida; pós-estruturalismo,false,false
+C2,problematisieren,verb,problematizar,"Der Autor problematisiert diesen Begriff.","O autor problematiza este conceito.",Wissenschaft,Regular; muito académico,false,false
+C2,operationalisieren,verb,operacionalizar,"Wie lässt sich das operationalisieren?","Como se pode operacionalizar isto?",Wissenschaft,Regular; metodologia de investigação,false,false
+C2,subsumieren,verb,subsumir/incluir sob,"Diese Fälle lassen sich unter den Begriff subsumieren.","Estes casos podem ser subsumidos sob o conceito.",Rechtswesen,Regular; jurídico e filosófico; de latim sub + sumere,false,false
+C2,explizieren,verb,explicitar/tornar explícito,"Lassen Sie mich das explizieren.","Deixe-me explicitar isso.",Wissenschaft,Regular; de latim explicare; mais formal que erklären,false,false
+C2,paraphrasieren,verb,parafrasear,"Können Sie das paraphrasieren?","Pode parafrasear isso?",Sprache,Regular; de grego paraphrazein,false,false
+C2,disambiguieren,verb,desambiguar,"Es ist wichtig, diesen Begriff zu disambiguieren.","É importante desambiguar este conceito.",Sprache,Regular; linguística; de latim + -ieren,false,false
+C2,abstrahieren,verb,abstrair,"Man muss von Einzelfällen abstrahieren können.","É preciso saber abstrair de casos concretos.",Wissenschaft,Regular; de latim abstrahere,false,false
+C2,rekonstruieren,verb,reconstruir (raciocínio/histórico),"Wir versuchen, den Argumentationsweg zu rekonstruieren.","Tentamos reconstruir o raciocínio.",Wissenschaft,Regular; inseparável: re-; académico,false,false
+C2,synthetisieren,verb,sintetizar,"Der Autor synthetisiert verschiedene Theorien.","O autor sintetiza diversas teorias.",Wissenschaft,Regular; de grego synthesizein; C2 pelo uso académico,false,false
+C2,antizipieren,verb,antecipar,"Diese Entwicklung war schwer zu antizipieren.","Era difícil antecipar este desenvolvimento.",Wissenschaft,Regular; de latim anticipare; mais formal que voraussehen,false,false
+C2,konnotieren,verb,conotar,"Das Wort konnotiert etwas Negatives.","A palavra conota algo negativo.",Sprache,Regular; de latim connotare; linguística,false,false
+C2,repräsentieren,verb,representar (semioticamente),"Dieses Symbol repräsentiert Freiheit.","Este símbolo representa a liberdade.",Sprache/Philosophie,Regular; de latim repraesentare,false,false
+C2,legitimieren,verb,legitimar,"Wie lässt sich diese Entscheidung legitimieren?","Como se pode legitimar esta decisão?",Politik,Regular; de latim legitimare,false,false
+C2,perpetuieren,verb,perpetuar,"Diese Strukturen perpetuieren Ungleichheit.","Estas estruturas perpetuam a desigualdade.",Gesellschaft,Regular; de latim perpetuare; raro mas preciso,false,false
+C2,relativieren,verb,relativizar,"Man sollte diese Zahlen relativieren.","Devemos relativizar estes números.",Wissenschaft,Regular; muito útil em debates académicos,false,false
+C2,nuancieren,verb,nuançar/matizar,"Lassen Sie mich das nuancieren.","Deixe-me nuançar isso.",Kommunikation,Regular; de francês nuancer; C2 pelo grau de precisão,false,false
+C2,expandieren,verb,expandir,"Das Unternehmen expandiert in neue Märkte.","A empresa expande-se para novos mercados.",Wirtschaft,Regular; de latim expandere,false,false
+C2,konvergieren,verb,convergir,"Die beiden Theorien konvergieren in diesem Punkt.","As duas teorias convergem neste ponto.",Wissenschaft,Regular; de latim convergere,false,false
+C2,divergieren,verb,divergir,"Unsere Meinungen divergieren stark.","As nossas opiniões divergem bastante.",Wissenschaft,Regular; de latim divergere,false,false
+C2,perpetuieren,verb,perpetuar (estrutural),"Diese Normen perpetuieren soziale Ungleichheit.","Estas normas perpetuam a desigualdade social.",Gesellschaft,Regular; de latim perpetuare; académico C2,false,false

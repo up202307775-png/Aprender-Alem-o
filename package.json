@@ -11,7 +11,9 @@
     "db:migrate": "prisma migrate dev",
     "db:migrate:prod": "prisma migrate deploy",
     "db:seed": "tsx prisma/seed.ts",
-    "db:studio": "prisma studio"
+    "db:studio": "prisma studio",
+    "db:import": "tsx scripts/import-vocab.ts",
+    "db:import:clear": "tsx scripts/import-vocab.ts --clear"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.106.0",

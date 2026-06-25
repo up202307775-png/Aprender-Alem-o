@@ -8,6 +8,7 @@ function conj(prasens: Record<string, string>, prateritum: Record<string, string
 
 async function main() {
   // ─── Limpar base de dados (ordem inversa de FK) ──────────────────────────
+  await prisma.userState.deleteMany();
   await prisma.score.deleteMany();
   await prisma.studySession.deleteMany();
   await prisma.reviewState.deleteMany();
@@ -1062,6 +1063,13 @@ Infinitivo + Sie (na ordem invertida):
         ]),
       },
     ],
+  });
+
+  // ─── Estado inicial do utilizador (A1, Módulo 1) ─────────────────────────
+  await prisma.userState.upsert({
+    where:  { id: 1 },
+    create: { id: 1, currentLevelId: a1.id, currentModuleId: a1m1.id },
+    update: { currentLevelId: a1.id, currentModuleId: a1m1.id },
   });
 
   // ─── Resumo ───────────────────────────────────────────────────────────────
