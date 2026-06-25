@@ -1,0 +1,16 @@
+node_modules
+# Keep environment variables out of version control
+.env
+.env.local
+.env*.local
+
+/app/generated/prisma
+# Next.js build
+.next/
+out/
+
+# Base de dados local (caso ainda exista algum ficheiro SQLite antigo)
+*.db
+*.db-journal
+.vercel
+.env*

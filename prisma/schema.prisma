@@ -1,0 +1,142 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// ─── Hierarquia de conteúdo ───────────────────────────────────────────────────
+
+model Level {
+  id        Int      @id @default(autoincrement())
+  codigo    String   @unique
+  nome      String
+  descricao String
+  ordem     Int
+  modules   Module[]
+}
+
+model Module {
+  id             Int                @id @default(autoincrement())
+  levelId        Int
+  level          Level              @relation(fields: [levelId], references: [id])
+  titulo         String
+  tema           String
+  ordem          Int
+  words          Word[]
+  verbs          Verb[]
+  grammarModules GrammarModule[]
+  externalExs    ExternalExercise[]
+  progress       Progress?
+}
+
+model Progress {
+  id              Int      @id @default(autoincrement())
+  moduleId        Int      @unique
+  module          Module   @relation(fields: [moduleId], references: [id])
+  percentagem     Float    @default(0)
+  terminado       Boolean  @default(false)
+  ultimaAtividade DateTime @default(now())
+}
+
+model ExternalExercise {
+  id           Int       @id @default(autoincrement())
+  moduleId     Int?
+  module       Module?   @relation(fields: [moduleId], references: [id])
+  titulo       String
+  fonte        String
+  url          String
+  nivel        String
+  tema         String
+  tipo         String
+  notas        String    @default("")
+  visitado     Boolean   @default(false)
+  concluido    Boolean   @default(false)
+  linkPartido  Boolean   @default(false)
+  ultimaVisita DateTime?
+}
+
+// ─── Vocabulário ──────────────────────────────────────────────────────────────
+
+model Word {
+  id         Int     @id @default(autoincrement())
+  alemao     String
+  artigo     String  @default("")
+  genero     String  @default("—")
+  raiz       String  @default("")
+  traducaoPt String
+  plural     String  @default("")
+  exemplo    String  @default("")
+  tema       String  @default("")
+  tipo       String  @default("palavra")
+  moduleId   Int?
+  module     Module? @relation(fields: [moduleId], references: [id])
+}
+
+// ─── Verbos ───────────────────────────────────────────────────────────────────
+
+model Verb {
+  id          Int     @id @default(autoincrement())
+  infinitivo  String
+  traducaoPt  String
+  raiz        String  @default("")
+  separavel   Boolean @default(false)
+  irregular   Boolean @default(false)
+  conjugacoes String  @default("{}")
+  moduleId    Int?
+  module      Module? @relation(fields: [moduleId], references: [id])
+}
+
+// ─── Gramática ────────────────────────────────────────────────────────────────
+
+model GrammarModule {
+  id         Int     @id @default(autoincrement())
+  titulo     String
+  conteudo   String
+  exercicios String  @default("[]")
+  moduleId   Int?
+  module     Module? @relation(fields: [moduleId], references: [id])
+}
+
+// ─── Cenários de conversa ─────────────────────────────────────────────────────
+
+model Scenario {
+  id     Int    @id @default(autoincrement())
+  titulo String
+  turnos String @default("[]")
+}
+
+// ─── Revisão espaçada (SM-2) ──────────────────────────────────────────────────
+
+model ReviewState {
+  id              Int      @id @default(autoincrement())
+  itemType        String
+  itemId          Int
+  intervaloDias   Int      @default(1)
+  fatorFacilidade Float    @default(2.5)
+  repeticoes      Int      @default(0)
+  proximaRevisao  DateTime @default(now())
+  ultimaRevisao   DateTime @default(now())
+
+  @@unique([itemType, itemId])
+}
+
+// ─── Sessões e pontuações ─────────────────────────────────────────────────────
+
+model StudySession {
+  id            Int      @id @default(autoincrement())
+  data          DateTime @default(now())
+  itensRevistos Int      @default(0)
+  acertos       Int      @default(0)
+  modo          String   @default("flashcard")
+}
+
+model Score {
+  id        Int      @id @default(autoincrement())
+  tipoQuiz  String
+  pontuacao Int
+  data      DateTime @default(now())
+}
