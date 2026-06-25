@@ -136,6 +136,7 @@ model ReviewState {
   repeticoes      Int      @default(0)
   proximaRevisao  DateTime @default(now())
   ultimaRevisao   DateTime @default(now())
+  introduzidoEm   DateTime @default(now())
 
   @@unique([itemType, itemId])
 }
@@ -143,11 +144,12 @@ model ReviewState {
 // ─── Sessões e pontuações ─────────────────────────────────────────────────────
 
 model StudySession {
-  id            Int      @id @default(autoincrement())
-  data          DateTime @default(now())
-  itensRevistos Int      @default(0)
-  acertos       Int      @default(0)
-  modo          String   @default("flashcard")
+  id                 Int      @id @default(autoincrement())
+  data               DateTime @default(now())
+  itensRevistos      Int      @default(0)
+  acertos            Int      @default(0)
+  novosIntroducidos  Int      @default(0)
+  modo               String   @default("flashcard")
 }
 
 model Score {
