@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/prisma"
 import VerbosClient from "./VerbosClient"
+export const dynamic = "force-dynamic";
 
 type ConjugacoesTipo = {
   prasens: Record<string, string>

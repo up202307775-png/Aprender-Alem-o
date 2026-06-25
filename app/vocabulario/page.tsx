@@ -1,6 +1,8 @@
 import { prisma } from "@/lib/prisma"
 import VocabClient from "./VocabClient"
 
+export const dynamic = "force-dynamic";
+
 export default async function VocabularioPage() {
   const [palavras, estados] = await Promise.all([
     prisma.word.findMany({ orderBy: [{ tema: "asc" }, { alemao: "asc" }] }),

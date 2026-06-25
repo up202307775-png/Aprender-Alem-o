@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/prisma"
 import FalaClient from "./FalaClient"
+export const dynamic = "force-dynamic";
 
 type Turno = { papel: string; texto: string; traducao: string }
 

@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/prisma"
 import QuizClient from "./QuizClient"
+export const dynamic = "force-dynamic";
 
 type ExercicioMC = {
   id: number

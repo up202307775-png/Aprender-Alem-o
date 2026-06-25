@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/prisma"
 import GramaticaClient from "./GramaticaClient"
+export const dynamic = "force-dynamic";
 
 type Exercicio = {
   id: number
