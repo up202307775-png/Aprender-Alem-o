@@ -49,9 +49,11 @@ function intercalar<A, B>(arr1: A[], arr2: B[]): (A | B)[] {
   return resultado
 }
 
-// GET /api/revisao — devolve todos os itens (palavras + verbos) devidos hoje,
+// GET /api/revisao?limite=N — devolve itens devidos hoje (palavras + verbos),
 // intercalados para maximizar a aprendizagem por interleaving.
-export async function GET() {
+// O parâmetro opcional "limite" restringe o total de itens devolvidos.
+export async function GET(req: NextRequest) {
+  const limite = Number(new URL(req.url).searchParams.get("limite")) || Infinity
   await garantirEstados()
 
   const fimDoDia = new Date()
@@ -84,7 +86,7 @@ export async function GET() {
     estado: estados.find(e => e.itemType === "verb" && e.itemId === v.id)!,
   }))
 
-  const itens = intercalar(itensPalavras, itensVerbos)
+  const itens = intercalar(itensPalavras, itensVerbos).slice(0, limite)
 
   return NextResponse.json({ itens, total: itens.length })
 }
