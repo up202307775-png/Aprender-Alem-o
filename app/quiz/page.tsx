@@ -47,8 +47,8 @@ export default async function QuizPage() {
   const dadosPalavras = palavras.map(p => ({
     id: p.id,
     alemao: p.alemao,
-    artigo: p.artigo,
-    genero: p.genero,
+    artigo: p.artigo ?? "",
+    genero: p.genero ?? "",
     raiz: p.raiz,
     traducaoPt: p.traducaoPt,
     exemplo: p.exemplo,
