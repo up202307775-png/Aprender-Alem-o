@@ -197,12 +197,20 @@ function CartaoVerbo({ verbo }: { verbo: VerbData }) {
 // ─── Componente principal ─────────────────────────────────────────────────────
 
 export default function VerbosClient({ verbos }: { verbos: VerbData[] }) {
-  const [filtro, setFiltro] = useState<"todos" | "separavel" | "irregular">("todos")
+  const [filtroTipo, setFiltroTipo] = useState<"todos" | "separavel" | "irregular">("todos")
+  const [filtroNivel, setFiltroNivel] = useState("todos")
+
+  // Níveis presentes nos verbos (ordenados)
+  const ORDEM_NIVEIS = ["A1", "A2", "B1", "B2", "C1", "C2"]
+  const niveisPresentes = ["todos", ...ORDEM_NIVEIS.filter(n => verbos.some(v => v.nivel === n))]
 
   const verbosFiltrados = verbos.filter(v => {
-    if (filtro === "separavel") return v.separavel
-    if (filtro === "irregular") return v.irregular
-    return true
+    const passaTipo =
+      filtroTipo === "todos" ||
+      (filtroTipo === "separavel" && v.separavel) ||
+      (filtroTipo === "irregular" && v.irregular)
+    const passaNivel = filtroNivel === "todos" || v.nivel === filtroNivel
+    return passaTipo && passaNivel
   })
 
   return (
@@ -213,6 +221,41 @@ export default function VerbosClient({ verbos }: { verbos: VerbData[] }) {
         <div className="flex items-center gap-3 mb-6">
           <Link href="/" className="text-gray-400 hover:text-gray-600 text-sm">← Início</Link>
           <h1 className="text-2xl font-bold text-gray-800">Verbos</h1>
+          <span className="text-sm text-gray-400">{verbosFiltrados.length} verbos</span>
+        </div>
+
+        {/* Filtro por nível CEFR */}
+        <div className="flex gap-2 overflow-x-auto pb-1 mb-3 scrollbar-hide">
+          {niveisPresentes.map(n => (
+            <button
+              key={n}
+              onClick={() => setFiltroNivel(n)}
+              className={`shrink-0 px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                filtroNivel === n
+                  ? "bg-blue-600 text-white"
+                  : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300"
+              }`}
+            >
+              {n === "todos" ? "Todos os níveis" : <NivelBadge nivel={n} />}
+            </button>
+          ))}
+        </div>
+
+        {/* Filtros por tipo */}
+        <div className="flex gap-2 mb-4">
+          {(["todos", "separavel", "irregular"] as const).map(f => (
+            <button
+              key={f}
+              onClick={() => setFiltroTipo(f)}
+              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                filtroTipo === f
+                  ? "bg-purple-600 text-white"
+                  : "bg-white text-gray-600 border border-gray-200 hover:border-purple-300"
+              }`}
+            >
+              {f === "todos" ? "Todos" : f === "separavel" ? "Separáveis" : "Irregulares"}
+            </button>
+          ))}
         </div>
 
         {/* Legenda */}
@@ -229,23 +272,6 @@ export default function VerbosClient({ verbos }: { verbos: VerbData[] }) {
             <span className="w-2 h-2 rounded-full bg-purple-600 inline-block" />
             prefixo separável
           </span>
-        </div>
-
-        {/* Filtros */}
-        <div className="flex gap-2 mb-6">
-          {(["todos", "separavel", "irregular"] as const).map(f => (
-            <button
-              key={f}
-              onClick={() => setFiltro(f)}
-              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                filtro === f
-                  ? "bg-blue-600 text-white"
-                  : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300"
-              }`}
-            >
-              {f === "todos" ? "Todos" : f === "separavel" ? "Separáveis" : "Irregulares"}
-            </button>
-          ))}
         </div>
 
         {/* Lista */}

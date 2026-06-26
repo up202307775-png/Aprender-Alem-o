@@ -154,13 +154,35 @@ function CartaoVocab({
 
 // ─── Componente principal ─────────────────────────────────────────────────────
 
+// Nível dominante (mais frequente) de cada tema
+function nivelDominantePorTema(palavras: PalavraData[]): Map<string, string> {
+  const contagens = new Map<string, Map<string, number>>()
+  for (const p of palavras) {
+    if (!p.tema || !p.nivel) continue
+    if (!contagens.has(p.tema)) contagens.set(p.tema, new Map())
+    const m = contagens.get(p.tema)!
+    m.set(p.nivel, (m.get(p.nivel) ?? 0) + 1)
+  }
+  const resultado = new Map<string, string>()
+  for (const [tema, niveis] of contagens) {
+    let melhor = ""
+    let max = 0
+    for (const [nivel, count] of niveis) {
+      if (count > max) { max = count; melhor = nivel }
+    }
+    resultado.set(tema, melhor)
+  }
+  return resultado
+}
+
 export default function VocabClient({ palavras }: { palavras: PalavraData[] }) {
   const [filtroTema, setFiltroTema] = useState("todos")
   const [expandidos, setExpandidos] = useState<Set<number>>(new Set())
   const [revistos, setRevistos] = useState<Set<number>>(new Set())
 
-  // Lista de temas únicos
+  // Lista de temas únicos ordenada; nível dominante por tema
   const temas = ["todos", ...Array.from(new Set(palavras.map(p => p.tema).filter(Boolean))).sort()]
+  const nivelPorTema = nivelDominantePorTema(palavras)
 
   const palavrasFiltradas =
     filtroTema === "todos" ? palavras : palavras.filter(p => p.tema === filtroTema)
@@ -202,21 +224,26 @@ export default function VocabClient({ palavras }: { palavras: PalavraData[] }) {
           <h1 className="text-2xl font-bold text-gray-800">Vocabulário</h1>
         </div>
 
-        {/* Filtros por tema */}
+        {/* Filtros por tema com badge de nível */}
         <div className="flex gap-2 overflow-x-auto pb-2 mb-6 scrollbar-hide">
-          {temas.map(tema => (
-            <button
-              key={tema}
-              onClick={() => setFiltroTema(tema)}
-              className={`shrink-0 px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                filtroTema === tema
-                  ? "bg-blue-600 text-white"
-                  : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300"
-              }`}
-            >
-              {tema}
-            </button>
-          ))}
+          {temas.map(tema => {
+            const nivel = tema !== "todos" ? nivelPorTema.get(tema) : undefined
+            const ativo = filtroTema === tema
+            return (
+              <button
+                key={tema}
+                onClick={() => setFiltroTema(tema)}
+                className={`shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                  ativo
+                    ? "bg-blue-600 text-white"
+                    : "bg-white text-gray-600 border border-gray-200 hover:border-blue-300"
+                }`}
+              >
+                {nivel && !ativo && <NivelBadge nivel={nivel} />}
+                {tema}
+              </button>
+            )
+          })}
         </div>
 
         {/* Contador */}
