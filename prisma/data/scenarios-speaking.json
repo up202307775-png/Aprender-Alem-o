@@ -1,0 +1,788 @@
+[
+  {
+    "id": 1, "nivel": "A1", "titulo": "Apresentação pessoal",
+    "contexto": "Primeiro dia numa aula de alemão. Dois colegas apresentam-se.",
+    "interlocutores": ["Anna", "Pedro"],
+    "turnos": [
+      { "pessoa": "Anna", "fala": "Hallo! Ich heiße Anna. Wie heißt du?", "traducao": "Olá! Chamo-me Anna. Como te chamas?" },
+      { "pessoa": "Pedro", "fala": "Ich heiße Pedro. Ich komme aus Portugal. Und du?", "traducao": "Chamo-me Pedro. Sou de Portugal. E tu?" },
+      { "pessoa": "Anna", "fala": "Ich komme aus Deutschland. Ich bin 25 Jahre alt.", "traducao": "Sou da Alemanha. Tenho 25 anos." },
+      { "pessoa": "Pedro", "fala": "Ich bin 22 Jahre alt. Schön, dich kennenzulernen!", "traducao": "Tenho 22 anos. Prazer em conhecer-te!" }
+    ],
+    "vocabulario_chave": ["heißen", "kommen aus", "Jahre alt", "kennenzulernen"],
+    "gramatica": ["presente do indicativo", "pronomes pessoais nominativo"]
+  },
+  {
+    "id": 2, "nivel": "A1", "titulo": "No café — pedir uma bebida",
+    "contexto": "Um turista entra num café e pede algo para beber.",
+    "interlocutores": ["Kellner", "Gast"],
+    "turnos": [
+      { "pessoa": "Kellner", "fala": "Guten Tag! Was möchten Sie trinken?", "traducao": "Boa tarde! O que deseja beber?" },
+      { "pessoa": "Gast", "fala": "Einen Kaffee, bitte.", "traducao": "Um café, por favor." },
+      { "pessoa": "Kellner", "fala": "Mit Milch oder ohne?", "traducao": "Com leite ou sem?" },
+      { "pessoa": "Gast", "fala": "Mit Milch, bitte. Und ein Glas Wasser.", "traducao": "Com leite, por favor. E um copo de água." },
+      { "pessoa": "Kellner", "fala": "Sofort!", "traducao": "Já a trazer!" }
+    ],
+    "vocabulario_chave": ["möchten", "trinken", "mit", "ohne", "bitte"],
+    "gramatica": ["Akkusativ do artigo indefinido (einen/eine/ein)", "möchten como forma de cortesia"]
+  },
+  {
+    "id": 3, "nivel": "A1", "titulo": "Pedir indicações na rua",
+    "contexto": "Um turista está perdido e pede ajuda a um transeunte.",
+    "interlocutores": ["Tourist", "Passant"],
+    "turnos": [
+      { "pessoa": "Tourist", "fala": "Entschuldigung! Wo ist der Bahnhof, bitte?", "traducao": "Com licença! Onde fica a estação, por favor?" },
+      { "pessoa": "Passant", "fala": "Der Bahnhof? Gehen Sie geradeaus und dann links.", "traducao": "A estação? Vá em frente e depois à esquerda." },
+      { "pessoa": "Tourist", "fala": "Ist das weit?", "traducao": "É longe?" },
+      { "pessoa": "Passant", "fala": "Nein, nur fünf Minuten zu Fuß.", "traducao": "Não, só cinco minutos a pé." },
+      { "pessoa": "Tourist", "fala": "Vielen Dank!", "traducao": "Muito obrigado!" }
+    ],
+    "vocabulario_chave": ["Entschuldigung", "geradeaus", "links", "rechts", "zu Fuß"],
+    "gramatica": ["imperativo formal (Sie)", "Dativ com preposições de lugar"]
+  },
+  {
+    "id": 4, "nivel": "A1", "titulo": "Apresentar a família",
+    "contexto": "Uma criança mostra uma foto da família a um colega.",
+    "interlocutores": ["Kind A", "Kind B"],
+    "turnos": [
+      { "pessoa": "Kind A", "fala": "Das ist meine Familie. Das ist meine Mutter.", "traducao": "Esta é a minha família. Esta é a minha mãe." },
+      { "pessoa": "Kind B", "fala": "Wie heißt sie?", "traducao": "Como se chama ela?" },
+      { "pessoa": "Kind A", "fala": "Sie heißt Maria. Und das ist mein Vater. Er heißt Thomas.", "traducao": "Chama-se Maria. E este é o meu pai. Chama-se Thomas." },
+      { "pessoa": "Kind B", "fala": "Hast du Geschwister?", "traducao": "Tens irmãos?" },
+      { "pessoa": "Kind A", "fala": "Ja, ich habe eine Schwester. Sie ist drei Jahre alt.", "traducao": "Sim, tenho uma irmã. Ela tem três anos." }
+    ],
+    "vocabulario_chave": ["Familie", "Mutter", "Vater", "Geschwister", "Schwester"],
+    "gramatica": ["possessivos (mein/meine)", "haben no presente"]
+  },
+  {
+    "id": 5, "nivel": "A1", "titulo": "Fazer compras — roupa",
+    "contexto": "Numa loja de roupa. O cliente procura uma camisola.",
+    "interlocutores": ["Verkäuferin", "Kunde"],
+    "turnos": [
+      { "pessoa": "Verkäuferin", "fala": "Kann ich Ihnen helfen?", "traducao": "Posso ajudá-lo?" },
+      { "pessoa": "Kunde", "fala": "Ja, ich suche einen Pullover.", "traducao": "Sim, procuro uma camisola." },
+      { "pessoa": "Verkäuferin", "fala": "Welche Farbe?", "traducao": "De que cor?" },
+      { "pessoa": "Kunde", "fala": "Blau, bitte. Haben Sie Größe M?", "traducao": "Azul, por favor. Tem tamanho M?" },
+      { "pessoa": "Verkäuferin", "fala": "Ja, hier ist er. Möchten Sie ihn anprobieren?", "traducao": "Sim, aqui está. Quer experimentar?" }
+    ],
+    "vocabulario_chave": ["suchen", "Farbe", "Größe", "anprobieren", "Pullover"],
+    "gramatica": ["Akkusativ (einen Pullover)", "pronome de substituição (ihn)"]
+  },
+  {
+    "id": 6, "nivel": "A1", "titulo": "Na consulta médica — sintomas simples",
+    "contexto": "Primeira consulta. O médico pergunta ao paciente como se sente.",
+    "interlocutores": ["Arzt", "Patient"],
+    "turnos": [
+      { "pessoa": "Arzt", "fala": "Guten Morgen. Was fehlt Ihnen?", "traducao": "Bom dia. O que é que tem?" },
+      { "pessoa": "Patient", "fala": "Ich habe Kopfschmerzen und Fieber.", "traducao": "Tenho dores de cabeça e febre." },
+      { "pessoa": "Arzt", "fala": "Seit wann haben Sie diese Beschwerden?", "traducao": "Desde quando tem estes sintomas?" },
+      { "pessoa": "Patient", "fala": "Seit gestern.", "traducao": "Desde ontem." },
+      { "pessoa": "Arzt", "fala": "Ich schreibe Ihnen ein Rezept.", "traducao": "Vou passar-lhe uma receita." }
+    ],
+    "vocabulario_chave": ["Kopfschmerzen", "Fieber", "seit", "Rezept", "Beschwerden"],
+    "gramatica": ["haben + substantivo composto", "seit + Dativ"]
+  },
+  {
+    "id": 7, "nivel": "A1", "titulo": "No supermercado — encontrar produtos",
+    "contexto": "Um cliente pede ajuda para encontrar produtos.",
+    "interlocutores": ["Kunde", "Mitarbeiter"],
+    "turnos": [
+      { "pessoa": "Kunde", "fala": "Entschuldigung, wo finde ich die Milch?", "traducao": "Com licença, onde encontro o leite?" },
+      { "pessoa": "Mitarbeiter", "fala": "Die Milch ist im dritten Gang, rechts.", "traducao": "O leite está no terceiro corredor, à direita." },
+      { "pessoa": "Kunde", "fala": "Und das Brot?", "traducao": "E o pão?" },
+      { "pessoa": "Mitarbeiter", "fala": "Das Brot finden Sie vorne, neben der Kasse.", "traducao": "O pão encontra-o à frente, ao lado da caixa." },
+      { "pessoa": "Kunde", "fala": "Danke schön!", "traducao": "Muito obrigado!" }
+    ],
+    "vocabulario_chave": ["finden", "Gang", "rechts", "links", "neben", "Kasse"],
+    "gramatica": ["Dativ com neben/vor/hinter", "ordinal números (dritten)"]
+  },
+  {
+    "id": 8, "nivel": "A1", "titulo": "Marcar uma hora — telefonema simples",
+    "contexto": "Telefonema para marcar um encontro com um amigo.",
+    "interlocutores": ["Felix", "Lena"],
+    "turnos": [
+      { "pessoa": "Felix", "fala": "Hallo Lena! Hast du am Samstag Zeit?", "traducao": "Olá Lena! Tens tempo no sábado?" },
+      { "pessoa": "Lena", "fala": "Ja, ich bin frei. Warum?", "traducao": "Sim, estou livre. Porquê?" },
+      { "pessoa": "Felix", "fala": "Möchtest du ins Kino gehen?", "traducao": "Queres ir ao cinema?" },
+      { "pessoa": "Lena", "fala": "Gern! Um wie viel Uhr?", "traducao": "Com prazer! A que horas?" },
+      { "pessoa": "Felix", "fala": "Um 19 Uhr, vor dem Kino.", "traducao": "Às 19 horas, em frente ao cinema." }
+    ],
+    "vocabulario_chave": ["Zeit haben", "frei sein", "um wie viel Uhr", "vor", "Kino"],
+    "gramatica": ["Uhrzeit (um + Uhrzeit)", "Dativ com vor"]
+  },
+  {
+    "id": 9, "nivel": "A1", "titulo": "No hotel — check-in",
+    "contexto": "Chegada a um hotel. O rececionista faz o check-in.",
+    "interlocutores": ["Rezeptionist", "Gast"],
+    "turnos": [
+      { "pessoa": "Rezeptionist", "fala": "Guten Abend! Haben Sie eine Reservierung?", "traducao": "Boa noite! Tem uma reserva?" },
+      { "pessoa": "Gast", "fala": "Ja, auf den Namen Silva.", "traducao": "Sim, em nome de Silva." },
+      { "pessoa": "Rezeptionist", "fala": "Ein Einzelzimmer für drei Nächte, richtig?", "traducao": "Um quarto individual por três noites, correto?" },
+      { "pessoa": "Gast", "fala": "Ja, genau. Hat das Zimmer WLAN?", "traducao": "Sim, exatamente. O quarto tem Wi-Fi?" },
+      { "pessoa": "Rezeptionist", "fala": "Ja, natürlich. Das Passwort steht auf der Karte.", "traducao": "Sim, claro. A senha está no cartão." }
+    ],
+    "vocabulario_chave": ["Reservierung", "Einzelzimmer", "Nächte", "WLAN", "Passwort"],
+    "gramatica": ["Akkusativ (eine Reservierung)", "haben + Substantiv"]
+  },
+  {
+    "id": 10, "nivel": "A1", "titulo": "Apresentar-se num contexto formal",
+    "contexto": "Primeiro dia de trabalho. O novo funcionário apresenta-se à equipa.",
+    "interlocutores": ["Neuer Mitarbeiter", "Chefin"],
+    "turnos": [
+      { "pessoa": "Chefin", "fala": "Willkommen! Bitte stellen Sie sich kurz vor.", "traducao": "Bem-vindo! Por favor apresente-se brevemente." },
+      { "pessoa": "Neuer Mitarbeiter", "fala": "Mein Name ist Carlos Dias. Ich komme aus Portugal.", "traducao": "O meu nome é Carlos Dias. Sou de Portugal." },
+      { "pessoa": "Neuer Mitarbeiter", "fala": "Ich bin Ingenieur und arbeite seit fünf Jahren im IT-Bereich.", "traducao": "Sou engenheiro e trabalho há cinco anos na área de TI." },
+      { "pessoa": "Chefin", "fala": "Sehr gut! Herzlich willkommen im Team.", "traducao": "Muito bem! Bem-vindo à equipa." }
+    ],
+    "vocabulario_chave": ["sich vorstellen", "Mein Name ist", "seit", "Bereich", "willkommen"],
+    "gramatica": ["sich vorstellen (reflexivo)", "seit + Dativ para duração"]
+  },
+  {
+    "id": 11, "nivel": "A2", "titulo": "Na estação de comboios — comprar bilhete",
+    "contexto": "Um viajante compra um bilhete de comboio para outra cidade.",
+    "interlocutores": ["Reisender", "Schaltermitarbeiter"],
+    "turnos": [
+      { "pessoa": "Reisender", "fala": "Einen Fahrschein nach München, bitte. Einfache Fahrt.", "traducao": "Um bilhete para Munique, por favor. Só de ida." },
+      { "pessoa": "Schaltermitarbeiter", "fala": "Wann möchten Sie fahren?", "traducao": "Quando quer viajar?" },
+      { "pessoa": "Reisender", "fala": "Heute Nachmittag, möglichst um 14 Uhr.", "traducao": "Esta tarde, se possível às 14 horas." },
+      { "pessoa": "Schaltermitarbeiter", "fala": "Es gibt einen ICE um 14:23. Kostet 45 Euro.", "traducao": "Há um ICE às 14:23. Custa 45 euros." },
+      { "pessoa": "Reisender", "fala": "Gut. Ich zahle mit Karte.", "traducao": "Ótimo. Pago com cartão." }
+    ],
+    "vocabulario_chave": ["Fahrschein", "einfache Fahrt", "möglichst", "ICE", "zahlen"],
+    "gramatica": ["Akkusativ de destino (nach + Stadtname)", "möchten + Infinitiv"]
+  },
+  {
+    "id": 12, "nivel": "A2", "titulo": "Conversa sobre o tempo livre",
+    "contexto": "Dois colegas de trabalho conversam durante a pausa do almoço.",
+    "interlocutores": ["Sara", "Tom"],
+    "turnos": [
+      { "pessoa": "Sara", "fala": "Was machst du in deiner Freizeit?", "traducao": "O que fazes no teu tempo livre?" },
+      { "pessoa": "Tom", "fala": "Ich treibe viel Sport. Ich spiele Fußball und schwimme gern.", "traducao": "Faço muito desporto. Jogo futebol e gosto de nadar." },
+      { "pessoa": "Sara", "fala": "Und am Wochenende?", "traducao": "E ao fim de semana?" },
+      { "pessoa": "Tom", "fala": "Meistens treffe ich mich mit Freunden oder ich lese.", "traducao": "Maioritariamente encontro-me com amigos ou leio." },
+      { "pessoa": "Sara", "fala": "Ich auch! Was liest du gern?", "traducao": "Eu também! O que gostas de ler?" }
+    ],
+    "vocabulario_chave": ["Freizeit", "Sport treiben", "meistens", "sich treffen", "gern"],
+    "gramatica": ["verbos reflexivos (sich treffen)", "advérbios de frequência (meistens, oft)"]
+  },
+  {
+    "id": 13, "nivel": "A2", "titulo": "Alugar um apartamento — visita",
+    "contexto": "Uma pessoa visita um apartamento para arrendar.",
+    "interlocutores": ["Mieter", "Vermieter"],
+    "turnos": [
+      { "pessoa": "Vermieter", "fala": "Herzlich willkommen! Hier ist das Wohnzimmer.", "traducao": "Bem-vindo! Aqui está a sala de estar." },
+      { "pessoa": "Mieter", "fala": "Sehr schön. Ist die Küche ausgestattet?", "traducao": "Muito bonito. A cozinha está equipada?" },
+      { "pessoa": "Vermieter", "fala": "Ja, mit Kühlschrank und Herd. Aber ohne Waschmaschine.", "traducao": "Sim, com frigorífico e fogão. Mas sem máquina de lavar." },
+      { "pessoa": "Mieter", "fala": "Was kostet die Miete pro Monat?", "traducao": "Quanto custa a renda por mês?" },
+      { "pessoa": "Vermieter", "fala": "850 Euro warm, inklusive Nebenkosten.", "traducao": "850 euros com aquecimento, incluindo despesas." }
+    ],
+    "vocabulario_chave": ["ausgestattet", "Kühlschrank", "Miete", "warm", "Nebenkosten"],
+    "gramatica": ["aber como adversativo", "ohne + Akkusativ", "inklusive"]
+  },
+  {
+    "id": 14, "nivel": "A2", "titulo": "Planos para o fim de semana",
+    "contexto": "Conversa entre amigos sobre o que vão fazer no fim de semana.",
+    "interlocutores": ["Julia", "Markus"],
+    "turnos": [
+      { "pessoa": "Julia", "fala": "Was hast du am Wochenende vor?", "traducao": "O que tencionas fazer ao fim de semana?" },
+      { "pessoa": "Markus", "fala": "Ich werde meine Eltern besuchen. Und du?", "traducao": "Vou visitar os meus pais. E tu?" },
+      { "pessoa": "Julia", "fala": "Ich weiß noch nicht. Vielleicht gehe ich ins Museum.", "traducao": "Ainda não sei. Talvez vá ao museu." },
+      { "pessoa": "Markus", "fala": "Das klingt gut! Welches Museum?", "traducao": "Parece bem! Qual museu?" },
+      { "pessoa": "Julia", "fala": "Das Kunstmuseum. Es gibt eine neue Ausstellung.", "traducao": "O museu de arte. Há uma nova exposição." }
+    ],
+    "vocabulario_chave": ["vorhaben", "werden + Infinitiv", "vielleicht", "klingen", "Ausstellung"],
+    "gramatica": ["Futur I (werden + Infinitiv)", "vorhaben como separável"]
+  },
+  {
+    "id": 15, "nivel": "A2", "titulo": "Descrever a rotina diária",
+    "contexto": "Entrevista para uma reportagem sobre hábitos quotidianos.",
+    "interlocutores": ["Journalist", "Interviewte"],
+    "turnos": [
+      { "pessoa": "Journalist", "fala": "Wie sieht Ihr Alltag aus?", "traducao": "Como é o seu quotidiano?" },
+      { "pessoa": "Interviewte", "fala": "Ich stehe um halb sieben auf und frühstücke dann.", "traducao": "Levanto-me às seis e meia e depois tomo o pequeno-almoço." },
+      { "pessoa": "Journalist", "fala": "Wie kommen Sie zur Arbeit?", "traducao": "Como vai para o trabalho?" },
+      { "pessoa": "Interviewte", "fala": "Meistens mit dem Fahrrad. Es dauert nur zwanzig Minuten.", "traducao": "Maioritariamente de bicicleta. Demora só vinte minutos." },
+      { "pessoa": "Journalist", "fala": "Und nach der Arbeit?", "traducao": "E depois do trabalho?" },
+      { "pessoa": "Interviewte", "fala": "Ich koche und lese ein bisschen. Ich schlafe früh ein.", "traducao": "Cozinho e leio um pouco. Adormeço cedo." }
+    ],
+    "vocabulario_chave": ["aufstehen", "frühstücken", "dauern", "einschlafen", "Alltag"],
+    "gramatica": ["verbos separáveis (aufstehen, einschlafen)", "halb + hora"]
+  },
+  {
+    "id": 16, "nivel": "A2", "titulo": "No restaurante — pedir e reclamar",
+    "contexto": "Um casal num restaurante. A comida não está conforme o pedido.",
+    "interlocutores": ["Kellner", "Gast"],
+    "turnos": [
+      { "pessoa": "Gast", "fala": "Entschuldigung, ich habe das Steak medium bestellt, aber es ist durch.", "traducao": "Com licença, pedi o bife ao ponto, mas está bem passado." },
+      { "pessoa": "Kellner", "fala": "Das tut mir leid. Ich bringe Ihnen sofort ein neues.", "traducao": "Lamento muito. Trago-lhe um novo de imediato." },
+      { "pessoa": "Gast", "fala": "Danke. Und können wir noch Brot bekommen?", "traducao": "Obrigado. E podemos ter mais pão?" },
+      { "pessoa": "Kellner", "fala": "Natürlich, sofort. Möchten Sie auch etwas trinken?", "traducao": "Claro, já a vir. Quer também beber algo?" }
+    ],
+    "vocabulario_chave": ["bestellen", "durch", "medium", "tut mir leid", "sofort"],
+    "gramatica": ["Perfekt (habe bestellt)", "können para pedidos"]
+  },
+  {
+    "id": 17, "nivel": "A2", "titulo": "Telefone — marcar consulta médica",
+    "contexto": "Telefonema para marcar uma consulta com o médico de família.",
+    "interlocutores": ["Praxishelferin", "Patient"],
+    "turnos": [
+      { "pessoa": "Praxishelferin", "fala": "Praxis Dr. Müller, guten Morgen!", "traducao": "Consultório Dr. Müller, bom dia!" },
+      { "pessoa": "Patient", "fala": "Guten Morgen. Ich möchte einen Termin machen.", "traducao": "Bom dia. Gostaria de marcar uma consulta." },
+      { "pessoa": "Praxishelferin", "fala": "Wann passt es Ihnen?", "traducao": "Quando lhe convém?" },
+      { "pessoa": "Patient", "fala": "Möglichst bald. Ich habe starke Halsschmerzen.", "traducao": "O mais depressa possível. Tenho dores fortes de garganta." },
+      { "pessoa": "Praxishelferin", "fala": "Können Sie morgen früh um 9 Uhr kommen?", "traducao": "Pode vir amanhã de manhã às 9 horas?" }
+    ],
+    "vocabulario_chave": ["Termin", "passen", "möglichst bald", "Halsschmerzen", "können"],
+    "gramatica": ["Dativ com passen (Ihnen)", "möglichst + Superlativ (bald)"]
+  },
+  {
+    "id": 18, "nivel": "A2", "titulo": "Conversa sobre o trabalho",
+    "contexto": "Dois conhecidos encontram-se e conversam sobre a vida profissional.",
+    "interlocutores": ["Petra", "Hans"],
+    "turnos": [
+      { "pessoa": "Petra", "fala": "Was machst du beruflich?", "traducao": "O que fazes profissionalmente?" },
+      { "pessoa": "Hans", "fala": "Ich bin Lehrer. Ich unterrichte Mathematik an einer Grundschule.", "traducao": "Sou professor. Ensino Matemática numa escola primária." },
+      { "pessoa": "Petra", "fala": "Macht dir das Spaß?", "traducao": "Gostas?" },
+      { "pessoa": "Hans", "fala": "Ja, sehr! Die Kinder sind toll. Und du, was arbeitest du?", "traducao": "Sim, muito! As crianças são fantásticas. E tu, em que trabalhas?" },
+      { "pessoa": "Petra", "fala": "Ich arbeite als Ärztin in einem Krankenhaus.", "traducao": "Trabalho como médica num hospital." }
+    ],
+    "vocabulario_chave": ["beruflich", "unterrichten", "Spaß machen", "als + Beruf", "Krankenhaus"],
+    "gramatica": ["als + profissão (sem artigo)", "Dativ com in einem"]
+  },
+  {
+    "id": 19, "nivel": "A2", "titulo": "Na farmácia",
+    "contexto": "Uma pessoa vai à farmácia com uma receita e pede conselho.",
+    "interlocutores": ["Apothekerin", "Kunde"],
+    "turnos": [
+      { "pessoa": "Kunde", "fala": "Guten Tag, ich habe ein Rezept.", "traducao": "Boa tarde, tenho uma receita." },
+      { "pessoa": "Apothekerin", "fala": "Moment, ich schaue nach… Das sind Antibiotika.", "traducao": "Um momento, vejo… São antibióticos." },
+      { "pessoa": "Kunde", "fala": "Wie oft muss ich sie nehmen?", "traducao": "Com que frequência os devo tomar?" },
+      { "pessoa": "Apothekerin", "fala": "Dreimal täglich, nach dem Essen. Und immer mit viel Wasser.", "traducao": "Três vezes por dia, após as refeições. E sempre com muita água." },
+      { "pessoa": "Kunde", "fala": "Gibt es Nebenwirkungen?", "traducao": "Há efeitos secundários?" }
+    ],
+    "vocabulario_chave": ["Rezept", "Antibiotika", "täglich", "nach dem Essen", "Nebenwirkungen"],
+    "gramatica": ["müssen + Infinitiv", "Häufigkeit (dreimal täglich)"]
+  },
+  {
+    "id": 20, "nivel": "A2", "titulo": "Convidar para uma festa",
+    "contexto": "Uma pessoa convida um amigo para a sua festa de aniversário.",
+    "interlocutores": ["Mia", "Jonas"],
+    "turnos": [
+      { "pessoa": "Mia", "fala": "Ich feiere am Freitag Geburtstag. Kannst du kommen?", "traducao": "Faço anos na sexta-feira. Podes vir?" },
+      { "pessoa": "Jonas", "fala": "Oh, herzlichen Glückwunsch! Um wie viel Uhr fängt es an?", "traducao": "Oh, parabéns! A que horas começa?" },
+      { "pessoa": "Mia", "fala": "Um 19 Uhr. Bring einfach gute Laune mit!", "traducao": "Às 19 horas. Traz apenas boa disposição!" },
+      { "pessoa": "Jonas", "fala": "Gern! Soll ich etwas mitbringen?", "traducao": "Com prazer! Devo trazer alguma coisa?" },
+      { "pessoa": "Mia", "fala": "Wenn du möchtest, einen Salat oder Wein.", "traducao": "Se quiseres, uma salada ou vinho." }
+    ],
+    "vocabulario_chave": ["feiern", "anfangen", "mitbringen", "gute Laune", "wenn"],
+    "gramatica": ["anfangen como separável (fängt an)", "wenn + Konjunktiv (wenn du möchtest)"]
+  },
+  {
+    "id": 21, "nivel": "A2", "titulo": "Reclamar sobre barulho na vizinhança",
+    "contexto": "Um residente fala com o vizinho sobre barulho nocturno.",
+    "interlocutores": ["Bewohner A", "Bewohner B"],
+    "turnos": [
+      { "pessoa": "Bewohner A", "fala": "Guten Abend. Ich muss Sie etwas fragen.", "traducao": "Boa noite. Tenho de lhe perguntar uma coisa." },
+      { "pessoa": "Bewohner B", "fala": "Ja, natürlich. Was ist los?", "traducao": "Sim, claro. O que se passa?" },
+      { "pessoa": "Bewohner A", "fala": "Die Musik war letzte Nacht sehr laut. Ich konnte nicht schlafen.", "traducao": "A música estava muito alta ontem à noite. Não consegui dormir." },
+      { "pessoa": "Bewohner B", "fala": "Oh, das tut mir wirklich leid. Das passiert nicht wieder.", "traducao": "Oh, lamento muito. Não volta a acontecer." }
+    ],
+    "vocabulario_chave": ["Was ist los?", "letzte Nacht", "laut", "konnte nicht", "wieder"],
+    "gramatica": ["Präteritum de können (konnte)", "Negação mit nicht + Infinitiv"]
+  },
+  {
+    "id": 22, "nivel": "A2", "titulo": "No banco — abrir uma conta",
+    "contexto": "Um estudante estrangeiro quer abrir uma conta bancária.",
+    "interlocutores": ["Bankangestellte", "Student"],
+    "turnos": [
+      { "pessoa": "Bankangestellte", "fala": "Was kann ich für Sie tun?", "traducao": "O que posso fazer por si?" },
+      { "pessoa": "Student", "fala": "Ich möchte ein Konto eröffnen.", "traducao": "Gostaria de abrir uma conta." },
+      { "pessoa": "Bankangestellte", "fala": "Haben Sie Ihren Personalausweis dabei?", "traducao": "Tem o seu documento de identidade consigo?" },
+      { "pessoa": "Student", "fala": "Ja, hier ist mein Reisepass.", "traducao": "Sim, aqui está o meu passaporte." },
+      { "pessoa": "Bankangestellte", "fala": "Gut. Bitte füllen Sie dieses Formular aus.", "traducao": "Ótimo. Por favor preencha este formulário." }
+    ],
+    "vocabulario_chave": ["Konto eröffnen", "Personalausweis", "dabei haben", "Reisepass", "Formular ausfüllen"],
+    "gramatica": ["dabei haben (ter consigo)", "ausfüllen como separável"]
+  },
+  {
+    "id": 23, "nivel": "B1", "titulo": "Entrevista de emprego",
+    "contexto": "Candidato numa entrevista para uma posição de marketing.",
+    "interlocutores": ["Personalleiterin", "Bewerber"],
+    "turnos": [
+      { "pessoa": "Personalleiterin", "fala": "Erzählen Sie mir von Ihrer bisherigen Berufserfahrung.", "traducao": "Fale-me da sua experiência profissional até agora." },
+      { "pessoa": "Bewerber", "fala": "Ich habe drei Jahre als Marketing-Manager gearbeitet. Dabei habe ich Kampagnen für europäische Märkte geleitet.", "traducao": "Trabalhei três anos como gestor de marketing. Nesse contexto, dirigi campanhas para mercados europeus." },
+      { "pessoa": "Personalleiterin", "fala": "Was sind Ihre größten Stärken?", "traducao": "Quais são os seus pontos fortes?" },
+      { "pessoa": "Bewerber", "fala": "Ich bin sehr teamfähig und arbeite gern kreativ. Außerdem spreche ich vier Sprachen.", "traducao": "Trabalho muito bem em equipa e gosto de trabalhar criativamente. Além disso, falo quatro línguas." },
+      { "pessoa": "Personalleiterin", "fala": "Warum möchten Sie in unser Unternehmen wechseln?", "traducao": "Por que razão quer mudar para a nossa empresa?" }
+    ],
+    "vocabulario_chave": ["Berufserfahrung", "leiten", "teamfähig", "Stärken", "wechseln"],
+    "gramatica": ["Perfekt para experiência passada", "Nebensatz com dabei"]
+  },
+  {
+    "id": 24, "nivel": "B1", "titulo": "Discussão sobre um problema ambiental",
+    "contexto": "Reunião de cidadãos sobre a construção de um parque eólico.",
+    "interlocutores": ["Moderatorin", "Bürger A", "Bürger B"],
+    "turnos": [
+      { "pessoa": "Moderatorin", "fala": "Wir diskutieren heute über den geplanten Windpark. Wer möchte beginnen?", "traducao": "Discutimos hoje o parque eólico planeado. Quem quer começar?" },
+      { "pessoa": "Bürger A", "fala": "Ich finde das Projekt wichtig. Wir brauchen erneuerbare Energie, um den Klimawandel zu bekämpfen.", "traducao": "Acho o projeto importante. Precisamos de energia renovável para combater as alterações climáticas." },
+      { "pessoa": "Bürger B", "fala": "Ich verstehe das, aber der Windpark würde die Landschaft zerstören. Das ist auch ein Problem.", "traducao": "Percebo isso, mas o parque eólico destruiria a paisagem. Isso é também um problema." },
+      { "pessoa": "Moderatorin", "fala": "Gibt es Kompromissmöglichkeiten?", "traducao": "Existem possibilidades de compromisso?" }
+    ],
+    "vocabulario_chave": ["Windpark", "erneuerbar", "bekämpfen", "zerstören", "Kompromiss"],
+    "gramatica": ["Infinitiv com zu (um...zu)", "Konjunktiv II (würde + Inf.) para hipóteses"]
+  },
+  {
+    "id": 25, "nivel": "B1", "titulo": "Reclamação formal num hotel",
+    "contexto": "Hóspede faz uma reclamação formal à direção do hotel.",
+    "interlocutores": ["Hoteldirektor", "Gast"],
+    "turnos": [
+      { "pessoa": "Gast", "fala": "Ich möchte mich über meinen Aufenthalt beschweren.", "traducao": "Gostaria de apresentar uma reclamação sobre a minha estadia." },
+      { "pessoa": "Hoteldirektor", "fala": "Das tut mir sehr leid. Was ist passiert?", "traducao": "Lamento muito. O que aconteceu?" },
+      { "pessoa": "Gast", "fala": "Das Zimmer war nicht sauber, die Klimaanlage hat nicht funktioniert und das Frühstück war enttäuschend.", "traducao": "O quarto não estava limpo, o ar condicionado não funcionou e o pequeno-almoço foi decepcionante." },
+      { "pessoa": "Hoteldirektor", "fala": "Das ist inakzeptabel. Ich biete Ihnen eine Rückerstattung von 30% an.", "traducao": "Isso é inaceitável. Ofereço-lhe um reembolso de 30%." },
+      { "pessoa": "Gast", "fala": "Das finde ich fair. Danke für Ihr Verständnis.", "traducao": "Acho isso justo. Obrigado pela sua compreensão." }
+    ],
+    "vocabulario_chave": ["sich beschweren", "Aufenthalt", "enttäuschend", "inakzeptabel", "Rückerstattung"],
+    "gramatica": ["sich beschweren über + Akkusativ", "Perfekt (ist passiert, hat funktioniert)"]
+  },
+  {
+    "id": 26, "nivel": "B1", "titulo": "Conversa sobre saúde e hábitos",
+    "contexto": "Duas amigas conversam sobre mudanças de hábitos de vida.",
+    "interlocutores": ["Clara", "Nina"],
+    "turnos": [
+      { "pessoa": "Clara", "fala": "Ich habe beschlossen, gesünder zu leben. Ich esse jetzt weniger Fleisch.", "traducao": "Decidi viver de forma mais saudável. Como agora menos carne." },
+      { "pessoa": "Nina", "fala": "Das ist eine gute Idee. Ich versuche auch, mehr Sport zu machen.", "traducao": "É uma boa ideia. Também tento fazer mais desporto." },
+      { "pessoa": "Clara", "fala": "Ich jogge dreimal pro Woche. Es ist manchmal schwer, sich zu motivieren.", "traducao": "Faço jogging três vezes por semana. É às vezes difícil motivar-me." },
+      { "pessoa": "Nina", "fala": "Ich kenne das Gefühl. Deshalb mache ich Sport mit einer Freundin zusammen.", "traducao": "Conheço essa sensação. Por isso faço desporto com uma amiga." }
+    ],
+    "vocabulario_chave": ["beschließen", "versuchen", "motivieren", "kennen", "deshalb"],
+    "gramatica": ["beschließen/versuchen + zu + Infinitiv", "deshalb como conector causal"]
+  },
+  {
+    "id": 27, "nivel": "B1", "titulo": "Negociar prazo num contexto profissional",
+    "contexto": "Um funcionário pede ao seu chefe uma extensão de prazo.",
+    "interlocutores": ["Mitarbeiter", "Chef"],
+    "turnos": [
+      { "pessoa": "Mitarbeiter", "fala": "Ich wollte fragen, ob es möglich wäre, die Frist um drei Tage zu verschieben.", "traducao": "Queria perguntar se seria possível adiar o prazo três dias." },
+      { "pessoa": "Chef", "fala": "Warum? Gibt es Schwierigkeiten?", "traducao": "Porquê? Há dificuldades?" },
+      { "pessoa": "Mitarbeiter", "fala": "Ja, ich habe unerwartete Probleme mit den Daten. Ich brauche mehr Zeit für die Analyse.", "traducao": "Sim, tive problemas inesperados com os dados. Preciso de mais tempo para a análise." },
+      { "pessoa": "Chef", "fala": "Einverstanden, aber nicht länger als drei Tage. Der Kunde wartet.", "traducao": "Concordo, mas não mais de três dias. O cliente está à espera." }
+    ],
+    "vocabulario_chave": ["Frist", "verschieben", "unerwartete", "Einverstanden", "Schwierigkeiten"],
+    "gramatica": ["ob-Satz (indirete Frage)", "Konjunktiv II (wäre, wollte) para cortesia"]
+  },
+  {
+    "id": 28, "nivel": "B1", "titulo": "Falar sobre viagens passadas",
+    "contexto": "Dois amigos partilham experiências de viagens.",
+    "interlocutores": ["Max", "Sophie"],
+    "turnos": [
+      { "pessoa": "Max", "fala": "Ich war letzten Sommer in Japan. Es war unglaublich.", "traducao": "Estive no Japão no verão passado. Foi incrível." },
+      { "pessoa": "Sophie", "fala": "Was hat dir am besten gefallen?", "traducao": "O que te agradou mais?" },
+      { "pessoa": "Max", "fala": "Die Kultur und das Essen natürlich. Aber auch die Natur. Ich bin auf den Fuji gestiegen.", "traducao": "A cultura e a comida, claro. Mas também a natureza. Subi ao Fuji." },
+      { "pessoa": "Sophie", "fala": "Das klingt toll! Warst du alleine?", "traducao": "Parece fantástico! Foste sozinho?" },
+      { "pessoa": "Max", "fala": "Nein, mit einem Freund. Wir haben uns kaum verstanden, weil wir kein Japanisch sprachen.", "traducao": "Não, com um amigo. Quase não nos entendemos porque não falávamos japonês." }
+    ],
+    "vocabulario_chave": ["unglaublich", "gefallen", "steigen auf", "alleine", "sich verstehen"],
+    "gramatica": ["Präteritum de sein/haben", "weil-Satz (verb no fim)"]
+  },
+  {
+    "id": 29, "nivel": "B1", "titulo": "Conversa sobre educação — vantagens e desvantagens",
+    "contexto": "Debate entre estudantes sobre o sistema de educação.",
+    "interlocutores": ["Studentin A", "Studentin B"],
+    "turnos": [
+      { "pessoa": "Studentin A", "fala": "Ich finde, das Schulsystem sollte mehr auf praktische Fähigkeiten setzen.", "traducao": "Acho que o sistema escolar deveria apostar mais em competências práticas." },
+      { "pessoa": "Studentin B", "fala": "Da stimme ich dir nicht ganz zu. Theoretisches Wissen ist auch sehr wichtig.", "traducao": "Não concordo completamente contigo. O conhecimento teórico é também muito importante." },
+      { "pessoa": "Studentin A", "fala": "Natürlich, aber viele Schüler verlassen die Schule ohne grundlegende Alltagsfähigkeiten.", "traducao": "Claro, mas muitos alunos saem da escola sem competências quotidianas básicas." },
+      { "pessoa": "Studentin B", "fala": "Das stimmt. Vielleicht brauchen wir eine bessere Balance.", "traducao": "É verdade. Talvez precisemos de um equilíbrio melhor." }
+    ],
+    "vocabulario_chave": ["sollte", "Fähigkeiten", "zustimmen", "grundlegend", "Balance"],
+    "gramatica": ["Konjunktiv II (sollte) para sugestão", "jemandem zustimmen (Dativ)"]
+  },
+  {
+    "id": 30, "nivel": "B1", "titulo": "Comunicar em situação de emergência",
+    "contexto": "Alguém testemunha um acidente e liga para os bombeiros.",
+    "interlocutores": ["Anrufer", "Feuerwehr"],
+    "turnos": [
+      { "pessoa": "Feuerwehr", "fala": "Feuerwehr und Rettungsdienst, was ist passiert?", "traducao": "Bombeiros e serviço de emergência, o que aconteceu?" },
+      { "pessoa": "Anrufer", "fala": "Es hat einen Unfall gegeben! Ein Auto ist gegen einen Baum gefahren.", "traducao": "Houve um acidente! Um carro embateu contra uma árvore." },
+      { "pessoa": "Feuerwehr", "fala": "Wo genau? Welche Straße?", "traducao": "Onde exatamente? Qual rua?" },
+      { "pessoa": "Anrufer", "fala": "Auf der Hauptstraße, Höhe Nummer 42. Es gibt Verletzte.", "traducao": "Na rua principal, à altura do número 42. Há feridos." },
+      { "pessoa": "Feuerwehr", "fala": "Wir schicken sofort Hilfe. Bleiben Sie bitte ruhig.", "traducao": "Enviamos ajuda imediatamente. Por favor mantenha a calma." }
+    ],
+    "vocabulario_chave": ["Unfall", "Verletzte", "schicken", "ruhig bleiben", "Rettungsdienst"],
+    "gramatica": ["Perfekt para relatar eventos recentes", "Es gibt + Akkusativ"]
+  },
+  {
+    "id": 31, "nivel": "B1", "titulo": "Reunião de trabalho — atribuir tarefas",
+    "contexto": "Uma chefe distribui tarefas para um novo projeto.",
+    "interlocutores": ["Chefin", "Team"],
+    "turnos": [
+      { "pessoa": "Chefin", "fala": "Wir müssen das Projekt bis Ende des Monats abschließen. Ich teile die Aufgaben jetzt ein.", "traducao": "Temos de concluir o projeto até ao final do mês. Vou agora distribuir as tarefas." },
+      { "pessoa": "Mitarbeiter A", "fala": "Ich kümmere mich um die Marktanalyse.", "traducao": "Encarrego-me da análise de mercado." },
+      { "pessoa": "Chefin", "fala": "Gut. Und du, Frau Braun, könntest du die Präsentation übernehmen?", "traducao": "Ótimo. E a senhora Braun, poderia ficar com a apresentação?" },
+      { "pessoa": "Mitarbeiter B", "fala": "Ja, das schaffe ich. Bis wann brauchen Sie sie?", "traducao": "Sim, consigo. Para quando precisa?" }
+    ],
+    "vocabulario_chave": ["abschließen", "einteilen", "sich kümmern um", "übernehmen", "schaffen"],
+    "gramatica": ["Konjunktiv II (könntest) para pedidos", "reflexivos com sich kümmern um"]
+  },
+  {
+    "id": 32, "nivel": "B1", "titulo": "Falar sobre a cultura alemã com um estrangeiro",
+    "contexto": "Um alemão explica tradições culturais a um turista.",
+    "interlocutores": ["Deutscher", "Tourist"],
+    "turnos": [
+      { "pessoa": "Tourist", "fala": "Was ist das Oktoberfest genau?", "traducao": "O que é exatamente o Oktoberfest?" },
+      { "pessoa": "Deutscher", "fala": "Es ist ein riesiges Volksfest in München, das jedes Jahr im September und Oktober stattfindet.", "traducao": "É um enorme festival popular em Munique, que se realiza todos os anos em setembro e outubro." },
+      { "pessoa": "Tourist", "fala": "Und was macht man da?", "traducao": "E o que se faz lá?" },
+      { "pessoa": "Deutscher", "fala": "Man trinkt Bier aus riesigen Maßkrügen, isst typisch bayerisches Essen und hört Volksmusik.", "traducao": "Bebe-se cerveja em canecas enormes, come-se comida típica bávara e ouve-se música folclórica." }
+    ],
+    "vocabulario_chave": ["Volksfest", "stattfinden", "Maßkrug", "bayerisch", "riesig"],
+    "gramatica": ["Relativsatz (das jedes Jahr stattfindet)", "man como sujeito genérico"]
+  },
+  {
+    "id": 33, "nivel": "B2", "titulo": "Negociação salarial",
+    "contexto": "Um funcionário negoceia uma promoção e aumento salarial com o seu chefe.",
+    "interlocutores": ["Mitarbeiter", "Vorgesetzter"],
+    "turnos": [
+      { "pessoa": "Mitarbeiter", "fala": "Ich würde gerne über meine berufliche Entwicklung und mein Gehalt sprechen.", "traducao": "Gostaria de falar sobre o meu desenvolvimento profissional e o meu salário." },
+      { "pessoa": "Vorgesetzter", "fala": "Ich höre zu. Was schwebt Ihnen vor?", "traducao": "Estou a ouvir. O que tem em mente?" },
+      { "pessoa": "Mitarbeiter", "fala": "In den letzten zwei Jahren habe ich den Umsatz meiner Abteilung um 30% gesteigert. Ich denke, das rechtfertigt eine Gehaltserhöhung.", "traducao": "Nos últimos dois anos, aumentei as receitas do meu departamento em 30%. Acho que isso justifica um aumento salarial." },
+      { "pessoa": "Vorgesetzter", "fala": "Ihre Leistungen sind unbestreitbar. Ich kann Ihnen eine Erhöhung von 8% anbieten, plus eine Prämie.", "traducao": "Os seus resultados são inegáveis. Posso oferecer-lhe um aumento de 8%, mais um bónus." }
+    ],
+    "vocabulario_chave": ["Gehalt", "vorschweben", "steigern", "rechtfertigen", "Leistungen", "Prämie"],
+    "gramatica": ["Konjunktiv II (würde gerne)", "Relativsatz implícito (was)"]
+  },
+  {
+    "id": 34, "nivel": "B2", "titulo": "Debate sobre redes sociais",
+    "contexto": "Dois jornalistas debatem o impacto das redes sociais na democracia.",
+    "interlocutores": ["Journalistin A", "Journalist B"],
+    "turnos": [
+      { "pessoa": "Journalistin A", "fala": "Soziale Medien haben die politische Teilhabe zweifellos verändert. Aber ist das eine Verbesserung?", "traducao": "As redes sociais mudaram indubitavelmente a participação política. Mas é uma melhoria?" },
+      { "pessoa": "Journalist B", "fala": "Einerseits ermöglichen sie breite Diskussionen. Andererseits begünstigen Algorithmen Filterblasen, die demokratischen Diskurs gefährden.", "traducao": "Por um lado, permitem debates alargados. Por outro, os algoritmos favorecem bolhas de filtro que ameaçam o discurso democrático." },
+      { "pessoa": "Journalistin A", "fala": "Dem stimme ich zu. Die Frage ist, ob Regulierung die Lösung ist.", "traducao": "Concordo. A questão é se a regulação é a solução." }
+    ],
+    "vocabulario_chave": ["Teilhabe", "begünstigen", "Filterblase", "gefährden", "Regulierung"],
+    "gramatica": ["einerseits...andererseits (conector de contraste)", "ob-Satz como sujeito"]
+  },
+  {
+    "id": 35, "nivel": "B2", "titulo": "Consulta jurídica",
+    "contexto": "Um cliente fala com um advogado sobre um contrato de trabalho.",
+    "interlocutores": ["Rechtsanwalt", "Mandant"],
+    "turnos": [
+      { "pessoa": "Mandant", "fala": "Mein Arbeitgeber hat mir eine Abfindung angeboten, aber ich bin nicht sicher, ob ich sie annehmen soll.", "traducao": "O meu empregador ofereceu-me uma indemnização, mas não tenho a certeza se devo aceitá-la." },
+      { "pessoa": "Rechtsanwalt", "fala": "Zunächst müssen wir prüfen, ob die Kündigung rechtmäßig war. Haben Sie den Kündigungsbrief dabei?", "traducao": "Primeiro temos de verificar se o despedimento foi legítimo. Tem a carta de despedimento consigo?" },
+      { "pessoa": "Mandant", "fala": "Ja, hier. Die Begründung war angeblich Umstrukturierung.", "traducao": "Sim, aqui está. A justificação foi alegadamente reestruturação." },
+      { "pessoa": "Rechtsanwalt", "fala": "Interessant. In diesem Fall haben Sie möglicherweise Anspruch auf eine höhere Abfindung.", "traducao": "Interessante. Neste caso, poderá ter direito a uma indemnização mais elevada." }
+    ],
+    "vocabulario_chave": ["Abfindung", "annehmen", "rechtmäßig", "Begründung", "Anspruch haben"],
+    "gramatica": ["ob-Satz em contexto jurídico", "Passiv (war... angeboten worden)"]
+  },
+  {
+    "id": 36, "nivel": "B2", "titulo": "Conversa sobre imigração e identidade",
+    "contexto": "Uma conversa entre duas pessoas com experiências de imigração.",
+    "interlocutores": ["Yasmin", "David"],
+    "turnos": [
+      { "pessoa": "Yasmin", "fala": "Nach zehn Jahren in Deutschland fühle ich mich manchmal immer noch zwischen zwei Kulturen.", "traducao": "Depois de dez anos na Alemanha, ainda me sinto às vezes entre duas culturas." },
+      { "pessoa": "David", "fala": "Das kenne ich. Ich bin zwar hier aufgewachsen, aber meine Eltern kamen aus dem Iran.", "traducao": "Conheço isso. Cresci cá, mas os meus pais vieram do Irão." },
+      { "pessoa": "Yasmin", "fala": "Genau. Manchmal frage ich mich, ob Identität überhaupt eindeutig sein muss.", "traducao": "Exatamente. Às vezes pergunto a mim própria se a identidade tem de ser inequívoca." },
+      { "pessoa": "David", "fala": "Ich glaube, Mehrfachidentitäten sind eine Stärke, keine Schwäche.", "traducao": "Acredito que as identidades múltiplas são uma força, não uma fraqueza." }
+    ],
+    "vocabulario_chave": ["aufwachsen", "Identität", "eindeutig", "Mehrfachidentität", "Stärke"],
+    "gramatica": ["zwar...aber (conector concessivo)", "sich fragen ob (reflexivo + ob-Satz)"]
+  },
+  {
+    "id": 37, "nivel": "B2", "titulo": "Reunião de projeto — resolver conflito",
+    "contexto": "Membros de uma equipa têm perspetivas conflituantes sobre uma estratégia.",
+    "interlocutores": ["Projektleiterin", "Teamm. A", "Teamm. B"],
+    "turnos": [
+      { "pessoa": "Teamm. A", "fala": "Ich halte den agilen Ansatz für riskant. Wir haben keine Erfahrung damit.", "traducao": "Considero a abordagem ágil arriscada. Não temos experiência com isso." },
+      { "pessoa": "Teamm. B", "fala": "Ich widerspreche. Ohne Agilität werden wir nicht wettbewerbsfähig bleiben.", "traducao": "Discordo. Sem agilidade não nos manteremos competitivos." },
+      { "pessoa": "Projektleiterin", "fala": "Beide Punkte sind berechtigt. Können wir einen Pilotversuch vereinbaren?", "traducao": "Ambos os pontos são válidos. Podemos acordar um projeto-piloto?" }
+    ],
+    "vocabulario_chave": ["Ansatz", "widersprechen", "wettbewerbsfähig", "berechtigt", "Pilotversuch"],
+    "gramatica": ["widersprechen + Dativ", "Passiv-ähnliche Konstruktion (werden... bleiben)"]
+  },
+  {
+    "id": 38, "nivel": "B2", "titulo": "Pedido de referência académica",
+    "contexto": "Estudante pede a um professor uma carta de recomendação.",
+    "interlocutores": ["Studentin", "Professor"],
+    "turnos": [
+      { "pessoa": "Studentin", "fala": "Herr Professor, ich bewerbe mich für ein Stipendium. Würden Sie mir ein Empfehlungsschreiben ausstellen?", "traducao": "Professor, estou a candidatar-me a uma bolsa. Poderia passar-me uma carta de recomendação?" },
+      { "pessoa": "Professor", "fala": "Gerne. Für welche Institution ist das Schreiben gedacht?", "traducao": "Com prazer. Para que instituição é a carta?" },
+      { "pessoa": "Studentin", "fala": "Für die Humboldt-Universität. Die Frist ist der 15. März.", "traducao": "Para a Universidade Humboldt. O prazo é o dia 15 de março." },
+      { "pessoa": "Professor", "fala": "Das schaffe ich. Schicken Sie mir bitte Ihre Unterlagen per E-Mail.", "traducao": "Consigo fazer isso. Por favor envie-me os seus documentos por email." }
+    ],
+    "vocabulario_chave": ["Stipendium", "Empfehlungsschreiben", "ausstellen", "Frist", "Unterlagen"],
+    "gramatica": ["Konjunktiv II (würden Sie) para pedidos formais", "gedacht sein für"]
+  },
+  {
+    "id": 39, "nivel": "B2", "titulo": "Falar sobre saúde mental",
+    "contexto": "Dois amigos falam sobre stress e burnout no trabalho.",
+    "interlocutores": ["Lena", "Tim"],
+    "turnos": [
+      { "pessoa": "Lena", "fala": "Ich fühle mich total ausgebrannt. Ich kann kaum noch abschalten.", "traducao": "Sinto-me completamente esgotada. Mal consigo desligar." },
+      { "pessoa": "Tim", "fala": "Das klingt nach einem klassischen Burnout. Hast du mit deinem Arzt gesprochen?", "traducao": "Isso parece um burnout clássico. Falaste com o teu médico?" },
+      { "pessoa": "Lena", "fala": "Noch nicht. Ich habe Angst, als schwach zu gelten.", "traducao": "Ainda não. Tenho medo de passar por fraca." },
+      { "pessoa": "Tim", "fala": "Das ist ein verbreitetes Vorurteil. Psychische Gesundheit ist genauso wichtig wie körperliche.", "traducao": "É um preconceito generalizado. A saúde mental é tão importante como a física." }
+    ],
+    "vocabulario_chave": ["ausgebrannt", "abschalten", "Burnout", "gelten als", "psychisch"],
+    "gramatica": ["als + Infinitiv (als schwach zu gelten)", "genauso...wie (comparativo de igualdade)"]
+  },
+  {
+    "id": 40, "nivel": "B2", "titulo": "Apresentação de resultados a clientes",
+    "contexto": "Uma consultora apresenta resultados trimestrais a um cliente empresarial.",
+    "interlocutores": ["Beraterin", "Kunde"],
+    "turnos": [
+      { "pessoa": "Beraterin", "fala": "Wie Sie in der Grafik sehen können, hat Ihr Unternehmen im dritten Quartal eine Wachstumsrate von 12% erzielt.", "traducao": "Como pode ver no gráfico, a sua empresa alcançou uma taxa de crescimento de 12% no terceiro trimestre." },
+      { "pessoa": "Kunde", "fala": "Das übersteigt unsere Erwartungen. Worauf ist das zurückzuführen?", "traducao": "Isso supera as nossas expectativas. A que se deve?" },
+      { "pessoa": "Beraterin", "fala": "Hauptsächlich auf die neue Marketingstrategie und die Expansion in den osteuropäischen Markt.", "traducao": "Principalmente à nova estratégia de marketing e à expansão para o mercado da Europa de Leste." }
+    ],
+    "vocabulario_chave": ["Wachstumsrate", "erzielen", "übersteigen", "zurückführen auf", "Expansion"],
+    "gramatica": ["Passivkonstruktion (ist zurückzuführen auf)", "hauptsächlich como advérbio"]
+  },
+  {
+    "id": 41, "nivel": "B2", "titulo": "Discussão filosófica entre amigos",
+    "contexto": "Conversa filosófica sobre livre-arbítrio.",
+    "interlocutores": ["Eva", "Paul"],
+    "turnos": [
+      { "pessoa": "Eva", "fala": "Glaubst du an den freien Willen?", "traducao": "Acreditas no livre-arbítrio?" },
+      { "pessoa": "Paul", "fala": "Das ist komplex. Neurowissenschaftlich gesehen sind unsere Entscheidungen durch Hirnprozesse determiniert, bevor wir sie bewusst treffen.", "traducao": "É complexo. Do ponto de vista das neurociências, as nossas decisões são determinadas por processos cerebrais antes de as tomarmos conscientemente." },
+      { "pessoa": "Eva", "fala": "Aber heißt das, wir sind moralisch für nichts verantwortlich?", "traducao": "Mas isso significa que não somos moralmente responsáveis por nada?" },
+      { "pessoa": "Paul", "fala": "Nicht unbedingt. Verantwortung kann man auf andere Weise begründen, ohne den freien Willen vorauszusetzen.", "traducao": "Não necessariamente. A responsabilidade pode ser fundamentada de outras formas, sem pressupor o livre-arbítrio." }
+    ],
+    "vocabulario_chave": ["freier Wille", "determiniert", "bewusst", "verantwortlich", "vorauszusetzen"],
+    "gramatica": ["Partizip II como adjetivo (determiniert)", "ohne...zu (sem + Infinitiv)"]
+  },
+  {
+    "id": 42, "nivel": "B2", "titulo": "Planear uma viagem de negócios complexa",
+    "contexto": "Um assistente executa coordenação logística com o seu gestor.",
+    "interlocutores": ["Assistentin", "Manager"],
+    "turnos": [
+      { "pessoa": "Manager", "fala": "Ich brauche für nächste Woche Flüge nach Zürich und zurück, plus Hotel für zwei Nächte.", "traducao": "Preciso de voos para Zurique na semana que vem e de volta, mais hotel por duas noites." },
+      { "pessoa": "Assistentin", "fala": "Soll ich Business oder Economy buchen?", "traducao": "Devo reservar Business ou Economy?" },
+      { "pessoa": "Manager", "fala": "Economy reicht. Und stellen Sie sicher, dass das Hotel in der Nähe des Messegeländes liegt.", "traducao": "Economy chega. E certifique-se de que o hotel fica perto do recinto da feira." },
+      { "pessoa": "Assistentin", "fala": "Selbstverständlich. Soll ich auch den Flughafentransfer organisieren?", "traducao": "Com certeza. Devo também organizar o transfer do aeroporto?" }
+    ],
+    "vocabulario_chave": ["Messegelände", "sicherstellen", "reichen", "Transfer", "selbstverständlich"],
+    "gramatica": ["sicherstellen dass (assegurar que)", "reichen como verbo suficiência"]
+  },
+  {
+    "id": 43, "nivel": "C1", "titulo": "Debate académico sobre ética da IA",
+    "contexto": "Seminário universitário sobre os limites éticos da inteligência artificial.",
+    "interlocutores": ["Professorin", "Doktorand A", "Doktorandin B"],
+    "turnos": [
+      { "pessoa": "Professorin", "fala": "Die zentrale Frage ist, ob KI moralische Urteile fällen kann oder ob das stets menschlicher Vorbehalt bleiben muss.", "traducao": "A questão central é se a IA pode emitir juízos morais ou se isso deve permanecer sempre prerrogativa humana." },
+      { "pessoa": "Doktorand A", "fala": "Das setzt voraus, dass wir Moral objektivieren können, was philosophisch äußerst fraglich ist.", "traducao": "Isso pressupõe que possamos objetivar a moral, o que é filosoficamente muito questionável." },
+      { "pessoa": "Doktorandin B", "fala": "Ich würde differenzieren zwischen normativer Entscheidung und technischer Optimierung. KI kann letzteres, aber nicht ersteres wirklich autonomisieren.", "traducao": "Eu distinguiria entre decisão normativa e otimização técnica. A IA pode autonomizar a segunda, mas não verdadeiramente a primeira." }
+    ],
+    "vocabulario_chave": ["moralisches Urteil", "Vorbehalt", "objektivieren", "normativer", "autonomisieren"],
+    "gramatica": ["voraussetzen + dass", "ersteres/letzteres como pronomes de referência"]
+  },
+  {
+    "id": 44, "nivel": "C1", "titulo": "Negociação diplomática simulada",
+    "contexto": "Simulação de negociação entre representantes de dois países sobre política climática.",
+    "interlocutores": ["Delegierter A", "Delegierte B"],
+    "turnos": [
+      { "pessoa": "Delegierter A", "fala": "Wir begrüßen die ambitionierten Ziele, möchten jedoch darauf hinweisen, dass die vorgeschlagenen Fristen für Entwicklungsländer schwer umsetzbar sind.", "traducao": "Saudamos os objetivos ambiciosos, mas gostaríamos de salientar que os prazos propostos são difíceis de implementar para países em desenvolvimento." },
+      { "pessoa": "Delegierte B", "fala": "Wir verstehen die Bedenken. Wären Sie bereit, einen Übergangsmechanismus zu akzeptieren?", "traducao": "Compreendemos as preocupações. Estaria disposto a aceitar um mecanismo de transição?" },
+      { "pessoa": "Delegierter A", "fala": "Das hängt von den konkreten Bedingungen ab. Transparenz und Überprüfbarkeit sind für uns unverzichtbar.", "traducao": "Depende das condições concretas. Transparência e verificabilidade são para nós indispensáveis." }
+    ],
+    "vocabulario_chave": ["begrüßen", "hinweisen auf", "umsetzbar", "Übergangsmechanismus", "unverzichtbar"],
+    "gramatica": ["würden + bereit sein (C1 Konjunktiv)", "abhängen von + Dativ"]
+  },
+  {
+    "id": 45, "nivel": "C1", "titulo": "Análise literária em seminário",
+    "contexto": "Discussão de um romance de Kafka numa aula de literatura.",
+    "interlocutores": ["Dozent", "Studentin"],
+    "turnos": [
+      { "pessoa": "Dozent", "fala": "Wie interpretieren Sie die Verwandlung Gregors als Metapher für Entfremdung?", "traducao": "Como interpreta a transformação de Gregor como metáfora de alienação?" },
+      { "pessoa": "Studentin", "fala": "Kafka nutzt die surreale Metamorphose, um die Reduktion des Individuums auf seine wirtschaftliche Funktion zu illustrieren.", "traducao": "Kafka usa a metamorfose surreal para ilustrar a redução do indivíduo à sua função económica." },
+      { "pessoa": "Dozent", "fala": "Interessant. Inwiefern lässt sich das auf die gegenwärtige Arbeitswelt übertragen?", "traducao": "Interessante. Em que medida isso pode ser transposto para o mundo do trabalho contemporâneo?" },
+      { "pessoa": "Studentin", "fala": "Die Prekarisierung der Arbeit und die zunehmende Instrumentalisierung des Menschen legen nahe, dass Kafkas Kritik erschreckend aktuell ist.", "traducao": "A precarização do trabalho e a crescente instrumentalização do ser humano sugerem que a crítica de Kafka é assustadoramente atual." }
+    ],
+    "vocabulario_chave": ["Entfremdung", "Metamorphose", "Prekarisierung", "Instrumentalisierung", "nahelegen"],
+    "gramatica": ["Relativsatz com Genitiv (dessen)", "lässt sich + Infinitiv (passivo alternativo)"]
+  },
+  {
+    "id": 46, "nivel": "C1", "titulo": "Sessão de coaching executivo",
+    "contexto": "Um coach fala com um executivo sobre liderança e tomada de decisão.",
+    "interlocutores": ["Coach", "Führungskraft"],
+    "turnos": [
+      { "pessoa": "Coach", "fala": "Sie beschreiben eine Entscheidungsparalyse. Was glauben Sie, liegt dem zugrunde?", "traducao": "Descreve uma paralisia na tomada de decisão. O que acha que está na sua base?" },
+      { "pessoa": "Führungskraft", "fala": "Vermutlich die Angst vor Konsequenzen. Ich versuche jeden Risikofaktor zu antizipieren, bevor ich handele.", "traducao": "Provavelmente o medo das consequências. Tento antecipar cada fator de risco antes de agir." },
+      { "pessoa": "Coach", "fala": "Das ist ein häufiges Muster bei Perfektionisten. Vollständige Sicherheit ist in komplexen Systemen eine Illusion.", "traducao": "É um padrão frequente em perfeccionistas. A segurança total é uma ilusão em sistemas complexos." },
+      { "pessoa": "Führungskraft", "fala": "Wie kann ich eine höhere Ambiguitätstoleranz entwickeln?", "traducao": "Como posso desenvolver uma maior tolerância à ambiguidade?" }
+    ],
+    "vocabulario_chave": ["Entscheidungsparalyse", "zugrunde liegen", "Risikofaktor", "Perfektionist", "Ambiguitätstoleranz"],
+    "gramatica": ["zugrunde liegen (liegen zugrunde — separável especial)", "bevor-Satz como condicional temporal"]
+  },
+  {
+    "id": 47, "nivel": "C1", "titulo": "Conversa sobre identidade linguística",
+    "contexto": "Dois linguistas conversam sobre as implicações políticas da política linguística europeia.",
+    "interlocutores": ["Linguistin A", "Linguist B"],
+    "turnos": [
+      { "pessoa": "Linguistin A", "fala": "Die Dominanz des Englischen als Arbeitssprache in EU-Institutionen ist nach dem Brexit paradoxer denn je.", "traducao": "A dominância do inglês como língua de trabalho nas instituições europeias é mais paradoxal do que nunca após o Brexit." },
+      { "pessoa": "Linguist B", "fala": "Absolut. Es entsteht eine Situation, in der eine Sprache ohne ihren wichtigsten Muttersprachlerblock institutionell privilegiert wird.", "traducao": "Absolutamente. Cria-se uma situação em que uma língua é privilegiada institucionalmente sem o seu principal grupo de falantes nativos." },
+      { "pessoa": "Linguistin A", "fala": "Das wirft Fragen zur sprachlichen Gerechtigkeit auf, die bisher kaum systematisch adressiert wurden.", "traducao": "Isso levanta questões de justiça linguística que até agora foram pouco abordadas sistematicamente." }
+    ],
+    "vocabulario_chave": ["Dominanz", "paradox", "privilegieren", "Muttersprachler", "Gerechtigkeit"],
+    "gramatica": ["Relativsatz com Genitiv deren", "denn je (mais do que nunca — superlativo)"]
+  },
+  {
+    "id": 48, "nivel": "C1", "titulo": "Consulta médica complexa — segundo diagnóstico",
+    "contexto": "Paciente pede segundo diagnóstico e questiona o plano de tratamento.",
+    "interlocutores": ["Spezialistin", "Patient"],
+    "turnos": [
+      { "pessoa": "Patient", "fala": "Mein Hausarzt hat eine Autoimmunerkrankung vermutet, ich möchte das gerne von Ihnen bestätigt oder widerlegt sehen.", "traducao": "O meu médico de família suspeitou de uma doença autoimune, e gostaria de ver isso confirmado ou refutado pela senhora." },
+      { "pessoa": "Spezialistin", "fala": "Dazu benötigen wir eine umfassende Anamnese und weitere diagnostische Maßnahmen.", "traducao": "Para isso precisamos de uma anamnese completa e medidas de diagnóstico adicionais." },
+      { "pessoa": "Patient", "fala": "Welche Symptome sollte ich besonders beobachten?", "traducao": "Que sintomas devo observar especialmente?" },
+      { "pessoa": "Spezialistin", "fala": "Achten Sie auf Entzündungszeichen, Fatigue und Veränderungen der Schleimhäute. Führen Sie am besten ein Symptomtagebuch.", "traducao": "Esteja atento a sinais de inflamação, fadiga e alterações das mucosas. Mantenha de preferência um diário de sintomas." }
+    ],
+    "vocabulario_chave": ["Autoimmunerkrankung", "Anamnese", "Entzündungszeichen", "Fatigue", "Schleimhaut"],
+    "gramatica": ["lassen + Infinitiv (sehen lassen — mandar ver)", "Imperativ para instruções médicas"]
+  },
+  {
+    "id": 49, "nivel": "C1", "titulo": "Avaliação de desempenho anual",
+    "contexto": "Reunião de avaliação de desempenho entre chefe e colaborador sénior.",
+    "interlocutores": ["Abteilungsleiter", "Seniorberater"],
+    "turnos": [
+      { "pessoa": "Abteilungsleiter", "fala": "Ihr Engagement war dieses Jahr außerordentlich. Dennoch sehe ich Entwicklungspotenzial bei der strategischen Kommunikation nach oben.", "traducao": "O seu empenho este ano foi extraordinário. Contudo vejo potencial de desenvolvimento na comunicação estratégica ascendente." },
+      { "pessoa": "Seniorberater", "fala": "Das nehme ich gerne an. Konkret: Was hätte ich in der Q3-Präsentation anders angehen sollen?", "traducao": "Aceito isso com agrado. Concretamente: o que deveria ter abordado de forma diferente na apresentação do Q3?" },
+      { "pessoa": "Abteilungsleiter", "fala": "Die Datentiefe war beeindruckend, aber die Übertragung auf strategische Implikationen blieb zu implizit.", "traducao": "A profundidade dos dados foi impressionante, mas a transferência para as implicações estratégicas ficou demasiado implícita." }
+    ],
+    "vocabulario_chave": ["Engagement", "Entwicklungspotenzial", "nach oben", "angehen", "Datentiefe"],
+    "gramatica": ["Konjunktiv II Vergangenheit (hätte... sollen)", "dennoch como conector adversativo formal"]
+  },
+  {
+    "id": 50, "nivel": "C1", "titulo": "Mediação de conflito organizacional",
+    "contexto": "Um mediador facilita um diálogo entre dois departamentos em conflito.",
+    "interlocutores": ["Mediator", "IT-Leiter", "Marketingleiterin"],
+    "turnos": [
+      { "pessoa": "Mediator", "fala": "Ich bitte beide Seiten, zunächst die Perspektive der anderen zu rekonstruieren, bevor sie ihre Position verteidigen.", "traducao": "Peço a ambas as partes que reconstruam primeiro a perspetiva da outra antes de defenderem a sua posição." },
+      { "pessoa": "IT-Leiter", "fala": "Marketing fordert ständig kurzfristige Anpassungen, die unsere Systemstabilität gefährden.", "traducao": "O Marketing exige constantemente adaptações de curto prazo que ameaçam a estabilidade do nosso sistema." },
+      { "pessoa": "Marketingleiterin", "fala": "IT reagiert auf jede Anfrage mit technischen Einwänden, ohne die Marktdynamik zu berücksichtigen.", "traducao": "A TI responde a cada pedido com objeções técnicas, sem ter em conta a dinâmica de mercado." },
+      { "pessoa": "Mediator", "fala": "Beide Beschreibungen sind nachvollziehbar. Lassen Sie uns gemeinsam einen Priorisierungsrahmen erarbeiten.", "traducao": "Ambas as descrições são compreensíveis. Vamos elaborar em conjunto um quadro de priorização." }
+    ],
+    "vocabulario_chave": ["rekonstruieren", "Systemstabilität", "Marktdynamik", "nachvollziehbar", "Priorisierungsrahmen"],
+    "gramatica": ["bevor-Satz", "lassen + wir + Infinitiv (proposta coletiva)"]
+  },
+  {
+    "id": 51, "nivel": "C2", "titulo": "Debate filosófico sobre tempo e memória",
+    "contexto": "Colóquio filosófico sobre as conceções de tempo em Heidegger e Bergson.",
+    "interlocutores": ["Philosoph A", "Philosophin B"],
+    "turnos": [
+      { "pessoa": "Philosoph A", "fala": "Für Heidegger konstituiert die Zeitlichkeit das Dasein fundamental, während Bergson die subjektive Dauer als eigentliche Erfahrung privilegiert.", "traducao": "Para Heidegger, a temporalidade constitui o Dasein fundamentalmente, enquanto Bergson privilegia a duração subjetiva como experiência genuína." },
+      { "pessoa": "Philosophin B", "fala": "Diese Dichotomie erscheint mir zu schematisch. Beide Denker teilen eine Kritik an der objektivierenden Zeitkonzeption der Naturwissenschaften.", "traducao": "Esta dicotomia parece-me demasiado esquemática. Ambos os pensadores partilham uma crítica à conceção objetivante do tempo nas ciências naturais." },
+      { "pessoa": "Philosoph A", "fala": "Einverstanden, aber die ontologische Priorität weist bei beiden in verschiedene Richtungen, was erhebliche Konsequenzen für die Phänomenologie hat.", "traducao": "Concordo, mas a prioridade ontológica aponta em direções diferentes nos dois, o que tem consequências consideráveis para a fenomenologia." }
+    ],
+    "vocabulario_chave": ["Zeitlichkeit", "Dasein", "Dauer", "objektivierend", "Phänomenologie"],
+    "gramatica": ["während como conjunção de contraste", "weist in + Richtung (estrutura idiomática C2)"]
+  },
+  {
+    "id": 52, "nivel": "C2", "titulo": "Entrevista a escritor sobre processo criativo",
+    "contexto": "Entrevista literária aprofundada com um escritor premiado.",
+    "interlocutores": ["Interviewerin", "Schriftsteller"],
+    "turnos": [
+      { "pessoa": "Interviewerin", "fala": "Ihr Roman spielt mit Gattungsgrenzen auf eine Weise, die sowohl fasziniert als auch irritiert. War das kalkuliert?", "traducao": "O seu romance joga com os limites dos géneros de uma forma que ao mesmo tempo fascina e perturba. Foi calculado?" },
+      { "pessoa": "Schriftsteller", "fala": "Kalkül wäre das falsche Wort. Es war eher ein Tasten im Dunkeln, dem ich nachgegeben habe, weil die Form dem Inhalt nicht gerecht wurde.", "traducao": "Cálculo seria a palavra errada. Foi antes um tatear no escuro ao qual cedi, porque a forma não fazia jus ao conteúdo." },
+      { "pessoa": "Interviewerin", "fala": "Inwiefern versteht sich das als Reaktion auf den gegenwärtigen Literaturbetrieb?", "traducao": "Em que medida isso se entende como reação ao sistema literário contemporâneo?" },
+      { "pessoa": "Schriftsteller", "fala": "Es ist weniger Reaktion als Verweigerung — eine Weigerung, mich den Erwartungsstrukturen des Marktes zu unterwerfen.", "traducao": "É menos reação do que recusa — uma recusa de me submeter às estruturas de expectativa do mercado." }
+    ],
+    "vocabulario_chave": ["Gattungsgrenzen", "kalkuliert", "nachgeben", "Literaturbetrieb", "Verweigerung"],
+    "gramatica": ["als como comparativo de equivalência negativa (weniger...als)", "Infinitiv com zu em posição final (mich zu unterwerfen)"]
+  },
+  {
+    "id": 53, "nivel": "C2", "titulo": "Arguição de tese de doutoramento",
+    "contexto": "Arguição de tese sobre epistemologia da ciência.",
+    "interlocutores": ["Gutachter", "Doktorandin"],
+    "turnos": [
+      { "pessoa": "Gutachter", "fala": "Ihre These, dass wissenschaftliche Paradigmen im Kuhnschen Sinne nicht vollständig durch Evidenz determiniert werden, ist gut fundiert. Wie verhalten Sie sich aber zur Kritik, dass Ihre Argumentation einen konvergenten Realismus untergräbt?", "traducao": "A sua tese de que os paradigmas científicos no sentido kuhniano não são completamente determinados pela evidência está bem fundamentada. Mas como responde à crítica de que a sua argumentação mina um realismo convergente?" },
+      { "pessoa": "Doktorandin", "fala": "Ich würde zwischen epistemischem und ontologischem Realismus differenzieren. Meine Argumentation zielt auf ersteres ab, lässt letzteren aber bewusst offen.", "traducao": "Eu distinguiria entre realismo epistémico e ontológico. A minha argumentação visa o primeiro, mas deixa deliberadamente o segundo em aberto." }
+    ],
+    "vocabulario_chave": ["Paradigma", "determiniert", "konvergenter Realismus", "epistémico", "ontologisch"],
+    "gramatica": ["abzielen auf + Akkusativ", "ersteres/letzteren como referência anafórica precisa"]
+  },
+  {
+    "id": 54, "nivel": "C2", "titulo": "Debate sobre pós-colonialismo e linguagem",
+    "contexto": "Mesa redonda académica sobre poder, linguagem e discurso colonial.",
+    "interlocutores": ["Kulturwissenschaftlerin", "Literaturprofessor"],
+    "turnos": [
+      { "pessoa": "Kulturwissenschaftlerin", "fala": "Sprache ist nie neutral. Der postkoloniale Diskurs zeigt, wie sprachliche Kategorien Machtverhältnisse nicht nur widerspiegeln, sondern aktiv perpetuieren.", "traducao": "A língua nunca é neutra. O discurso pós-colonial mostra como as categorias linguísticas não apenas refletem as relações de poder, mas as perpetuam ativamente." },
+      { "pessoa": "Literaturprofessor", "fala": "Dem stimme ich im Wesentlichen zu, würde aber vor einer totalisierenden Lesart warnen. Es gibt auch subversive Aneignungen kolonialer Sprachen.", "traducao": "Concordo essencialmente, mas advertiria contra uma leitura totalizante. Há também apropriações subversivas de línguas coloniais." },
+      { "pessoa": "Kulturwissenschaftlerin", "fala": "Das ist ein berechtigter Einwand. Die Ambivalenz des sprachlichen Widerstands ist theoretisch noch unzureichend ausgearbeitet.", "traducao": "É uma objeção pertinente. A ambivalência da resistência linguística está ainda insuficientemente elaborada do ponto de vista teórico." }
+    ],
+    "vocabulario_chave": ["postkolonial", "perpetuieren", "totalisierend", "Aneignung", "subversiv"],
+    "gramatica": ["im Wesentlichen (locução adverbial C2)", "warnen vor + Dativ"]
+  },
+  {
+    "id": 55, "nivel": "C2", "titulo": "Consultoria estratégica de alto nível",
+    "contexto": "Apresentação de análise competitiva a conselho de administração.",
+    "interlocutores": ["Beraterin", "Vorstandsvorsitzender"],
+    "turnos": [
+      { "pessoa": "Beraterin", "fala": "Die Marktdaten legen nahe, dass Ihr Unternehmen in einem strukturellen Transformationsprozess steht, der über zyklische Schwankungen hinausgeht.", "traducao": "Os dados de mercado sugerem que a sua empresa está num processo de transformação estrutural que vai além das flutuações cíclicas." },
+      { "pessoa": "Vorstandsvorsitzender", "fala": "Welche strategischen Optionen empfehlen Sie, ohne dabei den Kernkompetenzrahmen zu verlassen?", "traducao": "Que opções estratégicas recomenda, sem sair do quadro das competências-chave?" },
+      { "pessoa": "Beraterin", "fala": "Eine konsequente Fokussierung auf Hochmargensegmente, begleitet von einer selektiven Deinvestition aus defizitären Bereichen, erscheint als tragfähigste Option.", "traducao": "Uma focalização consistente nos segmentos de margem elevada, acompanhada de desinvestimento seletivo de áreas deficitárias, afigura-se como a opção mais sustentável." }
+    ],
+    "vocabulario_chave": ["strukturell", "zyklisch", "Kernkompetenz", "Deinvestition", "tragfähig"],
+    "gramatica": ["ohne...zu (sem + Infinitivo — condição negativa)", "erscheinen als + Superlativ"]
+  },
+  {
+    "id": 56, "nivel": "C2", "titulo": "Conversa sobre ética na investigação científica",
+    "contexto": "Debate sobre os limites éticos da investigação em engenharia genética.",
+    "interlocutores": ["Bioethikerin", "Genforscher"],
+    "turnos": [
+      { "pessoa": "Bioethikerin", "fala": "Die CRISPR-Technologie wirft Fragen auf, die unsere normativen Frameworks fundamental herausfordern.", "traducao": "A tecnologia CRISPR levanta questões que desafiam fundamentalmente os nossos quadros normativos." },
+      { "pessoa": "Genforscher", "fala": "Das stimmt, aber der Präventionsimperativ — die Möglichkeit, erbliche Krankheiten zu eliminieren — schafft auch eine moralische Obligation, zu forschen.", "traducao": "É verdade, mas o imperativo de prevenção — a possibilidade de eliminar doenças hereditárias — cria também uma obrigação moral de investigar." },
+      { "pessoa": "Bioethikerin", "fala": "Diese utilitaristische Logik übersieht die Fragen der Zugangsgerechtigkeit und der unbeabsichtigten Keimbahnmodifikationen.", "traducao": "Esta lógica utilitarista ignora as questões de justiça de acesso e as modificações germinativas não intencionais." }
+    ],
+    "vocabulario_chave": ["normativer Framework", "Präventionsimperativ", "Obligation", "Keimbahn", "Zugangsgerechtigkeit"],
+    "gramatica": ["Nominalstil (C2 — substantivação de verbos/adjetivos)", "übersehen como verbo de crítica argumentativa"]
+  },
+  {
+    "id": 57, "nivel": "C2", "titulo": "Debate sobre democracia e populismo",
+    "contexto": "Conferência política sobre os desafios do populismo às instituições democráticas.",
+    "interlocutores": ["Politikwissenschaftler", "Journalistin"],
+    "turnos": [
+      { "pessoa": "Politikwissenschaftler", "fala": "Populismus ist kein Defekt der Demokratie, sondern deren Symptom — er artikuliert eine genuine Repräsentationslücke.", "traducao": "O populismo não é um defeito da democracia, mas o seu sintoma — articula uma lacuna genuína de representação." },
+      { "pessoa": "Journalistin", "fala": "Aber diese diagnostische Perspektive läuft Gefahr, dem Populismus eine normative Legitimation zuzuschreiben, die er strukturell untergräbt.", "traducao": "Mas esta perspetiva diagnóstica corre o risco de atribuir ao populismo uma legitimação normativa que ele estruturalmente mina." },
+      { "pessoa": "Politikwissenschaftler", "fala": "Das ist ein methodologisch wichtiger Einwand. Die deskriptive und die normative Ebene müssen analytisch strikt getrennt werden.", "traducao": "É uma objeção metodologicamente importante. O nível descritivo e o normativo têm de ser analiticamente separados de forma estrita." }
+    ],
+    "vocabulario_chave": ["Populismus", "Repräsentationslücke", "legitimieren", "untergraben", "methodologisch"],
+    "gramatica": ["Nominalstil denso", "Gefahr laufen + zu + Inf. (correr o risco de)"]
+  },
+  {
+    "id": 58, "nivel": "C2", "titulo": "Supervisão de investigação — feedback a dissertação",
+    "contexto": "Reunião entre orientador e mestrando para feedback à dissertação.",
+    "interlocutores": ["Betreuer", "Masterstudent"],
+    "turnos": [
+      { "pessoa": "Betreuer", "fala": "Die Arbeit weist eine bemerkenswerte argumentative Stringenz auf, leidet aber an einer gewissen konzeptuellen Verwischung zwischen Ihrer Haupt- und Nebenthese.", "traducao": "O trabalho apresenta uma rigor argumentativo notável, mas sofre de uma certa confusão conceptual entre a tese principal e as secundárias." },
+      { "pessoa": "Masterstudent", "fala": "Können Sie das an einem konkreten Abschnitt festmachen?", "traducao": "Pode exemplificar com uma secção concreta?" },
+      { "pessoa": "Betreuer", "fala": "In Kapitel 3 behandeln Sie Diskurstheorie und Sprechakttheorie so, als wären sie kommensurabel, was methodologisch nicht hinreichend gerechtfertigt ist.", "traducao": "No capítulo 3 trata a teoria do discurso e a teoria dos atos de fala como se fossem comensuráveis, o que não está suficientemente justificado metodologicamente." }
+    ],
+    "vocabulario_chave": ["Stringenz", "Verwischung", "festmachen", "kommensurabel", "hinreichend"],
+    "gramatica": ["als wären sie (Konjunktiv II com als ob)", "leiden an + Dativ"]
+  },
+  {
+    "id": 59, "nivel": "C2", "titulo": "Julgamento simulado — discurso de defesa",
+    "contexto": "Simulação de julgamento. Advogada de defesa apresenta argumentação final.",
+    "interlocutores": ["Verteidigerin", "Staatsanwalt"],
+    "turnos": [
+      { "pessoa": "Verteidigerin", "fala": "Die Anklage beruht auf einer Indizienkette, die bei genauerer Prüfung erhebliche Lücken aufweist.", "traducao": "A acusação assenta numa cadeia de indícios que, sob exame mais atento, apresenta lacunas consideráveis." },
+      { "pessoa": "Staatsanwalt", "fala": "Das Indizienbündel ist in seiner Gesamtheit jedoch hinreichend, um eine Verurteilung zu rechtfertigen.", "traducao": "O conjunto de indícios é, no seu todo, suficiente para justificar uma condenação." },
+      { "pessoa": "Verteidigerin", "fala": "Im Zweifel für den Angeklagten — dieses Grundprinzip darf nicht durch kumulative Wahrscheinlichkeiten ausgehebelt werden.", "traducao": "Na dúvida, a favor do acusado — este princípio fundamental não pode ser contornado por probabilidades cumulativas." }
+    ],
+    "vocabulario_chave": ["Indizienkette", "Verurteilung", "im Zweifel", "aushebeln", "kumulativ"],
+    "gramatica": ["beruhen auf + Dativ", "darf nicht + Infinitiv (proibição formal)"]
+  },
+  {
+    "id": 60, "nivel": "C2", "titulo": "Conferência sobre o futuro da Europa",
+    "contexto": "Painel de alto nível sobre integração europeia e soberania nacional.",
+    "interlocutores": ["Politikerin", "Ökonom"],
+    "turnos": [
+      { "pessoa": "Politikerin", "fala": "Die Frage ist nicht, ob wir mehr Europa wollen, sondern welches Europa wir wollen — eines, das bürgerschaftliche Legitimität mit institutioneller Effizienz versöhnt.", "traducao": "A questão não é se queremos mais Europa, mas que Europa queremos — uma que concilie legitimidade cívica com eficiência institucional." },
+      { "pessoa": "Ökonom", "fala": "Das setzt voraus, dass diese zwei Ziele kompatibel sind. Die wirtschaftspolitische Steuerung der Eurozone zeigt, wie schwer dieser Spagat in der Praxis ist.", "traducao": "Isso pressupõe que estes dois objetivos são compatíveis. A governação de política económica da zona euro mostra quão difícil é este equilíbrio na prática." },
+      { "pessoa": "Politikerin", "fala": "Eben deshalb brauchen wir eine demokratische Neufundierung der europäischen Institutionen, die über technokratische Rationalität hinausgeht.", "traducao": "Precisamente por isso precisamos de uma refundação democrática das instituições europeias que vá além da racionalidade tecnocrática." }
+    ],
+    "vocabulario_chave": ["bürgerschaftlich", "versöhnen", "Steuerung", "Spagat", "Neufundierung"],
+    "gramatica": ["voraussetzen + dass", "eben deshalb (reforço causal-conclusivo C2)"]
+  }
+]

@@ -1,0 +1,950 @@
+{
+  "meta": {
+    "versao": "1.0",
+    "descricao": "Regras gramaticais do alemão organizadas por categoria e nível CEFR"
+  },
+  "categorias": [
+
+    {
+      "id": "artigos",
+      "titulo": "Artigos (Artikel)",
+      "nivel": "A1",
+      "descricao": "O alemão tem três géneros gramaticais e quatro casos que afetam a forma dos artigos.",
+      "regras": [
+        {
+          "id": "artigo-definido",
+          "titulo": "Artigo definido (der/die/das)",
+          "nivel": "A1",
+          "explicacao": "O artigo definido varia com o género (masculino, feminino, neutro) e o caso.",
+          "tabela": {
+            "colunas": ["Caso", "Masculino", "Feminino", "Neutro", "Plural"],
+            "linhas": [
+              ["Nominativ", "der", "die", "das", "die"],
+              ["Akkusativ", "den", "die", "das", "die"],
+              ["Dativ", "dem", "der", "dem", "den"],
+              ["Genitiv", "des", "der", "des", "der"]
+            ]
+          },
+          "exemplos": [
+            { "de": "Der Mann ist groß.", "pt": "O homem é alto." },
+            { "de": "Ich sehe den Mann.", "pt": "Vejo o homem." },
+            { "de": "Ich helfe dem Mann.", "pt": "Ajudo o homem." },
+            { "de": "Das Buch des Mannes.", "pt": "O livro do homem." }
+          ]
+        },
+        {
+          "id": "artigo-indefinido",
+          "titulo": "Artigo indefinido (ein/eine)",
+          "nivel": "A1",
+          "explicacao": "Segue o mesmo padrão que o artigo definido, mas sem forma para plural (usa-se sem artigo).",
+          "tabela": {
+            "colunas": ["Caso", "Masculino", "Feminino", "Neutro"],
+            "linhas": [
+              ["Nominativ", "ein", "eine", "ein"],
+              ["Akkusativ", "einen", "eine", "ein"],
+              ["Dativ", "einem", "einer", "einem"],
+              ["Genitiv", "eines", "einer", "eines"]
+            ]
+          },
+          "exemplos": [
+            { "de": "Das ist ein Hund.", "pt": "Isso é um cão." },
+            { "de": "Ich habe einen Hund.", "pt": "Tenho um cão." }
+          ]
+        },
+        {
+          "id": "artigo-negativo",
+          "titulo": "Artigo negativo (kein/keine)",
+          "nivel": "A1",
+          "explicacao": "Usa-se para negar substantivos. Declinação igual a ein/eine mas com plural (keine).",
+          "exemplos": [
+            { "de": "Ich habe kein Auto.", "pt": "Não tenho carro." },
+            { "de": "Ich habe keine Geschwister.", "pt": "Não tenho irmãos." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "substantivos",
+      "titulo": "Substantivos (Nomen)",
+      "nivel": "A1",
+      "descricao": "Substantivos em alemão têm género, número e caso. Formam o plural de maneiras variadas.",
+      "regras": [
+        {
+          "id": "genero",
+          "titulo": "Género dos substantivos",
+          "nivel": "A1",
+          "explicacao": "O género (der/die/das) deve ser memorizado com cada palavra. Algumas terminações ajudam a prever o género.",
+          "dicas": [
+            { "terminacao": "-ung", "genero": "die", "exemplos": ["die Wohnung", "die Zeitung"] },
+            { "terminacao": "-heit / -keit", "genero": "die", "exemplos": ["die Freiheit", "die Freundlichkeit"] },
+            { "terminacao": "-schaft", "genero": "die", "exemplos": ["die Gesellschaft", "die Freundschaft"] },
+            { "terminacao": "-tion / -sion", "genero": "die", "exemplos": ["die Nation", "die Vision"] },
+            { "terminacao": "-er (agente)", "genero": "der", "exemplos": ["der Lehrer", "der Fahrer"] },
+            { "terminacao": "-ismus", "genero": "der", "exemplos": ["der Tourismus", "der Kapitalismus"] },
+            { "terminacao": "-chen / -lein", "genero": "das", "exemplos": ["das Mädchen", "das Büchlein"] },
+            { "terminacao": "-ment", "genero": "das", "exemplos": ["das Dokument", "das Instrument"] }
+          ]
+        },
+        {
+          "id": "plural",
+          "titulo": "Formação do plural",
+          "nivel": "A1",
+          "explicacao": "O plural alemão é imprevisível e deve ser memorizado. Os principais padrões são:",
+          "padroes": [
+            { "tipo": "Sem mudança (der Wagen → die Wagen)", "exemplos": ["der Lehrer → die Lehrer"] },
+            { "tipo": "Adição de -e (der Hund → die Hunde)", "exemplos": ["das Jahr → die Jahre"] },
+            { "tipo": "Adição de -er com Umlaut (das Kind → die Kinder)", "exemplos": ["das Buch → die Bücher"] },
+            { "tipo": "Adição de -n ou -en (die Frau → die Frauen)", "exemplos": ["die Zeitung → die Zeitungen"] },
+            { "tipo": "Adição de -s (das Auto → die Autos)", "exemplos": ["das Foto → die Fotos"] },
+            { "tipo": "Umlaut sem desinência (der Vater → die Väter)", "exemplos": ["die Mutter → die Mütter"] }
+          ]
+        },
+        {
+          "id": "substantivos-compostos",
+          "titulo": "Substantivos compostos (Komposita)",
+          "nivel": "A2",
+          "explicacao": "Formam-se juntando palavras. O género é sempre o do último componente.",
+          "exemplos": [
+            { "de": "das Haus + die Tür = die Haustür", "pt": "porta de casa (feminino porque Tür é feminino)" },
+            { "de": "der Zug + das Ticket = das Zugticket", "pt": "bilhete de comboio" },
+            { "de": "die Arbeit + das Zimmer = das Arbeitszimmer", "pt": "escritório" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "pronomes",
+      "titulo": "Pronomes (Pronomen)",
+      "nivel": "A1",
+      "descricao": "Pronomes pessoais, possessivos, demonstrativos e reflexivos.",
+      "regras": [
+        {
+          "id": "pronomes-pessoais",
+          "titulo": "Pronomes pessoais",
+          "nivel": "A1",
+          "tabela": {
+            "colunas": ["Pessoa", "Nominativ", "Akkusativ", "Dativ"],
+            "linhas": [
+              ["1ª sing.", "ich", "mich", "mir"],
+              ["2ª sing. (informal)", "du", "dich", "dir"],
+              ["3ª masc.", "er", "ihn", "ihm"],
+              ["3ª fem.", "sie", "sie", "ihr"],
+              ["3ª neutro", "es", "es", "ihm"],
+              ["1ª pl.", "wir", "uns", "uns"],
+              ["2ª pl.", "ihr", "euch", "euch"],
+              ["3ª pl. / formal", "sie/Sie", "sie/Sie", "ihnen/Ihnen"]
+            ]
+          }
+        },
+        {
+          "id": "pronomes-possessivos",
+          "titulo": "Pronomes possessivos (mein, dein, sein...)",
+          "nivel": "A1",
+          "explicacao": "Declinam como o artigo indefinido (ein). Concordam em género, número e caso com o substantivo.",
+          "tabela": {
+            "colunas": ["Pessoa", "Possessivo"],
+            "linhas": [
+              ["ich", "mein/meine"],
+              ["du", "dein/deine"],
+              ["er/es", "sein/seine"],
+              ["sie (sing.)", "ihr/ihre"],
+              ["wir", "unser/unsere"],
+              ["ihr", "euer/eure"],
+              ["sie/Sie", "ihr/ihre / Ihr/Ihre"]
+            ]
+          },
+          "exemplos": [
+            { "de": "Das ist mein Buch.", "pt": "Este é o meu livro." },
+            { "de": "Ich liebe meine Familie.", "pt": "Amo a minha família." }
+          ]
+        },
+        {
+          "id": "pronomes-reflexivos",
+          "titulo": "Pronomes reflexivos",
+          "nivel": "A2",
+          "explicacao": "Usados com verbos reflexivos (sich + verbo). O pronome concorda com o sujeito.",
+          "tabela": {
+            "colunas": ["Pessoa", "Akkusativ", "Dativ"],
+            "linhas": [
+              ["ich", "mich", "mir"],
+              ["du", "dich", "dir"],
+              ["er/sie/es", "sich", "sich"],
+              ["wir", "uns", "uns"],
+              ["ihr", "euch", "euch"],
+              ["sie/Sie", "sich", "sich"]
+            ]
+          },
+          "exemplos": [
+            { "de": "Ich wasche mich.", "pt": "Lavo-me." },
+            { "de": "Er freut sich.", "pt": "Ele está contente." },
+            { "de": "Wir treffen uns um 8.", "pt": "Encontramo-nos às 8." }
+          ]
+        },
+        {
+          "id": "pronomes-relativos",
+          "titulo": "Pronomes relativos",
+          "nivel": "B1",
+          "explicacao": "Introduzem orações relativas. Concordam em género e número com o antecedente, e em caso com a função na oração relativa.",
+          "tabela": {
+            "colunas": ["Caso", "Masculino", "Feminino", "Neutro", "Plural"],
+            "linhas": [
+              ["Nominativ", "der", "die", "das", "die"],
+              ["Akkusativ", "den", "die", "das", "die"],
+              ["Dativ", "dem", "der", "dem", "denen"],
+              ["Genitiv", "dessen", "deren", "dessen", "deren"]
+            ]
+          },
+          "exemplos": [
+            { "de": "Das ist der Mann, der mich kennt.", "pt": "É o homem que me conhece." },
+            { "de": "Das Buch, das ich lese, ist interessant.", "pt": "O livro que estou a ler é interessante." },
+            { "de": "Die Frau, deren Auto rot ist, ist meine Lehrerin.", "pt": "A mulher cujo carro é vermelho é minha professora." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "verbos-presente",
+      "titulo": "Presente do indicativo (Präsens)",
+      "nivel": "A1",
+      "descricao": "Descreve ações habituais, factos gerais e ações em curso. Também usado para futuro próximo.",
+      "regras": [
+        {
+          "id": "conjugacao-regular",
+          "titulo": "Conjugação regular",
+          "nivel": "A1",
+          "explicacao": "Remove-se a terminação -en do infinitivo e adiciona-se a desinência pessoal.",
+          "tabela": {
+            "colunas": ["Pessoa", "Desinência", "Exemplo: machen"],
+            "linhas": [
+              ["ich", "-e", "mache"],
+              ["du", "-st", "machst"],
+              ["er/sie/es", "-t", "macht"],
+              ["wir", "-en", "machen"],
+              ["ihr", "-t", "macht"],
+              ["sie/Sie", "-en", "machen"]
+            ]
+          },
+          "nota": "Se a raiz terminar em -t, -d, -fn, -gn: du trabalha-st → du arbeitest (adiciona -e antes de -st e -t)"
+        },
+        {
+          "id": "verbos-irregulares-presente",
+          "titulo": "Verbos irregulares no Präsens",
+          "nivel": "A1",
+          "explicacao": "Alguns verbos fortes têm mudança vocálica na 2ª e 3ª pessoa do singular.",
+          "padroes": [
+            { "mudanca": "a → ä", "exemplos": ["fahren: du fährst, er fährt", "schlafen: du schläfst, er schläft"] },
+            { "mudanca": "e → i", "exemplos": ["geben: du gibst, er gibt", "sprechen: du sprichst, er spricht"] },
+            { "mudanca": "e → ie", "exemplos": ["sehen: du siehst, er sieht", "lesen: du liest, er liest"] }
+          ]
+        },
+        {
+          "id": "verbos-modais",
+          "titulo": "Verbos modais no Präsens",
+          "nivel": "A2",
+          "explicacao": "Os verbos modais têm formas especiais no singular. O infinitivo vai para o fim da frase.",
+          "tabela": {
+            "colunas": ["Pessoa", "können", "müssen", "wollen", "sollen", "dürfen", "mögen/möchten"],
+            "linhas": [
+              ["ich", "kann", "muss", "will", "soll", "darf", "mag / möchte"],
+              ["du", "kannst", "musst", "willst", "sollst", "darfst", "magst / möchtest"],
+              ["er/sie/es", "kann", "muss", "will", "soll", "darf", "mag / möchte"],
+              ["wir", "können", "müssen", "wollen", "sollen", "dürfen", "mögen / möchten"],
+              ["ihr", "könnt", "müsst", "wollt", "sollt", "dürft", "mögt / möchtet"],
+              ["sie/Sie", "können", "müssen", "wollen", "sollen", "dürfen", "mögen / möchten"]
+            ]
+          },
+          "significados": {
+            "können": "poder (capacidade)",
+            "müssen": "ter de (obrigação interna)",
+            "wollen": "querer",
+            "sollen": "dever (obrigação externa)",
+            "dürfen": "poder (permissão)",
+            "möchten": "gostar de / querer (forma de cortesia)"
+          }
+        }
+      ]
+    },
+
+    {
+      "id": "verbos-perfekt",
+      "titulo": "Pretérito perfeito (Perfekt)",
+      "nivel": "A2",
+      "descricao": "Tempo verbal mais usado na fala e escrita informal para descrever acontecimentos passados.",
+      "regras": [
+        {
+          "id": "formacao-perfekt",
+          "titulo": "Formação do Perfekt",
+          "nivel": "A2",
+          "explicacao": "Auxiliar (haben ou sein) no presente + Partizip II no final da frase.",
+          "exemplos": [
+            { "de": "Ich habe gegessen.", "pt": "Comi." },
+            { "de": "Er ist gefahren.", "pt": "Ele foi de carro." }
+          ]
+        },
+        {
+          "id": "partizip2",
+          "titulo": "Formação do Partizip II",
+          "nivel": "A2",
+          "padroes": [
+            { "tipo": "Verbos fracos (regulares)", "formula": "ge- + raiz + -t", "exemplos": ["machen → gemacht", "kaufen → gekauft"] },
+            { "tipo": "Verbos fracos com -ieren", "formula": "sem ge-, raiz + -t", "exemplos": ["studieren → studiert", "telefonieren → telefoniert"] },
+            { "tipo": "Verbos fortes (irregulares)", "formula": "ge- + raiz alterada + -en", "exemplos": ["schreiben → geschrieben", "fahren → gefahren", "gehen → gegangen"] },
+            { "tipo": "Verbos inseparáveis (be-, er-, ver-, ent-...)", "formula": "sem ge-", "exemplos": ["besuchen → besucht", "erklären → erklärt", "verstehen → verstanden"] },
+            { "tipo": "Verbos separáveis", "formula": "prefixo + ge- + raiz + terminação", "exemplos": ["aufmachen → aufgemacht", "einschlafen → eingeschlafen"] }
+          ]
+        },
+        {
+          "id": "haben-vs-sein",
+          "titulo": "haben ou sein como auxiliar",
+          "nivel": "A2",
+          "explicacao": "A maioria dos verbos usa haben. Sein é usado com: verbos de movimento com destino, verbos de mudança de estado, e verbos especiais.",
+          "com_sein": ["gehen", "fahren", "fliegen", "kommen", "ankommen", "aufstehen", "einschlafen", "sterben", "werden", "bleiben", "sein", "passieren"],
+          "exemplos": [
+            { "de": "Ich bin nach Berlin gefahren.", "pt": "Fui de carro a Berlim." },
+            { "de": "Er ist eingeschlafen.", "pt": "Ele adormeceu." },
+            { "de": "Wir sind zu Hause geblieben.", "pt": "Ficámos em casa." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "verbos-prateritum",
+      "titulo": "Pretérito imperfeito (Präteritum)",
+      "nivel": "B1",
+      "descricao": "Usado principalmente na escrita formal e literatura. Na fala, preferem-se sein/haben/modais no Präteritum.",
+      "regras": [
+        {
+          "id": "prateritum-regular",
+          "titulo": "Präteritum dos verbos fracos (regulares)",
+          "nivel": "B1",
+          "formula": "raiz + -te + desinência pessoal",
+          "tabela": {
+            "colunas": ["Pessoa", "machen"],
+            "linhas": [
+              ["ich", "machte"],
+              ["du", "machtest"],
+              ["er/sie/es", "machte"],
+              ["wir", "machten"],
+              ["ihr", "machtet"],
+              ["sie/Sie", "machten"]
+            ]
+          }
+        },
+        {
+          "id": "prateritum-irregular",
+          "titulo": "Präteritum dos verbos fortes (irregulares)",
+          "nivel": "B1",
+          "explicacao": "A raiz muda (ablaut). As desinências: ich/er/sie/es = sem desinência; du = -st; wir/sie = -en; ihr = -t.",
+          "exemplos_comuns": [
+            { "infinitivo": "sein", "prateritum": "war (ich war, du warst...)" },
+            { "infinitivo": "haben", "prateritum": "hatte (ich hatte, du hattest...)" },
+            { "infinitivo": "gehen", "prateritum": "ging" },
+            { "infinitivo": "kommen", "prateritum": "kam" },
+            { "infinitivo": "fahren", "prateritum": "fuhr" },
+            { "infinitivo": "schreiben", "prateritum": "schrieb" },
+            { "infinitivo": "sehen", "prateritum": "sah" },
+            { "infinitivo": "sprechen", "prateritum": "sprach" },
+            { "infinitivo": "nehmen", "prateritum": "nahm" },
+            { "infinitivo": "wissen", "prateritum": "wusste" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "verbos-futuro",
+      "titulo": "Futuro (Futur I e II)",
+      "nivel": "A2",
+      "descricao": "Futuro I para intenções/previsões; Futur II para ações futuras completadas.",
+      "regras": [
+        {
+          "id": "futur1",
+          "titulo": "Futur I",
+          "nivel": "A2",
+          "formula": "werden (conjugado) + Infinitiv (no final)",
+          "nota": "Na prática, o Präsens com um advérbio de tempo futuro é muito mais comum na fala.",
+          "tabela": {
+            "colunas": ["Pessoa", "werden"],
+            "linhas": [
+              ["ich", "werde"],
+              ["du", "wirst"],
+              ["er/sie/es", "wird"],
+              ["wir", "werden"],
+              ["ihr", "werdet"],
+              ["sie/Sie", "werden"]
+            ]
+          },
+          "exemplos": [
+            { "de": "Ich werde morgen kommen.", "pt": "Virei amanhã." },
+            { "de": "Es wird regnen.", "pt": "Vai chover." }
+          ]
+        },
+        {
+          "id": "futur2",
+          "titulo": "Futur II",
+          "nivel": "B2",
+          "formula": "werden + Partizip II + haben/sein",
+          "explicacao": "Ação futura que estará concluída num determinado momento. Pouco usado na fala.",
+          "exemplos": [
+            { "de": "Bis morgen werde ich den Brief geschrieben haben.", "pt": "Até amanhã, terei escrito a carta." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "konjunktiv",
+      "titulo": "Conjuntivo (Konjunktiv)",
+      "nivel": "B1",
+      "descricao": "O conjuntivo II é usado para hipóteses, cortesia e discurso indireto.",
+      "regras": [
+        {
+          "id": "konjunktiv2-presente",
+          "titulo": "Konjunktiv II — presente",
+          "nivel": "B1",
+          "formacao_irregular": "Verbos fortes usam o Präteritum + Umlaut + desinências especiais.",
+          "formacao_regular": "Verbos fracos: würde + Infinitiv (forma analítica preferida na fala).",
+          "formas_comuns": [
+            { "verbo": "sein", "konjunktiv2": "wäre (ich wäre, du wärst...)" },
+            { "verbo": "haben", "konjunktiv2": "hätte (ich hätte, du hättest...)" },
+            { "verbo": "können", "konjunktiv2": "könnte" },
+            { "verbo": "müssen", "konjunktiv2": "müsste" },
+            { "verbo": "dürfen", "konjunktiv2": "dürfte" },
+            { "verbo": "sollen", "konjunktiv2": "sollte" },
+            { "verbo": "wollen", "konjunktiv2": "wollte" },
+            { "verbo": "werden", "konjunktiv2": "würde" }
+          ],
+          "usos": [
+            { "uso": "Hipóteses / condições irreais", "exemplo": "Wenn ich Zeit hätte, würde ich reisen." },
+            { "uso": "Pedidos corteses", "exemplo": "Könnten Sie mir helfen?" },
+            { "uso": "Sugestões", "exemplo": "Du solltest mehr schlafen." },
+            { "uso": "Desejo", "exemplo": "Ich wünschte, es wäre Frühling." }
+          ]
+        },
+        {
+          "id": "konjunktiv2-vergangenheit",
+          "titulo": "Konjunktiv II — passado",
+          "nivel": "B2",
+          "formula": "hätte/wäre (Konjunktiv II) + Partizip II",
+          "exemplos": [
+            { "de": "Wenn ich mehr gelernt hätte, hätte ich bestanden.", "pt": "Se tivesse estudado mais, teria passado." },
+            { "de": "Er wäre nicht gekommen, wenn es geregnet hätte.", "pt": "Ele não teria vindo se tivesse chovido." }
+          ]
+        },
+        {
+          "id": "konjunktiv1",
+          "titulo": "Konjunktiv I — discurso indireto",
+          "nivel": "C1",
+          "explicacao": "Usado em jornalismo e escrita formal para citar o discurso alheio sem o validar.",
+          "exemplos": [
+            { "de": "Er sagt, er sei krank. (= Er sagt: 'Ich bin krank.')", "pt": "Ele diz que está doente." },
+            { "de": "Die Ministerin erklärte, die Lage sei stabil.", "pt": "A ministra declarou que a situação estava estável." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "passivo",
+      "titulo": "Voz passiva (Passiv)",
+      "nivel": "B1",
+      "descricao": "Desloca o foco da ação do sujeito agente para o objeto paciente.",
+      "regras": [
+        {
+          "id": "vorgangspassiv",
+          "titulo": "Passivo de processo (Vorgangspassiv)",
+          "nivel": "B1",
+          "formula": "werden (conjugado) + Partizip II",
+          "explicacao": "Descreve uma ação em curso. O agente pode ser indicado com von + Dativ.",
+          "tempos": [
+            { "tempo": "Präsens", "formula": "wird + Partizip II", "exemplo": "Das Buch wird gelesen." },
+            { "tempo": "Präteritum", "formula": "wurde + Partizip II", "exemplo": "Das Buch wurde gelesen." },
+            { "tempo": "Perfekt", "formula": "ist + Partizip II + worden", "exemplo": "Das Buch ist gelesen worden." },
+            { "tempo": "Futur I", "formula": "wird + Partizip II + werden", "exemplo": "Das Buch wird gelesen werden." }
+          ]
+        },
+        {
+          "id": "zustandspassiv",
+          "titulo": "Passivo de estado (Zustandspassiv)",
+          "nivel": "B2",
+          "formula": "sein (conjugado) + Partizip II",
+          "explicacao": "Descreve um estado resultante de uma ação já concluída.",
+          "exemplos": [
+            { "de": "Das Fenster ist geöffnet.", "pt": "A janela está aberta." },
+            { "de": "Der Laden ist geschlossen.", "pt": "A loja está fechada." }
+          ]
+        },
+        {
+          "id": "passivo-alternativas",
+          "titulo": "Alternativas ao passivo",
+          "nivel": "B2",
+          "formas": [
+            { "forma": "man + Aktiv", "exemplo": "Man baut hier eine Schule. (= Hier wird eine Schule gebaut.)" },
+            { "forma": "sich lassen + Infinitiv", "exemplo": "Das lässt sich machen. (= Das kann gemacht werden.)" },
+            { "forma": "sein + zu + Infinitiv", "exemplo": "Das ist nicht zu übersehen. (= Das kann nicht übersehen werden.)" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "infinitivo",
+      "titulo": "Construções com infinitivo",
+      "nivel": "A2",
+      "descricao": "O infinitivo usa-se sem zu com modais e alguns verbos, e com zu em outros contextos.",
+      "regras": [
+        {
+          "id": "infinitivo-sem-zu",
+          "titulo": "Infinitivo sem zu",
+          "nivel": "A2",
+          "contextos": [
+            "Verbos modais: Ich kann schwimmen.",
+            "werden (Futur): Ich werde kommen.",
+            "lassen: Er lässt das Auto reparieren.",
+            "bleiben: Sie bleibt stehen.",
+            "gehen: Wir gehen tanzen.",
+            "sehen/hören: Ich höre sie singen."
+          ]
+        },
+        {
+          "id": "infinitivo-com-zu",
+          "titulo": "Infinitivo com zu",
+          "nivel": "B1",
+          "explicacao": "Verbos separáveis: inserir 'zu' entre prefixo e raiz (einzuschlafen).",
+          "contextos": [
+            "versuchen, beginnen, aufhören, vergessen, versprechen, empfehlen...: Ich versuche, Deutsch zu lernen.",
+            "Es ist + adj: Es ist wichtig, gesund zu essen.",
+            "haben + Nomen: Ich habe keine Zeit, das zu erklären.",
+            "um...zu (finalidade): Ich lerne Deutsch, um in Deutschland zu arbeiten.",
+            "ohne...zu (sem): Er ging, ohne zu grüßen.",
+            "anstatt...zu (em vez de): Anstatt zu schlafen, lernte er."
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "casos",
+      "titulo": "Os quatro casos (Kasus)",
+      "nivel": "A1",
+      "descricao": "O alemão tem quatro casos que determinam a função gramatical dos substantivos na frase.",
+      "regras": [
+        {
+          "id": "nominativ",
+          "titulo": "Nominativ — sujeito",
+          "nivel": "A1",
+          "explicacao": "Identifica o sujeito da frase (quem/o quê realiza a ação).",
+          "pergunta": "Wer? Wer macht etwas?",
+          "exemplos": [{ "de": "Der Mann schläft.", "pt": "O homem dorme." }]
+        },
+        {
+          "id": "akkusativ",
+          "titulo": "Akkusativ — objeto direto",
+          "nivel": "A1",
+          "explicacao": "Identifica o objeto direto (quem/o quê é diretamente afetado pela ação). Só o masculino singular muda o artigo (der → den).",
+          "pergunta": "Wen? Was?",
+          "preposicoes": ["durch", "für", "gegen", "ohne", "um", "bis", "entlang"],
+          "exemplos": [{ "de": "Ich sehe den Mann.", "pt": "Vejo o homem." }]
+        },
+        {
+          "id": "dativ",
+          "titulo": "Dativ — objeto indireto",
+          "nivel": "A2",
+          "explicacao": "Identifica o objeto indireto (para quem/a favor de quem).",
+          "pergunta": "Wem?",
+          "preposicoes": ["mit", "nach", "bei", "seit", "von", "aus", "zu", "außer", "gegenüber", "ab"],
+          "exemplos": [{ "de": "Ich helfe dem Mann.", "pt": "Ajudo o homem." }]
+        },
+        {
+          "id": "genitiv",
+          "titulo": "Genitiv — posse",
+          "nivel": "B1",
+          "explicacao": "Indica posse ou relação entre substantivos. Substantivos masculinos e neutros recebem -(e)s.",
+          "pregunta": "Wessen?",
+          "preposicoes": ["wegen", "trotz", "während", "statt/anstatt", "aufgrund", "innerhalb", "außerhalb"],
+          "exemplos": [
+            { "de": "Das ist das Buch des Mannes.", "pt": "É o livro do homem." },
+            { "de": "Trotz des Regens gingen wir spazieren.", "pt": "Apesar da chuva, fomos dar um passeio." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "adjetivos",
+      "titulo": "Adjetivos (Adjektive)",
+      "nivel": "A2",
+      "descricao": "Adjetivos predicativos não declinam; adjetivos atributivos (antes do substantivo) declinam.",
+      "regras": [
+        {
+          "id": "declinacao-apos-definido",
+          "titulo": "Declinação após artigo definido (schwache Deklination)",
+          "nivel": "A2",
+          "tabela": {
+            "colunas": ["Caso", "Masculino", "Feminino", "Neutro", "Plural"],
+            "linhas": [
+              ["Nominativ", "-e", "-e", "-e", "-en"],
+              ["Akkusativ", "-en", "-e", "-e", "-en"],
+              ["Dativ", "-en", "-en", "-en", "-en"],
+              ["Genitiv", "-en", "-en", "-en", "-en"]
+            ]
+          },
+          "exemplos": [
+            { "de": "der alte Mann", "pt": "o homem velho" },
+            { "de": "mit dem alten Mann", "pt": "com o homem velho" }
+          ]
+        },
+        {
+          "id": "declinacao-apos-indefinido",
+          "titulo": "Declinação após artigo indefinido (gemischte Deklination)",
+          "nivel": "B1",
+          "tabela": {
+            "colunas": ["Caso", "Masculino", "Feminino", "Neutro", "Plural (kein)"],
+            "linhas": [
+              ["Nominativ", "-er", "-e", "-es", "-en"],
+              ["Akkusativ", "-en", "-e", "-es", "-en"],
+              ["Dativ", "-en", "-en", "-en", "-en"],
+              ["Genitiv", "-en", "-en", "-en", "-en"]
+            ]
+          }
+        },
+        {
+          "id": "declinacao-sem-artigo",
+          "titulo": "Declinação sem artigo (starke Deklination)",
+          "nivel": "B1",
+          "explicacao": "O adjetivo assume as desinências do artigo definido para indicar género/caso.",
+          "exemplos": [
+            { "de": "kalter Kaffee", "pt": "café frio" },
+            { "de": "frisches Brot", "pt": "pão fresco" }
+          ]
+        },
+        {
+          "id": "comparativo-superlativo",
+          "titulo": "Comparativo e superlativo",
+          "nivel": "A2",
+          "regras": [
+            { "grau": "Positivo", "forma": "schnell", "uso": "Er ist schnell." },
+            { "grau": "Comparativo", "forma": "schneller (als)", "uso": "Er ist schneller als ich." },
+            { "grau": "Superlativo predicativo", "forma": "am schnellsten", "uso": "Er ist am schnellsten." },
+            { "grau": "Superlativo atributivo", "forma": "der/die/das schnellste", "uso": "Er ist der schnellste Läufer." }
+          ],
+          "irregulares": [
+            { "positivo": "gut", "comparativo": "besser", "superlativo": "am besten / der beste" },
+            { "positivo": "viel", "comparativo": "mehr", "superlativo": "am meisten / der meiste" },
+            { "positivo": "gern", "comparativo": "lieber", "superlativo": "am liebsten" },
+            { "positivo": "hoch", "comparativo": "höher", "superlativo": "am höchsten" },
+            { "positivo": "groß", "comparativo": "größer", "superlativo": "am größten" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "preposicoes",
+      "titulo": "Preposições (Präpositionen)",
+      "nivel": "A2",
+      "descricao": "As preposições alemãs exigem um caso específico — Akkusativ, Dativ, Genitiv ou os dois (Wechselpräpositionen).",
+      "regras": [
+        {
+          "id": "prep-akkusativ",
+          "titulo": "Preposições com Akkusativ",
+          "nivel": "A2",
+          "lista": ["durch (através de)", "für (para)", "gegen (contra)", "ohne (sem)", "um (à volta de / às Horas)", "bis (até)", "entlang (ao longo de — posposto)"],
+          "exemplos": [
+            { "de": "durch den Park", "pt": "através do parque" },
+            { "de": "ohne einen Schirm", "pt": "sem um guarda-chuva" }
+          ]
+        },
+        {
+          "id": "prep-dativ",
+          "titulo": "Preposições com Dativ",
+          "nivel": "A2",
+          "lista": ["mit (com)", "nach (para/após)", "bei (em casa de/junto a)", "seit (desde)", "von (de/por)", "aus (de/proveniente de)", "zu (para/a)", "außer (exceto)", "gegenüber (em frente a)", "ab (a partir de)"],
+          "exemplos": [
+            { "de": "mit dem Zug", "pt": "de comboio" },
+            { "de": "seit einem Jahr", "pt": "há um ano" },
+            { "de": "bei der Arbeit", "pt": "no trabalho" }
+          ]
+        },
+        {
+          "id": "prep-wechsel",
+          "titulo": "Preposições de lugar/direção (Wechselpräpositionen)",
+          "nivel": "A2",
+          "explicacao": "Com Dativ: onde? (lugar estático). Com Akkusativ: para onde? (movimento com destino).",
+          "lista": ["in", "an", "auf", "über", "unter", "vor", "hinter", "neben", "zwischen"],
+          "exemplos": [
+            { "de": "Das Buch liegt auf dem Tisch. (Dativ — onde?)", "pt": "O livro está em cima da mesa." },
+            { "de": "Ich lege das Buch auf den Tisch. (Akkusativ — para onde?)", "pt": "Coloco o livro em cima da mesa." }
+          ]
+        },
+        {
+          "id": "contrações-preposicoes",
+          "titulo": "Contrações comuns de preposição + artigo",
+          "nivel": "A2",
+          "lista": [
+            "an + dem = am", "an + das = ans", "in + dem = im", "in + das = ins",
+            "zu + dem = zum", "zu + der = zur", "bei + dem = beim", "von + dem = vom"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "verbos-separaveis",
+      "titulo": "Verbos separáveis (trennbare Verben)",
+      "nivel": "A2",
+      "descricao": "Verbos com prefixo separável: o prefixo vai para o final da frase nas orações principais.",
+      "regras": [
+        {
+          "id": "separaveis-regra",
+          "titulo": "Regra dos verbos separáveis",
+          "nivel": "A2",
+          "explicacao": "Prefixos separáveis: ab-, an-, auf-, aus-, bei-, ein-, fest-, her-, hin-, los-, mit-, nach-, vor-, weg-, zu-, zurück-, zusammen-...",
+          "exemplos": [
+            { "de": "aufmachen → Ich mache die Tür auf.", "pt": "abrir → Abro a porta." },
+            { "de": "anrufen → Er ruft mich an.", "pt": "telefonar → Ele telefona-me." },
+            { "de": "einschlafen → Sie schläft ein.", "pt": "adormecer → Ela adormece." }
+          ],
+          "em_oracao_subordinada": "Em orações subordinadas, o verbo vai para o final e o prefixo não se separa: ..., weil er mich anruft.",
+          "no_infinitivo": "Com zu: aufzumachen, anzurufen, einzuschlafen (zu fica entre prefixo e raiz).",
+          "no_partizip2": "ge- entre prefixo e raiz: aufgemacht, angerufen, eingeschlafen."
+        }
+      ]
+    },
+
+    {
+      "id": "ordem-palavras",
+      "titulo": "Ordem das palavras (Wortstellung)",
+      "nivel": "A1",
+      "descricao": "O alemão tem regras específicas sobre a posição do verbo na frase.",
+      "regras": [
+        {
+          "id": "verb-zweite-position",
+          "titulo": "O verbo conjugado ocupa sempre a segunda posição",
+          "nivel": "A1",
+          "explicacao": "Em orações principais afirmativas, o verbo conjugado é sempre o segundo elemento (não necessariamente a segunda palavra).",
+          "exemplos": [
+            { "de": "Ich gehe morgen ins Kino.", "pt": "Vou amanhã ao cinema." },
+            { "de": "Morgen gehe ich ins Kino.", "pt": "Amanhã vou ao cinema." },
+            { "de": "Ins Kino gehe ich morgen.", "pt": "Ao cinema vou amanhã." }
+          ]
+        },
+        {
+          "id": "verb-am-ende",
+          "titulo": "Verbo no final nas orações subordinadas",
+          "nivel": "A2",
+          "conjuncoes_subordinantes": ["weil", "dass", "obwohl", "wenn", "ob", "damit", "bevor", "nachdem", "als", "während", "seitdem"],
+          "exemplos": [
+            { "de": "Ich lerne Deutsch, weil ich in Deutschland arbeiten will.", "pt": "Aprendo alemão porque quero trabalhar na Alemanha." },
+            { "de": "Ich weiß, dass er kommt.", "pt": "Sei que ele vem." }
+          ]
+        },
+        {
+          "id": "ordem-complementos",
+          "titulo": "Ordem dos complementos (TeKaMoLo)",
+          "nivel": "B1",
+          "explicacao": "Na ausência de marcadores especiais, a ordem preferida dos advérbios é: Temporal → Kausal → Modal → Lokal",
+          "exemplos": [
+            { "de": "Ich fahre morgen (T) wegen der Arbeit (K) mit dem Zug (M) nach Berlin (L).", "pt": "Amanhã vou de comboio a Berlim por causa do trabalho." }
+          ]
+        },
+        {
+          "id": "verbklammer",
+          "titulo": "Suporte verbal (Verbklammer)",
+          "nivel": "B1",
+          "explicacao": "Em orações principais, o verbo conjugado está em 2ª posição e o(s) elemento(s) verbais não conjugados (infinitivo, Partizip II, prefixo) ficam no final, formando uma 'moldura' (Klammer) em torno dos outros elementos.",
+          "exemplos": [
+            { "de": "Ich habe gestern das Buch gelesen.", "pt": "Li o livro ontem." },
+            { "de": "Er muss morgen früh aufstehen.", "pt": "Ele tem de se levantar cedo amanhã." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "conjuncoes",
+      "titulo": "Conjunções e conectores (Konjunktionen)",
+      "nivel": "A2",
+      "descricao": "Ligam orações ou partes de frases. As coordenativas não afetam a posição do verbo; as subordinantes enviam o verbo para o final.",
+      "regras": [
+        {
+          "id": "coordenativas",
+          "titulo": "Conjunções coordenativas (não mudam a posição do verbo)",
+          "nivel": "A2",
+          "lista": [
+            { "conjuncao": "und", "significado": "e" },
+            { "conjuncao": "aber", "significado": "mas" },
+            { "conjuncao": "oder", "significado": "ou" },
+            { "conjuncao": "denn", "significado": "pois / porque (explicativo)" },
+            { "conjuncao": "sondern", "significado": "mas sim (após negação)" }
+          ]
+        },
+        {
+          "id": "conectores-adverbiais",
+          "titulo": "Conectores adverbiais (verbo em 2ª posição — deslocam o sujeito)",
+          "nivel": "B1",
+          "lista": [
+            { "conector": "deshalb / daher / darum", "significado": "por isso" },
+            { "conector": "trotzdem", "significado": "mesmo assim" },
+            { "conector": "außerdem", "significado": "além disso" },
+            { "conector": "dennoch", "significado": "ainda assim (formal)" },
+            { "conector": "jedoch", "significado": "contudo (formal)" },
+            { "conector": "also", "significado": "portanto / logo" },
+            { "conector": "zwar...aber", "significado": "é certo que... mas" },
+            { "conector": "einerseits...andererseits", "significado": "por um lado... por outro" }
+          ],
+          "exemplos": [
+            { "de": "Es regnet. Deshalb bleibe ich zu Hause.", "pt": "Chove. Por isso fico em casa." },
+            { "de": "Ich bin müde. Trotzdem gehe ich ins Gym.", "pt": "Estou cansado. Mesmo assim vou ao ginásio." }
+          ]
+        },
+        {
+          "id": "subordinantes",
+          "titulo": "Conjunções subordinantes (verbo no final)",
+          "nivel": "A2",
+          "lista": [
+            { "conjuncao": "weil", "significado": "porque (causa)" },
+            { "conjuncao": "da", "significado": "uma vez que (causa — mais formal)" },
+            { "conjuncao": "obwohl", "significado": "embora" },
+            { "conjuncao": "wenn", "significado": "quando (presente/futuro) / se" },
+            { "conjuncao": "als", "significado": "quando (passado — evento único)" },
+            { "conjuncao": "während", "significado": "enquanto / ao passo que" },
+            { "conjuncao": "bevor", "significado": "antes de" },
+            { "conjuncao": "nachdem", "significado": "depois de" },
+            { "conjuncao": "damit", "significado": "para que (finalidade, sujeito diferente)" },
+            { "conjuncao": "dass", "significado": "que (completiva)" },
+            { "conjuncao": "ob", "significado": "se (interrogativa indireta)" },
+            { "conjuncao": "falls", "significado": "caso / se (condicional)" },
+            { "conjuncao": "seit/seitdem", "significado": "desde que" },
+            { "conjuncao": "sodass", "significado": "de modo que (consecutiva)" }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "numeros-tempo",
+      "titulo": "Números e expressões de tempo",
+      "nivel": "A1",
+      "descricao": "Números cardinais, ordinais e como dizer as horas em alemão.",
+      "regras": [
+        {
+          "id": "cardinais",
+          "titulo": "Números cardinais",
+          "nivel": "A1",
+          "basicos": ["null, ein/eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf"],
+          "dezenas": ["zwanzig, dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert"],
+          "formacao_compostos": "Unidades + und + dezenas: 21 = einundzwanzig, 35 = fünfunddreißig"
+        },
+        {
+          "id": "horas",
+          "titulo": "As horas (Uhrzeit)",
+          "nivel": "A1",
+          "formas": [
+            { "hora": "formal/oficial", "exemplo": "Es ist 14:30 Uhr. / Um 14 Uhr 30." },
+            { "hora": "informal (12h)", "exemplo": "Es ist halb drei (14:30). / Es ist Viertel nach zwei (14:15). / Es ist Viertel vor drei (14:45)." }
+          ],
+          "nota": "'halb drei' = metade para as três = 2:30 (não 3:30!)"
+        },
+        {
+          "id": "expressoes-temporais",
+          "titulo": "Expressões de tempo frequentes",
+          "nivel": "A1",
+          "lista": [
+            "heute (hoje), gestern (ontem), morgen (amanhã)",
+            "jetzt (agora), gerade (neste momento), dann (então)",
+            "oft (muitas vezes), manchmal (às vezes), selten (raramente), nie (nunca)",
+            "immer (sempre), meistens (na maioria das vezes)",
+            "am Montag / am Morgen / am Nachmittag / am Abend",
+            "in der Nacht / um Mitternacht",
+            "letzte Woche / nächsten Monat / dieses Jahr"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "negacao",
+      "titulo": "Negação (Verneinung)",
+      "nivel": "A1",
+      "descricao": "Não existe forma única de negar em alemão — depende do que se nega.",
+      "regras": [
+        {
+          "id": "nicht",
+          "titulo": "nicht — negar verbos, adjetivos, advérbios e substantivos com artigo definido",
+          "nivel": "A1",
+          "posicao": "Geralmente antes do elemento negado; no final da frase para negar o predicado todo.",
+          "exemplos": [
+            { "de": "Ich komme nicht.", "pt": "Não venho." },
+            { "de": "Das ist nicht schön.", "pt": "Isso não é bonito." },
+            { "de": "Ich kenne den Mann nicht.", "pt": "Não conheço o homem." }
+          ]
+        },
+        {
+          "id": "kein",
+          "titulo": "kein/keine — negar substantivos com artigo indefinido ou sem artigo",
+          "nivel": "A1",
+          "exemplos": [
+            { "de": "Ich habe kein Geld.", "pt": "Não tenho dinheiro." },
+            { "de": "Das ist keine gute Idee.", "pt": "Não é uma boa ideia." }
+          ]
+        },
+        {
+          "id": "andere-negativas",
+          "titulo": "Outras palavras negativas",
+          "nivel": "A2",
+          "lista": [
+            "niemand (ninguém)", "nichts (nada)", "nie / niemals (nunca)", "nirgends / nirgendwo (em lado nenhum)", "weder...noch (nem...nem)"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "discurso-indireto",
+      "titulo": "Discurso indireto (indirekte Rede)",
+      "nivel": "B2",
+      "descricao": "Relatar o que alguém disse. Usa-se formalmente o Konjunktiv I; na fala usa-se Konjunktiv II ou indicativo.",
+      "regras": [
+        {
+          "id": "estrutura-discurso-indireto",
+          "titulo": "Estrutura do discurso indireto",
+          "nivel": "B2",
+          "formas": [
+            { "tipo": "Com dass", "exemplo": "Er sagt, dass er müde ist/sei." },
+            { "tipo": "Sem dass (ordem do verbo: subordinada)", "exemplo": "Er sagt, er sei müde." }
+          ],
+          "ajuste_pronominal": "Os pronomes ajustam-se à perspetiva do relator: 'Ich bin krank' → Er sagt, er sei krank.",
+          "exemplos": [
+            { "de": "Direkt: 'Ich arbeite morgen nicht.' → Indirekt: Sie sagte, sie arbeite morgen nicht / sie würde morgen nicht arbeiten.", "pt": "Direto: 'Não trabalho amanhã.' → Indireto: Ela disse que não trabalharia amanhã." }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "verbos-inseparaveis",
+      "titulo": "Verbos inseparáveis (untrennbare Verben)",
+      "nivel": "A2",
+      "descricao": "Prefixos inseparáveis nunca se separam do verbo e não recebem 'ge-' no Partizip II.",
+      "regras": [
+        {
+          "id": "prefixos-inseparaveis",
+          "titulo": "Prefixos inseparáveis",
+          "nivel": "A2",
+          "lista": ["be-", "er-", "ge-", "ver-", "zer-", "ent-", "emp-", "miss-", "hinter-"],
+          "exemplos": [
+            { "de": "besuchen → besucht (nicht gebesucht)", "pt": "visitar → visitado" },
+            { "de": "erklären → erklärt", "pt": "explicar → explicado" },
+            { "de": "verstehen → verstanden", "pt": "compreender → compreendido" },
+            { "de": "zerbrechen → zerbrochen", "pt": "partir/quebrar → partido" }
+          ]
+        }
+      ]
+    }
+  ]
+}

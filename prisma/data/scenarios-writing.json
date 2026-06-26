@@ -1,0 +1,349 @@
+[
+  {
+    "id": 1, "nivel": "A1", "tipo": "email",
+    "titulo": "Email para um amigo — apresentação",
+    "contexto": "Um estudante escreve ao seu novo parceiro de correspondência alemão para se apresentar.",
+    "prompt": "Escreve um email curto a apresentar-te a um amigo alemão. Diz o teu nome, idade, de onde és e o que gostas de fazer.",
+    "exemplo": {
+      "assunto": "Hallo! Ich heiße Pedro.",
+      "corpo": "Lieber Max,\n\nmein Name ist Pedro. Ich komme aus Portugal. Ich bin 20 Jahre alt. Ich lerne Deutsch, weil ich Deutschland liebe.\n\nIch spiele gern Gitarre und ich lese viel. Hast du Hobbys?\n\nViele Grüße,\nPedro"
+    },
+    "vocabulario_chave": ["Lieber/Liebe", "mein Name ist", "ich komme aus", "Viele Grüße"],
+    "gramatica": ["Verbo em 2ª posição", "haben no presente", "gern para indicar preferência"]
+  },
+  {
+    "id": 2, "nivel": "A1", "tipo": "mensagem",
+    "titulo": "Mensagem de texto — combinar encontro",
+    "contexto": "Mensagem curta para combinar hora e local de encontro com um colega de turma.",
+    "prompt": "Escreve uma mensagem curta a propor um encontro. Inclui hora, local e o que vão fazer.",
+    "exemplo": {
+      "corpo": "Hallo Anna! Können wir uns morgen treffen? Um 15 Uhr im Café am Markt? Ich bringe mein Deutsch-Buch mit. Bis morgen! 😊"
+    },
+    "vocabulario_chave": ["können", "sich treffen", "mitbringen", "bis morgen"],
+    "gramatica": ["können + Infinitiv", "Uhrzeit mit um"]
+  },
+  {
+    "id": 3, "nivel": "A1", "tipo": "formulario",
+    "titulo": "Preencher um formulário de inscrição",
+    "contexto": "Inscrição numa escola de línguas alemã.",
+    "prompt": "Preenche os campos do formulário: Nome, Apelido, Data de nascimento, Nacionalidade, E-mail, Telefone, Nível de alemão.",
+    "exemplo": {
+      "campos": {
+        "Vorname": "Pedro",
+        "Nachname": "Silva",
+        "Geburtsdatum": "15.03.2001",
+        "Nationalität": "Portugiesisch",
+        "E-Mail": "pedro.silva@email.com",
+        "Telefon": "+351 912 345 678",
+        "Deutschkenntnisse": "Anfänger (A1)"
+      }
+    },
+    "vocabulario_chave": ["Vorname", "Nachname", "Geburtsdatum", "Nationalität", "Anfänger"],
+    "gramatica": ["Formatos de data em alemão (TT.MM.JJJJ)", "adjetivos de nacionalidade"]
+  },
+  {
+    "id": 4, "nivel": "A1", "tipo": "postal",
+    "titulo": "Postal de férias",
+    "contexto": "Enviar um postal da praia para um amigo alemão.",
+    "prompt": "Escreve um postal de férias. Diz onde estás, como está o tempo, o que comes e o que fazes.",
+    "exemplo": {
+      "corpo": "Liebe Maria,\n\nIch bin in Portugal. Das Wetter ist super! Die Sonne scheint jeden Tag. Ich esse viel Fisch und trinke Wein. Ich schwimme im Meer. Es ist wunderbar!\n\nBis bald,\nPedro"
+    },
+    "vocabulario_chave": ["Das Wetter", "die Sonne scheint", "wunderbar", "bis bald"],
+    "gramatica": ["Verbo sein im Präsens", "Wetter beschreiben"]
+  },
+  {
+    "id": 5, "nivel": "A2", "tipo": "email",
+    "titulo": "Email ao senhorio — pedido de informação sobre apartamento",
+    "contexto": "Um estudante estrangeiro escreve ao senhorio para obter informações sobre um apartamento anunciado.",
+    "prompt": "Escreve um email a pedir informações: preço, tamanho, localização, se inclui despesas, quando pode visitar.",
+    "exemplo": {
+      "assunto": "Anfrage Wohnung — Anzeige vom 12. März",
+      "corpo": "Sehr geehrte Damen und Herren,\n\nich habe Ihre Anzeige für die Wohnung in der Hauptstraße gelesen und interessiere mich sehr dafür.\n\nKönnten Sie mir bitte folgende Fragen beantworten:\nWie groß ist die Wohnung genau?\nSind die Nebenkosten inklusive?\nIst die Wohnung möbliert?\n\nGerne würde ich die Wohnung besichtigen. Wann wäre das möglich?\n\nMit freundlichen Grüßen,\nPedro Silva"
+    },
+    "vocabulario_chave": ["Sehr geehrte Damen und Herren", "sich interessieren für", "Nebenkosten", "besichtigen", "Mit freundlichen Grüßen"],
+    "gramatica": ["Konjunktiv II (Könnten Sie, würde ich)", "Indirekte Frage"]
+  },
+  {
+    "id": 6, "nivel": "A2", "tipo": "email",
+    "titulo": "Email a cancelar uma reserva",
+    "contexto": "Cancelar uma reserva de hotel com antecedência.",
+    "prompt": "Escreve um email a cancelar uma reserva. Inclui nome, data de chegada e partida, e motivo.",
+    "exemplo": {
+      "assunto": "Stornierung der Reservierung — Silva, 20.–23. April",
+      "corpo": "Sehr geehrte Damen und Herren,\n\nhiermit möchte ich meine Reservierung für den Zeitraum vom 20. bis 23. April stornieren. Leider kann ich den geplanten Aufenthalt nicht wahrnehmen, da ich krank geworden bin.\n\nIch bitte um eine Bestätigung der Stornierung.\n\nMit freundlichen Grüßen,\nPedro Silva"
+    },
+    "vocabulario_chave": ["stornieren", "Zeitraum", "wahrnehmen", "Bestätigung", "leider"],
+    "gramatica": ["hiermit como introdutor formal", "da-Satz (causal)"]
+  },
+  {
+    "id": 7, "nivel": "A2", "tipo": "mensagem",
+    "titulo": "Mensagem — pedir ajuda a um colega",
+    "contexto": "Pedir ajuda a um colega de trabalho para um problema técnico.",
+    "prompt": "Escreve uma mensagem informal a pedir ajuda. Explica o problema e quando precisas da ajuda.",
+    "exemplo": {
+      "corpo": "Hallo Jonas,\n\nkannst du mir bitte helfen? Mein Computer funktioniert nicht richtig. Ich kann keine E-Mails öffnen. Das passiert seit heute Morgen.\n\nHast du vielleicht Zeit heute Nachmittag? Das wäre super!\n\nDanke schon mal,\nPedro"
+    },
+    "vocabulario_chave": ["funktionieren", "seit", "vielleicht", "das wäre super", "danke schon mal"],
+    "gramatica": ["seit + Dativ (duração)", "Konjunktiv II (wäre) para cortesia"]
+  },
+  {
+    "id": 8, "nivel": "A2", "tipo": "carta",
+    "titulo": "Carta de felicitações — aniversário",
+    "contexto": "Escrever uma carta de aniversário a um amigo.",
+    "prompt": "Escreve uma carta de aniversário. Inclui os parabéns, um desejo específico e convite para comemorar.",
+    "exemplo": {
+      "corpo": "Liebe Julia,\n\nherzlichen Glückwunsch zum Geburtstag! Ich hoffe, dass du einen wunderschönen Tag hast.\n\nFür das neue Lebensjahr wünsche ich dir vor allem Gesundheit, Glück und viele schöne Erlebnisse. Du verdienst das Allerbeste!\n\nMöchtest du am Wochenende etwas zusammen feiern? Ich lade dich gern zum Essen ein.\n\nAlles Liebe,\nPedro"
+    },
+    "vocabulario_chave": ["herzlichen Glückwunsch", "wünschen", "Lebensjahr", "verdienen", "einladen"],
+    "gramatica": ["wünschen + Dativ", "möchten + Infinitiv"]
+  },
+  {
+    "id": 9, "nivel": "A2", "tipo": "descricao",
+    "titulo": "Descrição de um apartamento",
+    "contexto": "Descrever o próprio apartamento para um amigo que vai fazer uma visita.",
+    "prompt": "Descreve o teu apartamento. Número de divisões, localização, o que tem de especial e como se chega lá.",
+    "exemplo": {
+      "corpo": "Meine Wohnung liegt im 3. Stock ohne Aufzug. Sie hat drei Zimmer: ein Schlafzimmer, ein Wohnzimmer und eine Küche. Das Bad ist klein, aber modern.\n\nIch mag meine Wohnung, weil sie hell und ruhig ist. Vom Fenster sieht man einen kleinen Park.\n\nUm zu mir zu kommen: U-Bahn Linie 3, Station Marktplatz, dann 5 Minuten zu Fuß."
+    },
+    "vocabulario_chave": ["Stock", "Aufzug", "Schlafzimmer", "hell", "ruhig", "Station"],
+    "gramatica": ["weil-Satz", "um zu + Infinitiv (finalidade)"]
+  },
+  {
+    "id": 10, "nivel": "A2", "tipo": "email",
+    "titulo": "Email a um professor — justificação de falta",
+    "contexto": "Justificar uma ausência à aula por motivo de doença.",
+    "prompt": "Escreve um email formal a justificar a tua ausência. Menciona quando faltaste, o motivo e quando voltas.",
+    "exemplo": {
+      "assunto": "Entschuldigung für das Fehlen am 15. März",
+      "corpo": "Sehr geehrte Frau Schmidt,\n\nmit dieser E-Mail möchte ich mein Fehlen am 15. März entschuldigen. Ich war leider krank und hatte Fieber.\n\nIch war beim Arzt und habe ein Attest. Ich kann es Ihnen morgen mitbringen.\n\nIch werde den verpassten Stoff natürlich nachholen.\n\nMit freundlichen Grüßen,\nPedro Silva"
+    },
+    "vocabulario_chave": ["entschuldigen", "Fehlen", "Attest", "nachholen", "verpasst"],
+    "gramatica": ["Perfekt (war, hatte)", "werden + Infinitiv para compromisso futuro"]
+  },
+  {
+    "id": 11, "nivel": "B1", "tipo": "carta",
+    "titulo": "Carta de reclamação — produto defeituoso",
+    "contexto": "Escrever uma carta formal de reclamação a uma empresa sobre um produto com defeito.",
+    "prompt": "Escreve uma carta de reclamação. Descreve o produto, o defeito, quando ocorreu e o que pretendes (reembolso, troca).",
+    "exemplo": {
+      "assunto": "Reklamation — Bestellung Nr. 45678",
+      "corpo": "Sehr geehrte Damen und Herren,\n\nam 5. März habe ich bei Ihnen einen Laptop (Modell XZ-500) bestellt und am 10. März erhalten. Leider musste ich feststellen, dass das Gerät einen schwerwiegenden Defekt aufweist: Der Bildschirm flackert ständig, und das Gerät schaltet sich unerwartet aus.\n\nIch habe das Produkt noch nicht geöffnet und alle Originalverpackungen aufbewahrt. Da das Gerät offensichtlich fehlerhaft ist, bitte ich Sie entweder um einen Umtausch gegen ein fehlerfreies Gerät oder um eine vollständige Rückerstattung des Kaufpreises.\n\nBitte teilen Sie mir mit, wie ich weiter vorgehen soll.\n\nMit freundlichen Grüßen,\nPedro Silva"
+    },
+    "vocabulario_chave": ["Reklamation", "feststellen", "fehlerhaft", "Umtausch", "Rückerstattung", "vorgehen"],
+    "gramatica": ["Perfekt para narrar sequência de eventos", "da-Satz causal formal", "entweder...oder"]
+  },
+  {
+    "id": 12, "nivel": "B1", "tipo": "email",
+    "titulo": "Email de candidatura a estágio",
+    "contexto": "Candidatura espontânea a um estágio numa empresa alemã.",
+    "prompt": "Escreve um email de candidatura espontânea. Apresenta-te, explica porque queres o estágio nessa empresa e o que podes oferecer.",
+    "exemplo": {
+      "assunto": "Bewerbung um ein Praktikum im Bereich Marketing",
+      "corpo": "Sehr geehrte Damen und Herren,\n\nmein Name ist Pedro Silva, ich bin 22 Jahre alt und studiere im dritten Jahr Betriebswirtschaft an der Universidade do Porto.\n\nIch interessiere mich sehr für einen Praktikumsplatz in Ihrem Unternehmen, da Sie im Bereich digitales Marketing führend sind. Durch mein Studium habe ich fundierte Kenntnisse in Marketing und Social Media erworben. Außerdem spreche ich fließend Portugiesisch, Englisch und Deutsch.\n\nIch wäre sehr motiviert, Ihre Projekte zu unterstützen und praktische Erfahrungen zu sammeln. Meine Unterlagen hänge ich dieser E-Mail an.\n\nIch freue mich auf Ihre Rückmeldung.\n\nMit freundlichen Grüßen,\nPedro Silva"
+    },
+    "vocabulario_chave": ["Praktikumsplatz", "fundierte Kenntnisse", "fließend", "Rückmeldung", "anhängen"],
+    "gramatica": ["da-Satz causal", "Perfekt para descrever experiências", "Konjunktiv II (wäre)"]
+  },
+  {
+    "id": 13, "nivel": "B1", "tipo": "ensaio",
+    "titulo": "Texto de opinião — redes sociais e jovens",
+    "contexto": "Texto de opinião para um jornal escolar sobre o impacto das redes sociais nos jovens.",
+    "prompt": "Escreve um texto de opinião (150-200 palavras) sobre as redes sociais. Apresenta vantagens, desvantagens e a tua opinião.",
+    "exemplo": {
+      "corpo": "Soziale Medien sind aus dem Leben junger Menschen nicht mehr wegzudenken. Sie ermöglichen es, mit Freunden in Kontakt zu bleiben und sich schnell über aktuelle Ereignisse zu informieren.\n\nAuf der anderen Seite gibt es aber auch Risiken: Viele Jugendliche verbringen zu viel Zeit vor dem Bildschirm, was zu Schlafproblemen und Konzentrationsschwierigkeiten führen kann. Zudem kann der ständige Vergleich mit anderen das Selbstbild negativ beeinflussen.\n\nMeiner Meinung nach sind soziale Medien weder gut noch schlecht — es kommt darauf an, wie man sie nutzt. Ein bewusster und kontrollierter Umgang ist der Schlüssel. Eltern und Lehrer sollten junge Menschen dabei unterstützen, eine gesunde Mediengewohnheit zu entwickeln."
+    },
+    "vocabulario_chave": ["nicht mehr wegzudenken", "ermöglichen", "auf der anderen Seite", "Selbstbild", "Umgang"],
+    "gramatica": ["auf der anderen Seite (contraste)", "Meiner Meinung nach (opinião)", "Es kommt darauf an, wie... (exprime condição)"]
+  },
+  {
+    "id": 14, "nivel": "B1", "tipo": "relatorio",
+    "titulo": "Relatório de viagem de estudo",
+    "contexto": "Relatório para o professor após uma visita de estudo a Berlim.",
+    "prompt": "Escreve um relatório descrevendo a visita: o que viram, o que aprenderam e a tua avaliação pessoal.",
+    "exemplo": {
+      "corpo": "Bericht über die Studienreise nach Berlin (10.–14. März)\n\nAm 10. März reiste unsere Gruppe mit dem Zug nach Berlin ab. In den folgenden Tagen besuchten wir mehrere wichtige Sehenswürdigkeiten, darunter das Brandenburger Tor, das Holocaust-Mahnmal und das Pergamon-Museum.\n\nBesonders beeindruckt hat mich das Jüdische Museum, das die Geschichte der jüdischen Bevölkerung in Deutschland auf sehr bewegende Weise darstellt.\n\nInsgesamt war die Reise sehr lehrreich. Wir haben nicht nur Geschichte gelernt, sondern auch gelernt, wie man sich in einer Großstadt orientiert und Deutsch in echten Situationen anwendet.\n\nIch empfehle diese Reise allen Schülern, die Interesse an Geschichte und Kultur haben."
+    },
+    "vocabulario_chave": ["Sehenswürdigkeit", "darunter", "beeindrucken", "darstellend", "empfehlen"],
+    "gramatica": ["Präteritum para narração formal", "Partizip II como adjetivo (beeindruckend)", "Passiv (wird dargestellt)"]
+  },
+  {
+    "id": 15, "nivel": "B1", "tipo": "email",
+    "titulo": "Email a pedir referência a um professor",
+    "contexto": "Pedir ao professor universitário uma referência para uma bolsa de estudos.",
+    "prompt": "Escreve um email formal a pedir uma carta de referência. Contextualiza o pedido, explica o programa e indica o prazo.",
+    "exemplo": {
+      "assunto": "Bitte um ein Empfehlungsschreiben — Erasmus-Stipendium",
+      "corpo": "Sehr geehrter Herr Professor Müller,\n\nich bewerbe mich um ein Erasmus-Stipendium für das nächste Semester an der Humboldt-Universität zu Berlin. Da ich in Ihrem Seminar \"Europäische Wirtschaftspolitik\" sehr viel gelernt habe und Sie meine akademischen Leistungen gut kennen, würde ich mich sehr freuen, wenn Sie mir ein Empfehlungsschreiben ausstellen könnten.\n\nDie Frist für die Bewerbung ist der 15. April. Das Schreiben sollte auf Englisch oder Deutsch verfasst sein.\n\nIch würde Ihnen selbstverständlich alle nötigen Unterlagen zur Verfügung stellen.\n\nFür Ihre Zeit und Unterstützung bedanke ich mich herzlich im Voraus.\n\nMit freundlichen Grüßen,\nPedro Silva"
+    },
+    "vocabulario_chave": ["Empfehlungsschreiben", "ausstellen", "Frist", "verfasst sein", "im Voraus"],
+    "gramatica": ["Konjunktiv II (würde ich mich freuen, könnten)", "da-Satz causal formal"]
+  },
+  {
+    "id": 16, "nivel": "B1", "tipo": "descricao",
+    "titulo": "Descrição de uma pessoa — perfil para rede social",
+    "contexto": "Criar um perfil de apresentação para uma plataforma de intercâmbio linguístico.",
+    "prompt": "Escreve um texto de apresentação. Inclui personalidade, interesses, objetivos com o alemão e o que podes oferecer ao parceiro.",
+    "exemplo": {
+      "corpo": "Hallo! Ich bin Pedro, 22 Jahre alt, und ich komme aus Porto, Portugal. Ich studiere Wirtschaftswissenschaften und möchte nach meinem Studium in Deutschland oder Österreich arbeiten.\n\nIch bin neugierig, offen und lerne gern Neues. In meiner Freizeit spiele ich Gitarre, lese Sachbücher und koche gern portugiesische Gerichte.\n\nIch lerne seit zwei Jahren Deutsch und möchte vor allem meine mündlichen Kenntnisse verbessern. Im Austausch kann ich dir helfen, Portugiesisch zu lernen — ich erkläre geduldig und habe viel Erfahrung im Sprachunterricht.\n\nAuf eine gute Zusammenarbeit!"
+    },
+    "vocabulario_chave": ["neugierig", "offen", "Kenntnisse", "verbessern", "geduldig", "Zusammenarbeit"],
+    "gramatica": ["seit + Dativ", "möchten + Infinitiv", "im Austausch (locução prepositiva)"]
+  },
+  {
+    "id": 17, "nivel": "B2", "tipo": "carta",
+    "titulo": "Carta formal de candidatura a emprego",
+    "contexto": "Candidatura a uma vaga de especialista de marketing numa empresa internacional.",
+    "prompt": "Escreve uma carta de candidatura completa. Refere como soubeste da vaga, a tua formação e experiência, motivação e expectativas.",
+    "exemplo": {
+      "assunto": "Bewerbung als Marketing-Spezialist (Ref. 2024-MKT-07)",
+      "corpo": "Sehr geehrte Frau Dr. Weber,\n\nmit großem Interesse habe ich Ihre Stellenanzeige auf LinkedIn gelesen und bewerbe mich hiermit als Marketing-Spezialist in Ihrem Unternehmen.\n\nIch bin ausgebildeter Betriebswirt mit Schwerpunkt Marketing und verfüge über drei Jahre Berufserfahrung in einer internationalen Agentur, wo ich für die Entwicklung und Umsetzung von digitalen Kampagnen in europäischen Märkten verantwortlich war. Dabei habe ich umfangreiche Kenntnisse in den Bereichen SEO, Content-Marketing und Datenanalyse erworben.\n\nIhr Unternehmen spricht mich besonders an, weil Sie für Ihre innovativen Ansätze und Ihre nachhaltige Unternehmensführung bekannt sind. Ich bin überzeugt, dass meine Erfahrung und meine kreative Denkweise einen wertvollen Beitrag zu Ihrem Team leisten können.\n\nFür ein persönliches Gespräch stehe ich jederzeit zur Verfügung.\n\nMit freundlichen Grüßen,\nPedro Silva\n\nAnlagen: Lebenslauf, Zeugnisse"
+    },
+    "vocabulario_chave": ["Stellenanzeige", "verantwortlich sein für", "nachhaltig", "überzeugt", "Anlagen"],
+    "gramatica": ["Perfekt para narrar experiências", "weil-Satz (motivação)", "Partizip II como adjetivo (ausgebildet, bekannt)"]
+  },
+  {
+    "id": 18, "nivel": "B2", "tipo": "ensaio",
+    "titulo": "Ensaio argumentativo — trabalho remoto",
+    "contexto": "Ensaio para uma revista de negócios sobre as vantagens e desvantagens do trabalho remoto.",
+    "prompt": "Escreve um ensaio argumentativo (250 palavras) sobre o teletrabalho. Apresenta argumentos pró e contra e defende a tua posição.",
+    "exemplo": {
+      "corpo": "Homeoffice — Fluch oder Segen?\n\nDie COVID-19-Pandemie hat das Homeoffice über Nacht zur Norm gemacht. Seitdem sind die Meinungen darüber gespalten: Ist das Arbeiten von zu Hause ein Gewinn an Lebensqualität oder ein Verlust an Produktivität und sozialen Kontakten?\n\nBefürworter des Homeoffice betonen die Flexibilität, die es ermöglicht. Lange Pendelzeiten entfallen, Mitarbeiter können ihre Arbeit besser an persönliche Bedürfnisse anpassen und gewinnen dadurch an Autonomie und Zufriedenheit. Studien belegen zudem, dass viele Arbeitnehmer im Homeoffice produktiver sind als im Büro.\n\nAllerdings gibt es auch gewichtige Gegenargumente. Die Grenzen zwischen Berufs- und Privatleben verschwimmen, was zu Erschöpfung führen kann. Spontane Kreativität und Teamdynamik, die durch persönliche Begegnungen entstehen, lassen sich schwer digital replizieren. Zudem haben nicht alle Mitarbeiter zu Hause eine geeignete Arbeitsumgebung.\n\nMeines Erachtens ist ein hybrides Modell der sinnvollste Ansatz: Es kombiniert die Vorteile beider Welten. An Bürotagen fördert man Zusammenarbeit und Teamgeist; an Homeoffice-Tagen konzentrierte Einzelarbeit. Entscheidend ist, dass Unternehmen ihren Mitarbeitern vertrauen und individuelle Lösungen zulassen."
+    },
+    "vocabulario_chave": ["gespalten", "Befürworter", "entfallen", "verschwimmen", "Meines Erachtens", "hybrid"],
+    "gramatica": ["einerseits...andererseits", "Passiv (lassen sich replizieren)", "Meines Erachtens (opinião formal)"]
+  },
+  {
+    "id": 19, "nivel": "B2", "tipo": "relatorio",
+    "titulo": "Relatório de reunião — ata",
+    "contexto": "Redigir a ata de uma reunião de equipa sobre um novo projeto.",
+    "prompt": "Redige a ata de uma reunião. Inclui data, participantes, pontos discutidos e decisões tomadas.",
+    "exemplo": {
+      "corpo": "Protokoll — Teammeeting Projekt Alpha\nDatum: 20. März 2025 | Uhrzeit: 10:00–11:30 Uhr\nTeilnehmer: P. Silva (Leitung), A. Braun, M. Koch, L. Meyer\n\nTagesordnungspunkte:\n\n1. Projektstand\nFrau Braun berichtete, dass die erste Entwicklungsphase planmäßig verläuft. Es gibt jedoch Verzögerungen bei der Datenmigration.\n\n2. Budgetüberprüfung\nHerr Koch stellte fest, dass das Budget um 8% überschritten wurde. Als Maßnahme wurde beschlossen, externe Dienstleister zu reduzieren.\n\n3. Nächste Schritte\n- Frau Meyer erstellt bis 27. März einen aktualisierten Zeitplan.\n- Das Team trifft sich am 3. April zur Zwischenrevision.\n\nProtokollführer: P. Silva"
+    },
+    "vocabulario_chave": ["Protokoll", "Tagesordnung", "planmäßig", "Verzögerung", "beschließen", "Protokollführer"],
+    "gramatica": ["Passiv (wurde beschlossen)", "Konjunktiv I para discurso indireto (berichtete, dass...verläuft)", "Nominalsatz (kurzer Stil)"]
+  },
+  {
+    "id": 20, "nivel": "B2", "tipo": "email",
+    "titulo": "Email de negociação — proposta de parceria",
+    "contexto": "Propor uma parceria comercial a uma empresa parceira.",
+    "prompt": "Escreve um email formal a propor uma parceria. Contextualiza as duas empresas, descreve a proposta e os benefícios mútuos.",
+    "exemplo": {
+      "assunto": "Vorschlag zur strategischen Partnerschaft — Silva Tech / Müller GmbH",
+      "corpo": "Sehr geehrter Herr Müller,\n\nim Rahmen unserer Expansionsstrategie für den deutschsprachigen Markt möchte ich Ihnen eine strategische Partnerschaft vorschlagen, von der beide Unternehmen erheblich profitieren könnten.\n\nSilva Tech ist spezialisiert auf KI-gestützte Softwarelösungen für den Bildungsbereich. Ihr Unternehmen, Müller GmbH, verfügt über ein etabliertes Vertriebsnetz in der DACH-Region und umfangreiche Branchenkenntnisse.\n\nIch schlage vor, dass wir unsere Kompetenzen bündeln: Sie übernehmen den Vertrieb unserer Produkte in Deutschland und Österreich; wir stellen die technische Infrastruktur und den After-Sales-Support bereit. Die Erlöse würden nach einem vereinbarten Schlüssel aufgeteilt.\n\nIch würde mich sehr freuen, diese Möglichkeit in einem persönlichen Gespräch zu vertiefen.\n\nMit freundlichen Grüßen,\nPedro Silva, CEO Silva Tech"
+    },
+    "vocabulario_chave": ["im Rahmen", "profitieren", "spezialisiert auf", "bündeln", "Erlöse", "Schlüssel"],
+    "gramatica": ["Konjunktiv II (könnten, würden)", "Passiv impersonal (würden aufgeteilt)", "Relativsatz com von der"]
+  },
+  {
+    "id": 21, "nivel": "B2", "tipo": "ensaio",
+    "titulo": "Ensaio — sustentabilidade no turismo",
+    "contexto": "Texto para uma conferência sobre turismo sustentável.",
+    "prompt": "Escreve um ensaio (200-250 palavras) sobre os desafios e soluções do turismo sustentável.",
+    "exemplo": {
+      "corpo": "Nachhaltiger Tourismus: Zwischen Anspruch und Wirklichkeit\n\nTourismus ist einer der größten Wirtschaftszweige der Welt und gleichzeitig einer der größten Verursacher von CO₂-Emissionen. Die wachsende Nachfrage nach Reisen steht in direktem Widerspruch zu den Klimazielen vieler Länder.\n\nNachhaltiger Tourismus versucht, diesen Widerspruch aufzulösen, indem er wirtschaftliche, soziale und ökologische Interessen in Einklang bringt. Zu konkreten Maßnahmen gehören: der Verzicht auf Kurzstreckenflüge zugunsten der Bahn, die Förderung lokaler Anbieter, die Begrenzung von Besucherzahlen in überlasteten Gebieten sowie die Einbeziehung der lokalen Bevölkerung in Entscheidungsprozesse.\n\nKritiker werfen dem Konzept jedoch vor, dass es häufig als Marketing-Instrument missbraucht wird, ohne substanzielle Veränderungen herbeizuführen.\n\nNachhaltig zu reisen ist kein Privileg, sondern eine Notwendigkeit. Die Verantwortung liegt sowohl bei den Reisenden als auch bei der Tourismusindustrie und der Politik. Nur durch koordiniertes Handeln auf allen Ebenen lässt sich ein zukunftsfähiges Modell entwickeln."
+    },
+    "vocabulario_chave": ["Widerspruch", "in Einklang bringen", "Verzicht", "Begrenzung", "substanziell", "zukunftsfähig"],
+    "gramatica": ["indem-Satz (como/ao)", "lässt sich + Infinitiv (passivo alternativo)", "sowohl...als auch"]
+  },
+  {
+    "id": 22, "nivel": "B2", "tipo": "carta",
+    "titulo": "Carta ao diretor — proposta de melhoria na escola",
+    "contexto": "Aluno do secundário escreve ao diretor para propor a criação de um espaço de estudo.",
+    "prompt": "Escreve uma carta formal com uma proposta. Apresenta o problema, a solução, os benefícios e como pode ser financiada.",
+    "exemplo": {
+      "corpo": "Sehr geehrter Herr Direktor,\n\nals Schülerin der 12. Klasse möchte ich im Namen vieler Schülerinnen und Schüler auf ein Problem aufmerksam machen, das uns täglich betrifft: Es fehlt an geeigneten Lernräumen außerhalb der Unterrichtszeiten.\n\nIch schlage vor, einen modernen Lernraum einzurichten, der mit stabilen Internetzugang, ruhigen Arbeitsplätzen und einem kleinen Bistrobereich ausgestattet ist. Dieser Raum könnte in dem derzeit ungenutzten Seitenflügel des Schulgebäudes untergebracht werden.\n\nDie Kosten könnten teilweise durch Fördergelder aus dem Bildungsfonds der Gemeinde sowie durch eine Elternspende gedeckt werden. Schüler der IT-AG könnten die technische Einrichtung übernehmen.\n\nIch bin überzeugt, dass dieser Raum die Lernmotivation und die Schulgemeinschaft deutlich stärken würde.\n\nFür ein persönliches Gespräch stehe ich gerne zur Verfügung.\n\nMit freundlichen Grüßen,\nAna Schmidt, Klasse 12b"
+    },
+    "vocabulario_chave": ["aufmerksam machen", "einrichten", "ausgestattet", "Fördergelder", "übernehmen", "überzeugt"],
+    "gramatica": ["könnte (Konjunktiv II para proposta)", "Partizip II como adjetivo atributivo", "Passiv (könnte gedeckt werden)"]
+  },
+  {
+    "id": 23, "nivel": "C1", "tipo": "ensaio",
+    "titulo": "Ensaio académico — Inteligência Artificial e mercado de trabalho",
+    "contexto": "Ensaio académico para uma publicação universitária sobre o impacto da IA no emprego.",
+    "prompt": "Escreve um ensaio académico (300 palavras) com uma tese clara, argumentação estruturada e conclusão.",
+    "exemplo": {
+      "corpo": "Die Automatisierungswelle: Bedrohung oder Chance für den Arbeitsmarkt?\n\nSeit dem Aufkommen generativer KI-Systeme ist die Debatte über deren Auswirkungen auf den Arbeitsmarkt neu entbrannt. Während optimistische Prognosen auf Produktivitätssteigerungen und die Entstehung neuer Berufsfelder verweisen, warnen skeptische Stimmen vor einer strukturellen Verdrängung menschlicher Arbeit.\n\nEmpiristisch betrachtet zeigt die Geschichte technologischer Disruption ein ambivalentes Bild: Die Industrialisierung vernichtete zwar zahlreiche handwerkliche Berufe, schuf jedoch langfristig mehr Arbeitsplätze, als sie eliminierte. Die Frage ist, ob das aktuelle KI-Zeitalter diesem Muster folgt oder qualitativ neue Risiken birgt.\n\nEntscheidend ist die Geschwindigkeit des Wandels. Während frühere Automatisierungswellen Jahrzehnte beanspruchten und Gesellschaften Zeit zur Anpassung gaben, vollzieht sich die aktuelle Transformation innerhalb weniger Jahre. Berufe, die kognitive Routinetätigkeiten beinhalten — Buchführung, Datenanalyse, Textproduktion — sind kurzfristig besonders exponiert.\n\nGleichzeitig entstehen neue Tätigkeitsfelder: KI-Training, algorithmische Ethik, hybride Mensch-Maschine-Interaktion. Diese erfordern allerdings Qualifikationen, die durch die bestehenden Bildungssysteme bisher nicht ausreichend vermittelt werden.\n\nDie entscheidende politische Frage ist nicht ob KI Jobs vernichtet, sondern welche institutionellen Mechanismen — Weiterbildung, Sozialabsicherung, Regulierung — sicherstellen, dass die Früchte der Automatisierung breit verteilt werden. Eine proaktive Strukturpolitik ist unerlässlich, um eine Polarisierung des Arbeitsmarkts zu verhindern."
+    },
+    "vocabulario_chave": ["Disruption", "Verdrängung", "ambivalent", "exponiert", "unerlässlich", "Strukturpolitik"],
+    "gramatica": ["Nominalsatz (C1 estilo académico)", "Passiv + Modalverb (könnten...geschaffen werden)", "während como adversativo"]
+  },
+  {
+    "id": 24, "nivel": "C1", "tipo": "relatorio",
+    "titulo": "Relatório de análise de mercado",
+    "contexto": "Relatório executivo para a direção de uma empresa sobre oportunidades no mercado lusófono.",
+    "prompt": "Escreve um relatório executivo (250 palavras) com análise SWOT, oportunidades e recomendações.",
+    "exemplo": {
+      "corpo": "Marktanalyse: Potenzial des lusophonen Markts\nErstellt für: Vorstand TechSolutions GmbH | Datum: März 2025\n\n1. Ausgangslage\nDer lusophone Markt umfasst über 260 Millionen Sprecher in acht Ländern, darunter Brasilien als weltweit neuntgrößte Volkswirtschaft. TechSolutions ist in diesem Markt bislang nicht aktiv.\n\n2. Chancen\nBrasilien verzeichnet eine rasant wachsende Tech-affine Mittelschicht. Die Digitalisierung des Bildungswesens schreitet voran, was den Kernkompetenzen von TechSolutions entspricht. Zudem erleichtert das bilaterale Handelsabkommen der EU mit dem Mercosur den Markteintritt.\n\n3. Risiken\nWährungsvolatilität, regulatorische Komplexität und ein intensiver Wettbewerb durch lokale Anbieter stellen die größten Risiken dar. Eine Unterschätzung kultureller Unterschiede zwischen dem brasilianischen und dem europäischen Markt könnte kostspielige Anpassungsprozesse nach sich ziehen.\n\n4. Empfehlungen\n• Pilotprojekt mit einem brasilianischen Vertriebspartner (Q3 2025)\n• Lokalisierung der Kernprodukte für den brasilianischen Markt\n• Einstellung eines regionalen Marketingleiters mit Kenntnissen des brasilianischen Bildungssystems\n\nEine Entscheidung wird bis Ende April 2025 erbeten."
+    },
+    "vocabulario_chave": ["lusophon", "Volkswirtschaft", "rasant", "bilaterales Abkommen", "Lokalisierung", "nach sich ziehen"],
+    "gramatica": ["Nominalsatz denso (estilo executivo)", "Partizip I como adjetivo (wachsende)", "Passiv impessoal"]
+  },
+  {
+    "id": 25, "nivel": "C1", "tipo": "ensaio",
+    "titulo": "Ensaio crítico — identidade europeia",
+    "contexto": "Ensaio crítico para uma publicação de ciências políticas.",
+    "prompt": "Escreve um ensaio crítico (300 palavras) sobre a construção da identidade europeia e os seus limites.",
+    "exemplo": {
+      "corpo": "Europäische Identität: Projekt oder Fiktion?\n\nDie Frage nach einer gemeinsamen europäischen Identität bewegt sich im Spannungsfeld zwischen politischem Projekt und soziokultureller Realität. Während die EU institutionell und rechtlich eine bemerkenswerte Integrationstiefe erreicht hat, bleibt die Frage offen, ob sich eine genuine Gemeinschaftsidentität entwickeln kann oder ob die nationalen Identitäten unweigerlich dominieren.\n\nHistorisch hat die europäische Einigung primär auf wirtschaftlicher Kooperation basiert — der Schuman-Plan, die Einheitliche Europäische Akte, die Eurozone. Die affektive Dimension, also das Zugehörigkeitsgefühl zu einem europäischen 'Wir', hat sich hingegen nur ansatzweise herausgebildet.\n\nJüngste Krisen — die Finanzkrise, die Flüchtlingskrise, Brexit, die Pandemie — haben sowohl integrative als auch desintegrative Tendenzen offenbart. Einerseits zeigen sie die gegenseitige Abhängigkeit der Mitgliedstaaten; andererseits mobilisieren sie nationalen Rückzug und euroskeptische Narrative.\n\nKonstruktivistische Ansätze in der Politikwissenschaft argumentieren, dass Identitäten nicht vorgegeben, sondern durch Institutionen, Diskurse und kollektive Erfahrungen konstruiert werden. Aus dieser Perspektive ist eine europäische Identität möglich, erfordert jedoch gezielte politische Investitionen in Bildung, kulturellen Austausch und demokratische Partizipation auf EU-Ebene.\n\nDie Alternative — ein Europa als rein technokratisches Projekt ohne affektive Basis — erscheint auf Dauer politisch nicht tragfähig."
+    },
+    "vocabulario_chave": ["Spannungsfeld", "genuine", "ansatzweise", "desintegrativ", "Konstruktivismus", "tragfähig"],
+    "gramatica": ["Nominalsatz dichte (C1)", "Konjunktiv II passado (hat...basiert, bleibt offen)", "einerseits...andererseits"]
+  },
+  {
+    "id": 26, "nivel": "C1", "tipo": "carta",
+    "titulo": "Carta aberta — crise climática",
+    "contexto": "Carta aberta dirigida a representantes políticos sobre a inação face à crise climática.",
+    "prompt": "Escreve uma carta aberta formal e argumentativa. Usa linguagem persuasiva, cita dados e formula exigências concretas.",
+    "exemplo": {
+      "corpo": "Offener Brief an die Abgeordneten des Deutschen Bundestags\n\nSehr geehrte Abgeordnete,\n\ndie jüngsten Berichte des Weltklimarats (IPCC) zeichnen ein unmissverständliches Bild: Ohne sofortige und drastische Reduktion der Treibhausgasemissionen wird die 1,5-Grad-Schwelle noch in diesem Jahrzehnt überschritten. Dies hätte katastrophale Folgen für Ökosysteme, Landwirtschaft und Menschenleben weltweit.\n\nAngesichts dieser Bedrohungslage erscheinen die bisherigen politischen Maßnahmen unzureichend. Das Tempo der Energiewende ist zu langsam; Subventionen für fossile Brennstoffe bestehen weiterhin; verbindliche Unternehmenspflichten zur Klimaberichterstattung werden verzögert.\n\nWir fordern deshalb:\n1. Eine sofortige Abschaffung aller staatlichen Subventionen für fossile Energieträger bis 2026.\n2. Eine gesetzlich verankerte Treibhausgasneutralität für alle börsennotierten Unternehmen bis 2040.\n3. Die Einrichtung eines unabhängigen parlamentarischen Klimarats mit Vetobefugnis bei klimaschädlichen Gesetzgebungsvorhaben.\n\nDie politische Verantwortung, die Sie durch Ihr Mandat tragen, schließt die Verantwortung gegenüber zukünftigen Generationen ein. Wir erwarten Taten, nicht Absichtserklärungen.\n\nMit dringendem Appell,\nKlimainitiative Porto Europa"
+    },
+    "vocabulario_chave": ["unmissverständlich", "angesichts", "verbindlich", "Vetobefugnis", "Absichtserklärung", "dringend"],
+    "gramatica": ["Passiv (werden verzögert, wird überschritten)", "Nominalsatz formal", "fordern + Akkusativ"]
+  },
+  {
+    "id": 27, "nivel": "C1", "tipo": "relatorio",
+    "titulo": "Relatório de consultoria — diagnóstico organizacional",
+    "contexto": "Relatório de diagnóstico para uma organização sem fins lucrativos com dificuldades estruturais.",
+    "prompt": "Escreve um relatório de diagnóstico com: contexto, problemas identificados, análise de causas e recomendações.",
+    "exemplo": {
+      "corpo": "Organisationsdiagnose — Kulturverein Brücken e.V.\nAuftraggeber: Vorstand Kulturverein Brücken | Erstellt von: TM Consulting\n\nZusammenfassung\nDer Verein weist trotz stabiler Mitgliederzahlen strukturelle Defizite auf, die mittelfristig die operative Handlungsfähigkeit gefährden könnten.\n\nIdentifizierte Problemfelder\n1. Governance: Unklare Entscheidungsprozesse führen zu Doppelarbeit und Zuständigkeitskonflikten.\n2. Finanzmanagement: Fehlende Mehrjahresplanung und Überabhängigkeit von Projektförderungen erhöhen die Vulnerabilität.\n3. Kommunikation: Die interne Kommunikationsstruktur ist dezentralisiert und ineffizient.\n\nUrsachenanalyse\nDiese Defizite sind zum großen Teil historisch gewachsen und spiegeln den organischen Charakter der Vereinsentwicklung wider. Sie wurden in Wachstumsphasen nicht systematisch adressiert.\n\nEmpfehlungen\n• Erarbeitung einer Satzungsreform mit klar definierten Verantwortlichkeiten (Priorität: hoch)\n• Einführung eines rollierenden 3-Jahres-Finanzplans\n• Implementierung einer zentralen Kommunikationsplattform\n\nDie Maßnahmen sollten innerhalb von 12 Monaten schrittweise umgesetzt werden."
+    },
+    "vocabulario_chave": ["Governance", "Zuständigkeit", "Vulnerabilität", "organisch gewachsen", "rollierende Planung", "Satzung"],
+    "gramatica": ["Nominalsatz altamente comprimido", "Passiv nominal implícito", "Partizip II como adjetivo (identifiziert, dezentralisiert)"]
+  },
+  {
+    "id": 28, "nivel": "C2", "titulo": "Ensaio filosófico — memória coletiva e identidade",
+    "tipo": "ensaio",
+    "contexto": "Ensaio académico de alto nível sobre a relação entre memória coletiva e construção identitária.",
+    "prompt": "Escreve um ensaio filosófico-académico (350 palavras) de nível C2. Usa terminologia filosófica, estrutura argumentativa densa e estilo nominalizante.",
+    "exemplo": {
+      "corpo": "Gedächtnis als Identitätsstifter: Zur epistemischen Ambivalenz des kollektiven Erinnerns\n\nDie These, dass kollektives Gedächtnis konstitutiv für Gruppenidentitäten ist, hat seit Maurice Halbwachs' grundlegender Konzeptualisierung sowohl in der Soziologie als auch in der Geschichtswissenschaft breite Rezeption gefunden. Gleichwohl bleibt die epistemische Validität des kollektiven Erinnerns philosophisch umstritten, insofern es den Referenzrahmen der individuellen Kognition transzendiert.\n\nJan Assmanns Unterscheidung zwischen kommunikativem und kulturellem Gedächtnis verfeinert dieses Konzept erheblich. Während das kommunikative Gedächtnis auf lebendiger Zeitzeugenschaft basiert und eine Reichweite von etwa drei Generationen aufweist, verkörpert das kulturelle Gedächtnis jene institutionell stabilisierten Überlieferungsformen — Riten, Texte, Monumente —, durch die Gemeinschaften über biographische Zeiträume hinaus Sinnkontinuität konstituieren.\n\nProblematisch wird dieses Modell dort, wo kollektives Erinnern nicht organisch wächst, sondern strategisch instrumentalisiert wird. Die ideologische Verformung historischer Narrationen — etwa im Kontext nationalistischer Mobilisierung oder autoritärer Geschichtspolitik — demonstriert, dass das kollektive Gedächtnis gleichermaßen ein Medium der Vergemeinschaftung wie der Ausgrenzung und Feindbildkonstruktion sein kann.\n\nEine kritische Gedächtnistheorie muss daher zwischen deskriptiver Analyse und normativer Reflexion unterscheiden. Die Frage, welche Erinnerungen eine Gemeinschaft pflegen und welche sie verdrängen soll, ist keine historische, sondern eine dezidiert ethisch-politische. Hannah Arendts Begriff des 'öffentlichen Raums' als Ort des gemeinsamen Handelns und des pluralen Erinnerns bietet hierfür einen fruchtbaren theoretischen Ansatzpunkt.\n\nLetztlich ist die Spannung zwischen der identitätsstiftenden Funktion des Gedächtnisses und seiner kritischen Befragbarkeit nicht auflösbar — sie ist vielmehr konstitutiv für eine demokratische Erinnerungskultur, die Offenheit gegenüber Revisionen ebenso wie Verpflichtung gegenüber historischer Verantwortung einschließt."
+    },
+    "vocabulario_chave": ["konstitutiv", "epistemisch", "instrumentalisieren", "normativ", "Erinnerungskultur", "Revision"],
+    "gramatica": ["Nominalsatz máximo (C2)", "Konjunktiv I para discurso académico citado", "Partizip I como adjetivo (stabilisierten, lebendiger)", "insofern como subordinante epistémico"]
+  },
+  {
+    "id": 29, "nivel": "C2", "tipo": "carta",
+    "titulo": "Carta aberta — liberdade de imprensa",
+    "contexto": "Carta aberta de jornalistas a um governo que restringe a liberdade de imprensa.",
+    "prompt": "Escreve uma carta aberta C2 com retórica persuasiva sofisticada, dados concretos, linguagem jurídica e moral.",
+    "exemplo": {
+      "corpo": "An die Regierung der Republik,\n\ndie jüngsten Maßnahmen gegen unabhängige Medien — darunter die Lizenzentziehung dreier Rundfunksender und die strafrechtliche Verfolgung investigativer Journalistinnen — stellen nicht allein eine Verletzung nationalen Presserechts dar, sondern konstituieren einen systematischen Angriff auf jene institutionellen Grundlagen, ohne die demokratische Selbstregierung nicht funktionieren kann.\n\nArtikel 19 des Internationalen Pakts über bürgerliche und politische Rechte, dem Ihre Regierung beigetreten ist, garantiert das Recht auf freie Meinungsäußerung und Informationsfreiheit als nicht derogierbare Grundfreiheit. Die im Namen der 'nationalen Sicherheit' vorgenommenen Einschränkungen entsprechen weder dem Verhältnismäßigkeitsprinzip noch den Notstandsklauseln des Völkerrechts.\n\nWir erinnern daran, dass Pressefreiheit nicht das Privileg von Journalisten, sondern das Recht der Öffentlichkeit ist, informiert zu werden. Eine Regierung, die diese Freiheit beschränkt, entzieht sich der öffentlichen Rechenschaftspflicht und untergräbt damit die Legitimationsgrundlage ihrer eigenen Herrschaft.\n\nWir fordern die sofortige Einstellung aller laufenden Strafverfahren gegen Medienschaffende, die Wiederherstellung der eingezogenen Lizenzen sowie eine parlamentarische Enquetekommission zur Untersuchung der Zustände bei Medienbehörden.\n\nIn unerschütterlicher Solidarität,\nEuropäischer Journalistenverband"
+    },
+    "vocabulario_chave": ["Lizenzentziehung", "nicht derogierbar", "Verhältnismäßigkeitsprinzip", "Rechenschaftspflicht", "Enquetekommission"],
+    "gramatica": ["Relativsatz com ohne die (ohne + Akkusativ + Relativsatz)", "Konjunktiv I para normativo jurídico", "Passiv estatal (werden vorgenommen)"]
+  },
+  {
+    "id": 30, "nivel": "C2", "tipo": "ensaio",
+    "titulo": "Ensaio literário — a forma do romance contemporâneo",
+    "contexto": "Ensaio crítico-literário para uma publicação académica sobre a metamorfose do romance.",
+    "prompt": "Escreve um ensaio crítico-literário C2 (350 palavras) sobre as transformações do romance contemporâneo. Usa terminologia de teoria literária.",
+    "exemplo": {
+      "corpo": "Hybridität und Auflösung: Zur Transformation des Romans im 21. Jahrhundert\n\nDas Paradigma des 'klassischen' Romans — lineare Narration, psychologisch kohärentes Personal, kausal strukturierte Handlung — erscheint im Angesicht der gegenwärtigen Romanliteratur als überwundenes Modell. Was sich in den vergangenen Jahrzehnten vollzogen hat, ist keine bloße stilistische Evolution, sondern eine fundamentale Hinterfragung der Gattungsontologie selbst.\n\nZeichengebend dafür ist die ubiquitäre Präsenz metafiktionaler Verfahren: Der Roman thematisiert zunehmend seine eigene Konstruiertheit, exponiert die Arbitrarität seiner Mittel und irritiert damit jene Lesererwartungen, die auf mimetische Illusion oder empathische Identifikation zielen. Autoren wie W.G. Sebald, Jenny Erpenbeck oder Karl Ove Knausgård erkunden auf je eigene Weise die Grenzen zwischen Fiktion, Autobiographie und Essay — eine Auflösung, die die traditionelle Gattungstaxonomie herausfordert.\n\nParallel dazu verändert die digitale Medienumgebung die Rezeptionsbedingungen literarischer Texte grundlegend. Die Konkurrenz mit nicht-linearen, multimodalen Erzählformen — Serien, Videospiele, interaktive Narrative — zwingt den Roman, seine spezifische Leistung zu reformulieren: die Vermögen zur Langsamkeit, zur Introspektion und zur sprachlichen Verdichtung.\n\nDiese Reformulierung vollzieht sich indes nicht im luftleeren Raum, sondern ist eingebettet in globale Literatursysteme, Übersetzungsökonomien und die Logik des Literaturmarkts. Kanonisierungsprozesse — Nobelpreis, Booker Prize, Frankfurter Buchmesse — steuern die globale Sichtbarkeit und beeinflussen, welche formalen Innovationen als legitim gelten.\n\nIn dieser Gemengelage erweist sich der Roman als das anpassungsfähigste literarische Format der Moderne — nicht trotz, sondern wegen seiner strukturellen Offenheit. Gerade die Unabgeschlossenheit seines Formbegriffs macht ihn zum privilegierten Medium für die Erkundung jener Erfahrungsräume, die anderen Gattungen verschlossen bleiben."
+    },
+    "vocabulario_chave": ["Gattungsontologie", "metafiktional", "Arbitrarität", "Kanonisierung", "Gemengelage", "Unabgeschlossenheit"],
+    "gramatica": ["Nominalsatz máxima densidade C2", "Partizip I e II como adjetivos complexos", "nicht...sondern wegen (adversativo causal)"]
+  }
+]
