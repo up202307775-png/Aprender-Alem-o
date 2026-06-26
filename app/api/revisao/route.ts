@@ -36,11 +36,11 @@ export async function GET(req: NextRequest) {
   const [todasPalavras, todosVerbos] = await Promise.all([
     prisma.word.findMany({
       where: whereLevel,
-      orderBy: [{ moduleId: "asc" }, { id: "asc" }],
+      orderBy: [{ module: { ordem: "asc" } }, { id: "asc" }],
     }),
     prisma.verb.findMany({
       where: whereLevel,
-      orderBy: [{ moduleId: "asc" }, { id: "asc" }],
+      orderBy: [{ module: { ordem: "asc" } }, { id: "asc" }],
     }),
   ])
 

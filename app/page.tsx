@@ -5,13 +5,14 @@ import NivelBadge from "@/components/NivelBadge"
 export const dynamic = "force-dynamic"
 
 const ZONAS = [
-  { href: "/vocabulario", emoji: "📖", titulo: "Vocabulário", desc: "Flashcards com revisão espaçada", cor: "border-blue-200 hover:border-blue-400" },
-  { href: "/verbos",      emoji: "🔤", titulo: "Verbos",      desc: "Conjugações com raiz destacada",  cor: "border-purple-200 hover:border-purple-400" },
-  { href: "/gramatica",   emoji: "📐", titulo: "Gramática",   desc: "Módulos com mini-exercícios",     cor: "border-yellow-200 hover:border-yellow-400" },
-  { href: "/quiz",        emoji: "🎯", titulo: "Quizzes",     desc: "Produção escrita e ditado",       cor: "border-red-200 hover:border-red-400" },
-  { href: "/escrita",     emoji: "✍️", titulo: "Escrita",     desc: "Correção com IA",                 cor: "border-amber-200 hover:border-amber-400" },
-  { href: "/fala",        emoji: "🎙️", titulo: "Fala",        desc: "Pronúncia com reconhecimento de voz", cor: "border-teal-200 hover:border-teal-400" },
-  { href: "/dashboard",   emoji: "📊", titulo: "Dashboard",   desc: "Streak e progresso detalhado",   cor: "border-gray-200 hover:border-gray-400" },
+  { href: "/vocabulario", emoji: "📖", titulo: "Vocabulário",  desc: "Flashcards com revisão espaçada",    cor: "border-blue-200 hover:border-blue-400" },
+  { href: "/verbos",      emoji: "🔤", titulo: "Verbos",       desc: "Conjugações com raiz destacada",     cor: "border-purple-200 hover:border-purple-400" },
+  { href: "/gramatica",   emoji: "📐", titulo: "Gramática",    desc: "Módulos com mini-exercícios",        cor: "border-yellow-200 hover:border-yellow-400" },
+  { href: "/quiz",        emoji: "🎲", titulo: "Quizzes",      desc: "Produção escrita e ditado",          cor: "border-red-200 hover:border-red-400" },
+  { href: "/quiz-diario", emoji: "🎯", titulo: "Quiz do Dia",  desc: "PT → alemão com as palavras de hoje", cor: "border-green-200 hover:border-green-400" },
+  { href: "/escrita",     emoji: "✍️", titulo: "Escrita",      desc: "Correção com IA",                    cor: "border-amber-200 hover:border-amber-400" },
+  { href: "/fala",        emoji: "🎙️", titulo: "Fala",         desc: "Pronúncia com reconhecimento de voz", cor: "border-teal-200 hover:border-teal-400" },
+  { href: "/dashboard",   emoji: "📊", titulo: "Dashboard",    desc: "Streak e progresso detalhado",       cor: "border-gray-200 hover:border-gray-400" },
 ] as const
 
 async function getSessaoHoje() {
@@ -65,6 +66,10 @@ async function getSessaoHoje() {
     const podeAvancar = totalItens > 0 && itensCompletos === totalItens
     const faltamParaDesbloquear = totalItens - itensCompletos
 
+    const itensRevisadosHoje = reviewStates.filter(
+      r => r.ultimaRevisao >= inicioDia && r.ultimaRevisao <= fimDia
+    ).length
+
     return {
       nivelCodigo,
       percentagemNivel,
@@ -74,6 +79,7 @@ async function getSessaoHoje() {
       novosParaHoje,
       revisoesDue,
       totalHoje: novosParaHoje + revisoesDue,
+      itensRevisadosHoje,
       podeAvancar,
     }
   } catch {
@@ -156,6 +162,15 @@ export default async function Home() {
                 <div className="w-full text-center py-3 px-4 rounded-xl text-sm bg-gray-50 text-gray-400 font-medium">
                   Tudo feito por hoje! Volta amanhã.
                 </div>
+              )}
+
+              {sessao.itensRevisadosHoje > 0 && (
+                <Link
+                  href="/quiz-diario"
+                  className="block w-full text-center py-3 px-4 rounded-xl font-semibold text-sm bg-green-600 hover:bg-green-700 text-white transition-colors mt-2"
+                >
+                  🎯 Quiz do Dia &rarr; {sessao.itensRevisadosHoje} palavras
+                </Link>
               )}
             </div>
           </>

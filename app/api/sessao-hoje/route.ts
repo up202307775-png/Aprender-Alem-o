@@ -70,6 +70,11 @@ export async function GET() {
   // Novos que ainda faltam introduzir hoje (até ao máximo de 20)
   const novosParaHoje = Math.max(0, Math.min(20 - novosHoje, novosDisponiveis))
 
+  // Itens revisados hoje (ultimaRevisao >= início do dia)
+  const itensRevisadosHoje = reviewStates.filter(
+    r => r.ultimaRevisao >= inicioDia && r.ultimaRevisao <= fimDia
+  ).length
+
   // Progresso do nível (itens revistos ao menos uma vez)
   const itensCompletos = reviewStates.filter(r => r.repeticoes >= 1).length
   const percentagemNivel = totalItens > 0 ? Math.round((itensCompletos / totalItens) * 100) : 0
@@ -84,6 +89,7 @@ export async function GET() {
     novosParaHoje,
     revisoesDue,
     totalHoje: novosParaHoje + revisoesDue,
+    itensRevisadosHoje,
     podeAvancar,
   })
 }

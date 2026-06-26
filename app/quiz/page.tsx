@@ -18,12 +18,17 @@ type ConjugacoesTipo = {
 
 export default async function QuizPage() {
   const [palavras, verbos, modulos] = await Promise.all([
-    prisma.word.findMany({ orderBy: { id: "asc" } }),
-    prisma.verb.findMany({ orderBy: { id: "asc" } }),
+    prisma.word.findMany({
+      orderBy: { id: "asc" },
+      include: { module: { include: { level: true } } },
+    }),
+    prisma.verb.findMany({
+      orderBy: { id: "asc" },
+      include: { module: { include: { level: true } } },
+    }),
     prisma.grammarModule.findMany(),
   ])
 
-  // Extrair apenas exercícios de escolha-múltipla para o quiz
   const exerciciosMC: ExercicioMC[] = modulos.flatMap(m => {
     const exs = JSON.parse(m.exercicios) as Array<{
       id: number
@@ -36,7 +41,7 @@ export default async function QuizPage() {
     return exs
       .filter(e => e.tipo === "escolha-multipla" && e.opcoes)
       .map(e => ({
-        id: e.id + m.id * 100, // id único global
+        id: e.id + m.id * 100,
         pergunta: e.pergunta,
         opcoes: e.opcoes!,
         resposta: e.resposta,
@@ -53,6 +58,7 @@ export default async function QuizPage() {
     traducaoPt: p.traducaoPt,
     exemplo: p.exemplo,
     tema: p.tema,
+    nivel: p.module?.level?.codigo ?? "",
   }))
 
   const dadosVerbos = verbos.map(v => ({
@@ -62,6 +68,7 @@ export default async function QuizPage() {
     raiz: v.raiz,
     irregular: v.irregular,
     conjugacoes: JSON.parse(v.conjugacoes) as ConjugacoesTipo,
+    nivel: v.module?.level?.codigo ?? "",
   }))
 
   return (

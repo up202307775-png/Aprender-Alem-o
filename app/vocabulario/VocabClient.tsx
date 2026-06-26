@@ -190,6 +190,7 @@ export default function VocabClient({ palavras }: { palavras: PalavraData[] }) {
   }
 
   const revistosFiltrados = palavrasFiltradas.filter(p => revistos.has(p.id)).length
+  const revistosTotais = palavras.filter(p => revistos.has(p.id)).length
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -240,6 +241,21 @@ export default function VocabClient({ palavras }: { palavras: PalavraData[] }) {
 
         {palavrasFiltradas.length === 0 && (
           <p className="text-center text-gray-400 py-16">Nenhuma palavra neste tema.</p>
+        )}
+
+        {/* Botão Quiz do Dia — aparece quando há palavras revistas nesta sessão */}
+        {revistosTotais > 0 && (
+          <div className="mt-8 pt-6 border-t border-gray-200">
+            <Link
+              href="/quiz-diario"
+              className="block w-full text-center py-4 px-4 rounded-2xl font-semibold text-base bg-green-600 hover:bg-green-700 text-white transition-colors shadow-sm"
+            >
+              🎯 Fazer Quiz do Dia &rarr; {revistosTotais} palavras revistas
+            </Link>
+            <p className="text-center text-xs text-gray-400 mt-2">
+              Testa o que aprendeste hoje — PT → alemão
+            </p>
+          </div>
         )}
       </div>
     </div>

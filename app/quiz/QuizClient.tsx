@@ -2,16 +2,17 @@
 
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
+import NivelBadge from "@/components/NivelBadge"
 
 // ─── Tipos ─────────────────────────────────────────────────────────────────────
 
 type PalavraData = {
   id: number; alemao: string; artigo: string; genero: string
-  raiz: string; traducaoPt: string; exemplo: string; tema: string
+  raiz: string; traducaoPt: string; exemplo: string; tema: string; nivel: string
 }
 type VerbData = {
   id: number; infinitivo: string; traducaoPt: string; raiz: string
-  irregular: boolean
+  irregular: boolean; nivel: string
   conjugacoes: { prasens: Record<string, string>; prateritum: Record<string, string>; perfekt: string }
 }
 type ExercicioMC = { id: number; pergunta: string; opcoes: string[]; resposta: string; explicacao: string }
@@ -25,6 +26,7 @@ type Questao = {
   categoria: "producao" | "ditado" | "conjugacao" | "gramatica"
   audioTexto?: string
   opcoes?: string[]
+  nivel?: string
 }
 
 type ModoQuiz = "producao" | "ditado" | "intercalado"
@@ -96,6 +98,7 @@ function gerarQuestoes(
           p.raiz ? `raiz: ${p.raiz.split(",")[0].slice(0, 60)}` : "",
         ].filter(Boolean).join(" — "),
         audioTexto: p.alemao,
+        nivel: p.nivel,
       }))
     ).slice(0, n)
 
@@ -109,6 +112,7 @@ function gerarQuestoes(
         resposta: normalizar(p.alemao),
         explicacao: `**${p.alemao}** — ${p.traducaoPt}`,
         audioTexto: p.alemao,
+        nivel: p.nivel,
       })),
       ...verbos.map(v => ({
         id: `dv-${v.id}`,
@@ -118,6 +122,7 @@ function gerarQuestoes(
         resposta: normalizar(v.infinitivo),
         explicacao: `**${v.infinitivo}** — ${v.traducaoPt}`,
         audioTexto: v.infinitivo,
+        nivel: v.nivel,
       })),
     ]).slice(0, n)
 
@@ -132,6 +137,7 @@ function gerarQuestoes(
           resposta: normalizar(v.conjugacoes.prasens[p] ?? ""),
           explicacao: `${p === "er" ? "er/sie/es" : p} **${v.conjugacoes.prasens[p] ?? "—"}** (${v.irregular ? "irregular" : "regular"}, raiz: ${v.raiz})`,
           audioTexto: v.conjugacoes.prasens[p],
+          nivel: v.nivel,
         }))
       )
     ).slice(0, n)
@@ -348,15 +354,18 @@ export default function QuizClient({
         {/* Cartão da questão */}
         <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-5 mb-4">
 
-          {/* Badge de categoria */}
-          <span className={`inline-block text-xs px-2 py-0.5 rounded-full font-medium mb-3 ${
-            questaoAtual.categoria === "producao" ? "bg-blue-100 text-blue-700" :
-            questaoAtual.categoria === "ditado" ? "bg-purple-100 text-purple-700" :
-            questaoAtual.categoria === "conjugacao" ? "bg-orange-100 text-orange-700" :
-            "bg-green-100 text-green-700"
-          }`}>
-            {questaoAtual.categoria}
-          </span>
+          {/* Badges de nível + categoria */}
+          <div className="flex items-center gap-2 mb-3 flex-wrap">
+            {questaoAtual.nivel && <NivelBadge nivel={questaoAtual.nivel} />}
+            <span className={`inline-block text-xs px-2 py-0.5 rounded-full font-medium ${
+              questaoAtual.categoria === "producao" ? "bg-blue-100 text-blue-700" :
+              questaoAtual.categoria === "ditado" ? "bg-purple-100 text-purple-700" :
+              questaoAtual.categoria === "conjugacao" ? "bg-orange-100 text-orange-700" :
+              "bg-green-100 text-green-700"
+            }`}>
+              {questaoAtual.categoria}
+            </span>
+          </div>
 
           {/* Enunciado */}
           <p className="text-base font-medium text-gray-800 mb-4">
