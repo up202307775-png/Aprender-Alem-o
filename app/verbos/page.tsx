@@ -9,7 +9,10 @@ type ConjugacoesTipo = {
 }
 
 export default async function VerbosPage() {
-  const verbos = await prisma.verb.findMany({ orderBy: { infinitivo: "asc" } })
+  const verbos = await prisma.verb.findMany({
+    orderBy: { infinitivo: "asc" },
+    include: { module: { include: { level: true } } },
+  })
 
   const dados = verbos.map(v => ({
     id: v.id,
@@ -19,6 +22,7 @@ export default async function VerbosPage() {
     separavel: v.separavel,
     irregular: v.irregular,
     conjugacoes: JSON.parse(v.conjugacoes) as ConjugacoesTipo,
+    nivel: v.module?.level?.codigo ?? "",
   }))
 
   return <VerbosClient verbos={dados} />

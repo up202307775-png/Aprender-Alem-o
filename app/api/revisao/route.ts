@@ -1,44 +1,9 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server"
 import { prisma } from "@/lib/prisma"
 import { calcularProximaRevisao, type Resultado } from "@/lib/sm2"
 
-// Garante que cada Word e Verb tem um ReviewState criado (estado inicial: tudo devido hoje)
-async function garantirEstados() {
-  const [words, verbs, existentes] = await Promise.all([
-    prisma.word.findMany({ select: { id: true } }),
-    prisma.verb.findMany({ select: { id: true } }),
-    prisma.reviewState.findMany({
-      where: { itemType: { in: ["word", "verb"] } },
-      select: { itemType: true, itemId: true },
-    }),
-  ])
+const NOVOS_POR_DIA = 20
 
-  const chaves = new Set(existentes.map(e => `${e.itemType}-${e.itemId}`))
-
-  const novos = [
-    ...words
-      .filter(w => !chaves.has(`word-${w.id}`))
-      .map(w => ({ itemType: "word", itemId: w.id })),
-    ...verbs
-      .filter(v => !chaves.has(`verb-${v.id}`))
-      .map(v => ({ itemType: "verb", itemId: v.id })),
-  ]
-
-  if (novos.length === 0) return
-
-  await prisma.reviewState.createMany({
-    data: novos.map(item => ({
-      ...item,
-      intervaloDias: 1,
-      fatorFacilidade: 2.5,
-      repeticoes: 0,
-      proximaRevisao: new Date(),
-      ultimaRevisao: new Date(),
-    })),
-  })
-}
-
-// Intercala dois arrays alternando elementos: [a1, b1, a2, b2, ...]
 function intercalar<A, B>(arr1: A[], arr2: B[]): (A | B)[] {
   const resultado: (A | B)[] = []
   const tamanho = Math.max(arr1.length, arr2.length)
@@ -49,50 +14,100 @@ function intercalar<A, B>(arr1: A[], arr2: B[]): (A | B)[] {
   return resultado
 }
 
-// GET /api/revisao?limite=N — devolve itens devidos hoje (palavras + verbos),
-// intercalados para maximizar a aprendizagem por interleaving.
-// O parâmetro opcional "limite" restringe o total de itens devolvidos.
+// GET /api/revisao?limite=N
+// Devolve itens do nível atual: revisões devidas + novos (até 20/dia)
 export async function GET(req: NextRequest) {
   const limite = Number(new URL(req.url).searchParams.get("limite")) || Infinity
-  await garantirEstados()
 
-  const fimDoDia = new Date()
-  fimDoDia.setHours(23, 59, 59, 999)
+  const userState = await prisma.userState.findUnique({ where: { id: 1 } })
+  const currentLevelId = userState?.currentLevelId
 
-  const estados = await prisma.reviewState.findMany({
+  const hoje = new Date()
+  const inicioDia = new Date(hoje)
+  inicioDia.setHours(0, 0, 0, 0)
+  const fimDia = new Date(hoje)
+  fimDia.setHours(23, 59, 59, 999)
+
+  // Buscar palavras e verbos do nível atual
+  const whereLevel = currentLevelId
+    ? { module: { levelId: currentLevelId } }
+    : {}
+
+  const [todasPalavras, todosVerbos] = await Promise.all([
+    prisma.word.findMany({
+      where: whereLevel,
+      orderBy: [{ moduleId: "asc" }, { id: "asc" }],
+    }),
+    prisma.verb.findMany({
+      where: whereLevel,
+      orderBy: [{ moduleId: "asc" }, { id: "asc" }],
+    }),
+  ])
+
+  const wordIds = todasPalavras.map(w => w.id)
+  const verbIds = todosVerbos.map(v => v.id)
+
+  // ReviewStates existentes para estes itens
+  const reviewStates = await prisma.reviewState.findMany({
     where: {
-      itemType: { in: ["word", "verb"] },
-      proximaRevisao: { lte: fimDoDia },
+      OR: [
+        { itemType: "word", itemId: { in: wordIds } },
+        { itemType: "verb", itemId: { in: verbIds } },
+      ],
     },
   })
 
-  const wordIds = estados.filter(e => e.itemType === "word").map(e => e.itemId)
-  const verbIds = estados.filter(e => e.itemType === "verb").map(e => e.itemId)
+  const rsMapWord = new Map(
+    reviewStates.filter(r => r.itemType === "word").map(r => [r.itemId, r])
+  )
+  const rsMapVerb = new Map(
+    reviewStates.filter(r => r.itemType === "verb").map(r => [r.itemId, r])
+  )
 
-  const [palavras, verbos] = await Promise.all([
-    prisma.word.findMany({ where: { id: { in: wordIds } } }),
-    prisma.verb.findMany({ where: { id: { in: verbIds } } }),
-  ])
+  // Revisões devidas hoje
+  const palavrasRevisao = todasPalavras
+    .filter(p => {
+      const rs = rsMapWord.get(p.id)
+      return rs && rs.proximaRevisao <= fimDia
+    })
+    .map(p => ({ tipo: "word" as const, item: p, estado: rsMapWord.get(p.id)! }))
 
-  const itensPalavras = palavras.map(p => ({
-    tipo: "word" as const,
-    item: p,
-    estado: estados.find(e => e.itemType === "word" && e.itemId === p.id)!,
-  }))
+  const verbosRevisao = todosVerbos
+    .filter(v => {
+      const rs = rsMapVerb.get(v.id)
+      return rs && rs.proximaRevisao <= fimDia
+    })
+    .map(v => ({ tipo: "verb" as const, item: v, estado: rsMapVerb.get(v.id)! }))
 
-  const itensVerbos = verbos.map(v => ({
-    tipo: "verb" as const,
-    item: v,
-    estado: estados.find(e => e.itemType === "verb" && e.itemId === v.id)!,
-  }))
+  // Novos já introduzidos hoje (ReviewState com introduzidoEm = hoje)
+  const novosHoje = reviewStates.filter(
+    r => r.introduzidoEm >= inicioDia && r.introduzidoEm <= fimDia
+  ).length
 
-  const itens = intercalar(itensPalavras, itensVerbos).slice(0, limite)
+  const vagasParaNovos = Math.max(0, NOVOS_POR_DIA - novosHoje)
+
+  // Itens novos (sem ReviewState), respeitando ordem do módulo
+  const palavrasNovas = todasPalavras
+    .filter(p => !rsMapWord.has(p.id))
+    .slice(0, vagasParaNovos)
+    .map(p => ({ tipo: "word" as const, item: p, estado: null }))
+
+  const vagasVerbosNovos = Math.max(0, vagasParaNovos - palavrasNovas.length)
+  const verbosNovos = todosVerbos
+    .filter(v => !rsMapVerb.has(v.id))
+    .slice(0, vagasVerbosNovos)
+    .map(v => ({ tipo: "verb" as const, item: v, estado: null }))
+
+  // Combinar: revisões intercaladas + novos no fim
+  const revisoes = intercalar(palavrasRevisao, verbosRevisao)
+  const novos = intercalar(palavrasNovas, verbosNovos)
+  const itens = [...revisoes, ...novos].slice(0, limite)
 
   return NextResponse.json({ itens, total: itens.length })
 }
 
-// POST /api/revisao — recebe o resultado de um item e atualiza o seu ReviewState.
-// Body: { itemType: "word"|"verb", itemId: number, resultado: "errei"|"difícil"|"bom"|"fácil" }
+// POST /api/revisao
+// Body: { itemType, itemId, resultado }
 export async function POST(req: NextRequest) {
   const body = await req.json() as {
     itemType: string
@@ -110,7 +125,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ erro: "Parâmetros inválidos" }, { status: 400 })
   }
 
-  // Obtém o estado atual (cria se ainda não existir)
+  // Verificar se o item já tinha ReviewState (novo vs. revisão)
+  const estadoExistente = await prisma.reviewState.findUnique({
+    where: { itemType_itemId: { itemType, itemId } },
+  })
+
+  const eNovo = !estadoExistente
+
   const estadoAtual = await prisma.reviewState.upsert({
     where: { itemType_itemId: { itemType, itemId } },
     create: {
@@ -121,46 +142,99 @@ export async function POST(req: NextRequest) {
       repeticoes: 0,
       proximaRevisao: new Date(),
       ultimaRevisao: new Date(),
+      introduzidoEm: new Date(),
     },
     update: {},
   })
 
-  // Calcula e grava o novo estado via algoritmo SM-2
   const atualizacao = calcularProximaRevisao(estadoAtual.repeticoes, resultado)
-
   const novoEstado = await prisma.reviewState.update({
     where: { id: estadoAtual.id },
     data: atualizacao,
   })
 
-  // Atualiza ou cria a sessão de estudo de hoje
+  // Atualizar sessão de estudo de hoje
   const inicioDoDia = new Date()
   inicioDoDia.setHours(0, 0, 0, 0)
   const fimDoDia = new Date()
   fimDoDia.setHours(23, 59, 59, 999)
 
+  const acertou = resultado !== "errei"
   const sessaoHoje = await prisma.studySession.findFirst({
     where: { data: { gte: inicioDoDia, lte: fimDoDia } },
   })
 
-  const acertou = resultado !== "errei"
-
   if (sessaoHoje) {
     await prisma.studySession.update({
       where: { id: sessaoHoje.id },
-      data: acertou
-        ? { itensRevistos: { increment: 1 }, acertos: { increment: 1 } }
-        : { itensRevistos: { increment: 1 } },
+      data: {
+        itensRevistos: { increment: 1 },
+        acertos: acertou ? { increment: 1 } : undefined,
+        novosIntroducidos: eNovo ? { increment: 1 } : undefined,
+      },
     })
   } else {
     await prisma.studySession.create({
       data: {
         itensRevistos: 1,
         acertos: acertou ? 1 : 0,
+        novosIntroducidos: eNovo ? 1 : 0,
         modo: "flashcard",
       },
     })
   }
 
+  // Atualizar Progress do módulo do item
+  const moduleId = await getModuleId(itemType, itemId)
+  if (moduleId) {
+    await atualizarProgress(moduleId)
+  }
+
   return NextResponse.json({ estado: novoEstado })
+}
+
+// ─── Helpers ─────────────────────────────────────────────────────────────────
+
+async function getModuleId(itemType: string, itemId: number): Promise<number | null> {
+  if (itemType === "word") {
+    const w = await prisma.word.findUnique({ where: { id: itemId }, select: { moduleId: true } })
+    return w?.moduleId ?? null
+  }
+  if (itemType === "verb") {
+    const v = await prisma.verb.findUnique({ where: { id: itemId }, select: { moduleId: true } })
+    return v?.moduleId ?? null
+  }
+  return null
+}
+
+async function atualizarProgress(moduleId: number) {
+  const [totalWords, totalVerbs, revistoWords, revistoVerbs] = await Promise.all([
+    prisma.word.count({ where: { moduleId } }),
+    prisma.verb.count({ where: { moduleId } }),
+    prisma.reviewState.count({
+      where: {
+        itemType: "word",
+        itemId: { in: await prisma.word.findMany({ where: { moduleId }, select: { id: true } }).then(ws => ws.map(w => w.id)) },
+        repeticoes: { gte: 1 },
+      },
+    }),
+    prisma.reviewState.count({
+      where: {
+        itemType: "verb",
+        itemId: { in: await prisma.verb.findMany({ where: { moduleId }, select: { id: true } }).then(vs => vs.map(v => v.id)) },
+        repeticoes: { gte: 1 },
+      },
+    }),
+  ])
+
+  const total = totalWords + totalVerbs
+  const revistos = revistoWords + revistoVerbs
+  const percentagem = total > 0 ? (revistos / total) * 100 : 0
+  const terminado = total > 0 && revistos >= total
+
+  await prisma.progress.upsert({
+    where: { moduleId },
+    create: { moduleId, percentagem, terminado, ultimaAtividade: new Date() },
+    update: { percentagem, terminado, ultimaAtividade: new Date() },
+  })
 }

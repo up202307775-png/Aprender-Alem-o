@@ -1,6 +1,52 @@
 import Link from "next/link"
 import { prisma } from "@/lib/prisma"
+import NivelBadge from "@/components/NivelBadge"
 export const dynamic = "force-dynamic";
+
+// ─── Progresso do nível atual ─────────────────────────────────────────────────
+
+async function getProgressoNivel() {
+  const userState = await prisma.userState.findUnique({
+    where: { id: 1 },
+    include: { currentLevel: true },
+  })
+  if (!userState) return null
+
+  const currentLevelId = userState.currentLevelId
+
+  const [words, verbs] = await Promise.all([
+    prisma.word.findMany({ where: { module: { levelId: currentLevelId } }, select: { id: true } }),
+    prisma.verb.findMany({ where: { module: { levelId: currentLevelId } }, select: { id: true } }),
+  ])
+
+  const wordIds = words.map(w => w.id)
+  const verbIds = verbs.map(v => v.id)
+  const totalItens = wordIds.length + verbIds.length
+
+  const reviewStates = totalItens > 0
+    ? await prisma.reviewState.findMany({
+        where: {
+          OR: [
+            { itemType: "word", itemId: { in: wordIds } },
+            { itemType: "verb", itemId: { in: verbIds } },
+          ],
+        },
+        select: { repeticoes: true },
+      })
+    : []
+
+  const itensCompletos = reviewStates.filter(r => r.repeticoes >= 1).length
+  const percentagem = totalItens > 0 ? Math.round((itensCompletos / totalItens) * 100) : 0
+
+  return {
+    codigo: userState.currentLevel.codigo,
+    nome: userState.currentLevel.nome,
+    percentagem,
+    itensCompletos,
+    totalItens,
+    podeAvancar: totalItens > 0 && itensCompletos === totalItens,
+  }
+}
 
 // ─── Cálculo do streak ────────────────────────────────────────────────────────
 
@@ -120,7 +166,7 @@ export default async function DashboardPage() {
   const fimDoDia = new Date()
   fimDoDia.setHours(23, 59, 59, 999)
 
-  const [itensHoje, totalWords, totalVerbs, totalEstados, streak, progresso] =
+  const [itensHoje, totalWords, totalVerbs, totalEstados, streak, progresso, nivelInfo] =
     await Promise.all([
       prisma.reviewState.count({
         where: {
@@ -135,6 +181,7 @@ export default async function DashboardPage() {
       }),
       calcularStreak(),
       getProgresso(),
+      getProgressoNivel(),
     ])
 
   // Itens sem ReviewState ainda são "novos" e também precisam de revisão
@@ -146,8 +193,35 @@ export default async function DashboardPage() {
       <div className="max-w-xl mx-auto px-4 py-8">
 
         {/* Cabeçalho */}
-        <h1 className="text-3xl font-bold text-blue-700 mb-1">Aprender Alemão</h1>
-        <p className="text-gray-500 text-sm mb-8">Dashboard de revisão espaçada</p>
+        <div className="flex items-center gap-3 mb-1">
+          <h1 className="text-3xl font-bold text-blue-700">Aprender Alemão</h1>
+          {nivelInfo && <NivelBadge nivel={nivelInfo.codigo} className="text-sm px-3 py-1" />}
+        </div>
+        <p className="text-gray-500 text-sm mb-5">Dashboard de revisão espaçada</p>
+
+        {/* Progresso do nível atual */}
+        {nivelInfo && (
+          <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 mb-5">
+            <div className="flex items-center justify-between mb-2">
+              <p className="text-sm font-medium text-gray-700">
+                Nível {nivelInfo.codigo} — {nivelInfo.nome}
+              </p>
+              <span className="text-sm font-bold text-blue-600">{nivelInfo.percentagem}%</span>
+            </div>
+            <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden mb-1">
+              <div
+                className="h-full bg-blue-500 rounded-full transition-all duration-500"
+                style={{ width: `${nivelInfo.percentagem}%` }}
+              />
+            </div>
+            <p className="text-xs text-gray-400">
+              {nivelInfo.itensCompletos} de {nivelInfo.totalItens} itens revistos
+              {nivelInfo.podeAvancar && (
+                <span className="ml-2 text-yellow-600 font-semibold">· Pronto para avançar!</span>
+              )}
+            </p>
+          </div>
+        )}
 
         {/* Estatísticas principais */}
         <div className="grid grid-cols-2 gap-3 mb-6">

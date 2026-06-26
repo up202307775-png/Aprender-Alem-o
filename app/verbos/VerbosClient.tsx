@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import BotaoAudio from "@/components/BotaoAudio"
+import NivelBadge from "@/components/NivelBadge"
 
 type ConjugacoesTipo = {
   prasens: Record<string, string>
@@ -18,6 +19,7 @@ type VerbData = {
   separavel: boolean
   irregular: boolean
   conjugacoes: ConjugacoesTipo
+  nivel: string
 }
 
 // Ordem canónica das pessoas
@@ -106,6 +108,7 @@ function CartaoVerbo({ verbo }: { verbo: VerbData }) {
 
           <div className="flex items-center gap-2 shrink-0">
             {/* Badges */}
+            {verbo.nivel && <NivelBadge nivel={verbo.nivel} />}
             {verbo.separavel && (
               <span className="text-xs px-2 py-0.5 rounded-full bg-purple-100 text-purple-700 font-medium">
                 separável

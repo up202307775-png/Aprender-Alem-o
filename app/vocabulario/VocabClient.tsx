@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import BotaoAudio from "@/components/BotaoAudio"
+import NivelBadge from "@/components/NivelBadge"
 
 type PalavraData = {
   id: number
@@ -15,6 +16,7 @@ type PalavraData = {
   exemplo: string
   tema: string
   tipo: string
+  nivel: string
   revisao: { id: number; repeticoes: number } | null
 }
 
@@ -91,6 +93,7 @@ function CartaoVocab({
           </div>
 
           <div className="flex items-center gap-2 shrink-0">
+            {palavra.nivel && <NivelBadge nivel={palavra.nivel} />}
             <BotaoAudio texto={palavra.alemao} />
             <span className="text-gray-400 text-sm">{expandido ? "▲" : "▼"}</span>
           </div>

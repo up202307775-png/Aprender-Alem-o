@@ -5,7 +5,10 @@ export const dynamic = "force-dynamic";
 
 export default async function VocabularioPage() {
   const [palavras, estados] = await Promise.all([
-    prisma.word.findMany({ orderBy: [{ tema: "asc" }, { alemao: "asc" }] }),
+    prisma.word.findMany({
+      orderBy: [{ tema: "asc" }, { alemao: "asc" }],
+      include: { module: { include: { level: true } } },
+    }),
     prisma.reviewState.findMany({
       where: { itemType: "word" },
       select: { itemId: true, id: true, repeticoes: true },
@@ -17,14 +20,15 @@ export default async function VocabularioPage() {
   const dados = palavras.map(p => ({
     id: p.id,
     alemao: p.alemao,
-    artigo: p.artigo,
-    genero: p.genero,
+    artigo: p.artigo ?? "",
+    genero: p.genero ?? "",
     raiz: p.raiz,
     traducaoPt: p.traducaoPt,
-    plural: p.plural,
+    plural: p.plural ?? "",
     exemplo: p.exemplo,
     tema: p.tema,
     tipo: p.tipo,
+    nivel: p.module?.level?.codigo ?? "",
     revisao: mapaEstados.has(p.id)
       ? { id: mapaEstados.get(p.id)!.id, repeticoes: mapaEstados.get(p.id)!.repeticoes }
       : null,
